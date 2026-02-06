@@ -1,0 +1,214 @@
+# 1. For CMS datasets (By Provider, By Provider and Service, Part D) it looks like the definition of provider type changes through time. 
+For example, in 2013 there does not exist "Hospitalist" provider type, but it exists in 2023 -- and Ardalan Enkeshafi, M.D. (NPI: 1003000126
+) is listed as Internal Medicine in 2013 but Hospitalist in 2023. This could be due to actual switching, but unlikely for M.D.'s. Not an issue
+if switching anyway, as we want to capture the style of medicine for that field, which the providers should be following anyway -- i.e. control
+for medicial field, which is likely to be an independent driver of behavior in addition to any individual effects. 
+
+# 2. List of Departments, 2023 (from the By Provider set):
+. tab rndrng_prvdr_type
+
+                      Rndrng_Prvdr_Type |      Freq.     Percent        Cum.
+----------------------------------------+-----------------------------------
+                     Addiction Medicine |        257        0.02        0.02
+         Adult Congenital Heart Disease |         50        0.00        0.02
+Advanced Heart Failure and Transplant.. |        791        0.06        0.09
+                    All Other Suppliers |         54        0.00        0.09
+                    Allergy/ Immunology |      3,270        0.26        0.35
+             Ambulance Service Provider |      9,337        0.74        1.09
+             Ambulatory Surgical Center |      5,597        0.44        1.54
+                         Anesthesiology |     40,139        3.19        4.72
+               Anesthesiology Assistant |      3,237        0.26        4.98
+                            Audiologist |      7,390        0.59        5.57
+                        Cardiac Surgery |      1,118        0.09        5.66
+                             Cardiology |     19,657        1.56        7.22
+                        Centralized Flu |      9,383        0.75        7.96
+    Certified Clinical Nurse Specialist |      1,505        0.12        8.08
+                Certified Nurse Midwife |        881        0.07        8.15
+Certified Registered Nurse Anesthetis.. |     51,501        4.09       12.24
+                           Chiropractic |     33,147        2.63       14.87
+               Clinic or Group Practice |         51        0.00       14.88
+     Clinical Cardiac Electrophysiology |      2,472        0.20       15.07
+                    Clinical Laboratory |      3,155        0.25       15.32
+        Colorectal Surgery (Proctology) |      1,653        0.13       15.46
+           Critical Care (Intensivists) |      4,770        0.38       15.83
+                  Dental Anesthesiology |          1        0.00       15.83
+                                Dentist |        207        0.02       15.85
+                            Dermatology |     12,398        0.98       16.84
+                   Diagnostic Radiology |     32,277        2.56       19.40
+                     Emergency Medicine |     48,541        3.85       23.25
+                          Endocrinology |      6,303        0.50       23.75
+                        Family Practice |     83,136        6.60       30.36
+                       Gastroenterology |     14,581        1.16       31.51
+                       General Practice |      3,726        0.30       31.81
+                        General Surgery |     20,825        1.65       33.46
+                     Geriatric Medicine |      1,886        0.15       33.61
+                   Geriatric Psychiatry |        169        0.01       33.63
+                 Gynecological Oncology |      1,044        0.08       33.71
+                           Hand Surgery |      1,636        0.13       33.84
+                             Hematology |        901        0.07       33.91
+                    Hematology-Oncology |      8,909        0.71       34.62
+Hematopoietic Cell Transplantation an.. |        151        0.01       34.63
+         Home Infusion Therapy Services |         48        0.00       34.63
+            Hospice and Palliative Care |      1,726        0.14       34.77
+                            Hospitalist |     19,564        1.55       36.32
+Independent Diagnostic Testing Facili.. |      2,048        0.16       36.49
+                     Infectious Disease |      6,356        0.50       36.99
+       Intensive Cardiac Rehabilitation |          7        0.00       36.99
+                      Internal Medicine |     92,204        7.32       44.31
+              Interventional Cardiology |      4,436        0.35       44.67
+         Interventional Pain Management |      1,500        0.12       44.78
+               Interventional Radiology |      2,436        0.19       44.98
+        Licensed Clinical Social Worker |     17,207        1.37       46.34
+                     Mammography Center |         13        0.00       46.35
+           Mass Immunizer Roster Biller |     28,637        2.27       48.62
+                  Maxillofacial Surgery |        680        0.05       48.67
+          Medical Genetics and Genomics |         98        0.01       48.68
+                       Medical Oncology |      3,735        0.30       48.98
+                     Medical Toxicology |         37        0.00       48.98
+   Medicare Diabetes Preventive Program |         35        0.00       48.98
+      Micrographic Dermatologic Surgery |        358        0.03       49.01
+                             Nephrology |      9,395        0.75       49.76
+                              Neurology |     16,143        1.28       51.04
+                        Neuropsychiatry |        156        0.01       51.05
+                           Neurosurgery |      5,101        0.41       51.46
+                       Nuclear Medicine |        536        0.04       51.50
+                     Nurse Practitioner |    189,509       15.05       66.55
+                Obstetrics & Gynecology |     23,328        1.85       68.40
+Occupational Therapist in Private Pra.. |     10,406        0.83       69.23
+                          Ophthalmology |     17,459        1.39       70.61
+               Opioid Treatment Program |        857        0.07       70.68
+                              Optometry |     31,703        2.52       73.20
+            Oral Surgery (Dentist only) |        993        0.08       73.28
+                     Orthopedic Surgery |     21,633        1.72       75.00
+      Osteopathic Manipulative Medicine |        664        0.05       75.05
+                         Otolaryngology |      8,859        0.70       75.75
+                        Pain Management |      2,764        0.22       75.97
+                              Pathology |     12,129        0.96       76.93
+                     Pediatric Medicine |      1,779        0.14       77.08
+            Peripheral Vascular Disease |         57        0.00       77.08
+                               Pharmacy |      3,104        0.25       77.33
+   Physical Medicine and Rehabilitation |      8,328        0.66       77.99
+ Physical Therapist in Private Practice |     74,061        5.88       83.87
+                    Physician Assistant |    105,478        8.38       92.24
+     Plastic and Reconstructive Surgery |      3,923        0.31       92.56
+                               Podiatry |     15,486        1.23       93.79
+                Portable X-Ray Supplier |        284        0.02       93.81
+                    Preventive Medicine |        260        0.02       93.83
+                             Psychiatry |     19,904        1.58       95.41
+                 Psychologist, Clinical |     12,540        1.00       96.41
+        Public Health or Welfare Agency |        220        0.02       96.42
+                      Pulmonary Disease |     10,599        0.84       97.26
+                     Radiation Oncology |      4,954        0.39       97.66
+               Radiation Therapy Center |         25        0.00       97.66
+Registered Dietitian or Nutrition Pro.. |      2,192        0.17       97.83
+                           Rheumatology |      5,014        0.40       98.23
+                         Sleep Medicine |        800        0.06       98.30
+             Slide Preparation Facility |          9        0.00       98.30
+            Speech Language Pathologist |      2,442        0.19       98.49
+                        Sports Medicine |      1,798        0.14       98.63
+                      Surgical Oncology |      1,192        0.09       98.73
+                       Thoracic Surgery |      2,545        0.20       98.93
+               Undefined Physician type |        218        0.02       98.95
+       Undersea and Hyperbaric Medicine |        126        0.01       98.96
+    Unknown Supplier/Provider Specialty |         23        0.00       98.96
+                                Urology |      9,330        0.74       99.70
+                       Vascular Surgery |      3,786        0.30      100.00
+
+
+# 3. List of Departments, 2013 (from the By Provider set)
+ tab rndrng_prvdr_type
+
+                      Rndrng_Prvdr_Type |      Freq.     Percent        Cum.
+----------------------------------------+-----------------------------------
+                     Addiction Medicine |        591        0.01        0.01
+                    All Other Suppliers |      1,702        0.02        0.02
+                     Allergy/Immunology |     27,365        0.29        0.32
+             Ambulance Service Supplier |     33,328        0.36        0.68
+             Ambulatory Surgical Center |     59,414        0.64        1.32
+            Anesthesiologist Assistants |      2,970        0.03        1.35
+                         Anesthesiology |    224,111        2.41        3.76
+    Audiologist (billing independently) |     18,981        0.20        3.97
+                                   CRNA |    101,420        1.09        5.06
+              Cardiac Electrophysiology |     38,802        0.42        5.48
+                        Cardiac Surgery |     15,991        0.17        5.65
+                             Cardiology |    527,124        5.68       11.33
+                        Centralized Flu |     39,425        0.42       11.75
+    Certified Clinical Nurse Specialist |      7,413        0.08       11.83
+                Certified Nurse Midwife |        965        0.01       11.84
+                           Chiropractic |     50,456        0.54       12.38
+                    Clinical Laboratory |    124,053        1.34       13.72
+                  Clinical Psychologist |     31,281        0.34       14.06
+Colorectal Surgery (formerly proctolo.. |     12,863        0.14       14.20
+           Critical Care (Intensivists) |     19,804        0.21       14.41
+                            Dermatology |    191,432        2.06       16.47
+                   Diagnostic Radiology |  1,220,495       13.14       29.61
+                     Emergency Medicine |    220,504        2.37       31.99
+                          Endocrinology |     53,144        0.57       32.56
+                        Family Practice |    963,983       10.38       42.94
+                       Gastroenterology |    175,675        1.89       44.83
+                       General Practice |     55,133        0.59       45.42
+                        General Surgery |    167,872        1.81       47.23
+                     Geriatric Medicine |     20,645        0.22       47.45
+                   Geriatric Psychiatry |      1,000        0.01       47.47
+                 Gynecological/Oncology |      8,004        0.09       47.55
+                           Hand Surgery |     17,751        0.19       47.74
+                             Hematology |      9,319        0.10       47.84
+                    Hematology/Oncology |    175,380        1.89       49.73
+            Hospice and Palliative Care |      2,433        0.03       49.76
+Independent Diagnostic Testing Facility |     37,804        0.41       50.16
+                     Infectious Disease |     37,532        0.40       50.57
+                      Internal Medicine |  1,190,179       12.82       63.39
+         Interventional Pain Management |     40,982        0.44       63.83
+               Interventional Radiology |     33,985        0.37       64.19
+        Licensed Clinical Social Worker |     24,502        0.26       64.46
+          Mammographic Screening Center |         67        0.00       64.46
+        Mass Immunization Roster Biller |     99,411        1.07       65.53
+                  Maxillofacial Surgery |      1,833        0.02       65.55
+                       Medical Oncology |     54,041        0.58       66.13
+   Multispecialty Clinic/Group Practice |      1,503        0.02       66.15
+                             Nephrology |    109,154        1.18       67.32
+                              Neurology |    133,021        1.43       68.75
+                        Neuropsychiatry |        731        0.01       68.76
+                           Neurosurgery |     40,877        0.44       69.20
+                       Nuclear Medicine |      8,010        0.09       69.29
+                     Nurse Practitioner |    313,919        3.38       72.67
+                  Obstetrics/Gynecology |    115,381        1.24       73.91
+                 Occupational therapist |     16,948        0.18       74.09
+                          Ophthalmology |    237,630        2.56       76.65
+                              Optometry |    146,000        1.57       78.22
+           Oral Surgery (dentists only) |      2,704        0.03       78.25
+                     Orthopedic Surgery |    316,056        3.40       81.66
+      Osteopathic Manipulative Medicine |      4,646        0.05       81.71
+                         Otolaryngology |     98,945        1.07       82.77
+                        Pain Management |     23,144        0.25       83.02
+                              Pathology |    140,089        1.51       84.53
+                     Pediatric Medicine |      8,473        0.09       84.62
+            Peripheral Vascular Disease |      1,492        0.02       84.64
+                               Pharmacy |         33        0.00       84.64
+   Physical Medicine and Rehabilitation |     81,463        0.88       85.51
+                     Physical Therapist |    199,312        2.15       87.66
+                    Physician Assistant |    245,487        2.64       90.30
+     Plastic and Reconstructive Surgery |     23,880        0.26       90.56
+                               Podiatry |    193,521        2.08       92.64
+                         Portable X-ray |      8,989        0.10       92.74
+                    Preventive Medicine |      1,987        0.02       92.76
+                             Psychiatry |     95,432        1.03       93.79
+   Psychologist (billing independently) |        565        0.01       93.80
+           Public Health Welfare Agency |      1,166        0.01       93.81
+                      Pulmonary Disease |    142,482        1.53       95.34
+                     Radiation Oncology |     75,413        0.81       96.16
+                      Radiation Therapy |        770        0.01       96.16
+Registered Dietician/Nutrition Profes.. |      2,751        0.03       96.19
+                           Rheumatology |     70,037        0.75       96.95
+                         Sleep Medicine |        906        0.01       96.96
+             Slide Preparation Facility |         52        0.00       96.96
+            Speech Language Pathologist |      1,016        0.01       96.97
+                        Sports Medicine |      4,898        0.05       97.02
+                      Surgical Oncology |      4,828        0.05       97.07
+                       Thoracic Surgery |     17,877        0.19       97.27
+       Unknown Physician Specialty Code |        715        0.01       97.27
+              Unknown Supplier/Provider |        327        0.00       97.28
+                                Urology |    192,267        2.07       99.35
+                       Vascular Surgery |     60,571        0.65      100.00
+----------------------------------------+-----------------------------------
+                                  Total |  9,286,633      100.00
