@@ -1,0 +1,102 @@
+* This script sets up
+
+*===============================================================================
+* SECTION 1: MASTER GLOBAL SWITCHES
+*===============================================================================
+* --- DEFINE USER ---
+* Set this to match the user currently running the script
+global who = "Omar"
+*global who = "Collaborator"
+
+* --- DEFINE TEST MODE ---
+* "yes" = Use the 5% sample data (fast, for debugging)
+* "no"  = Use the full dataset (slow, for final production)
+global test = "yes" 
+*global test = "no"
+
+* --- DEFINE CONSTANTS ---
+global sample_rate = 5      // We are using a 5% sample
+global start_year = 2013
+global end_year = 2023
+
+*===============================================================================
+* SECTION 2: DEFINE ROOT PATH GLOBALS
+*===============================================================================
+* NOTE: The "projectRoot" should point to the folder containing 'cms', 'hcahps', etc.
+
+if "$who" == "Omar" {
+    * UPDATE THIS PATH to your actual Dropbox/Git root path
+    global projectRoot "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data"
+}
+else if "$who" == "Collaborator" {
+    * Example for a Mac user or second machine
+    global projectRoot "/Users/username/Dropbox/Your_Project_Main_Folder"
+}
+
+* --- DEFINE DYNAMIC SUBPATHS ---
+* These build off the projectRoot, so you don't need to change them manually
+global cmsRoot      "$projectRoot/cms"
+global hcahpsRoot   "$projectRoot/hcahps"
+global mipsRoot     "$projectRoot/cliniciansAndGroups"
+global codeDir      "$projectRoot/cleaningCode"
+global logDir       "$codeDir/logs"
+global outputDir    "$projectRoot/outputs_while_cleaning" 
+
+global outputRoot   "$projectRoot/outputs_while_cleaning"
+global figDir       "$outputRoot/figures"
+global tabDir       "$outputRoot/tables"
+
+capture mkdir "$outputRoot"
+capture mkdir "$figDir"
+capture mkdir "$tabDir"
+*===============================================================================
+* SECTION 3: HANDLE SAMPLE VS. FULL DATA LOGIC
+*===============================================================================
+* This automatically adjusts file paths based on the $test switch.
+* If specific subfolders for full data differ, adjust the 'else' block.
+
+if "$test" == "yes" {
+    global loadPath     "dta/5pct_sample"   // Subfolder for samples
+    global fileSuffix   "_sample"           // Suffix added to 5% files
+    global parseType    "TEST (5% Sample)"
+}
+else {
+    global loadPath     "dta/full_sample"   // Subfolder for full DTAs
+    global fileSuffix   ""                  // Full files usually have no suffix
+    global parseType    "PRODUCTION (Full Data)"
+}
+
+*===============================================================================
+* SECTION 4: DYNAMIC LOGGING CONFIGURATION
+*===============================================================================
+if "$component" == "" global component "general"
+
+* Define the specific log subfolder
+global logDir "$codeDir/logs/$component"
+
+capture mkdir "$codeDir/logs"
+capture mkdir "$logDir"
+
+capture log close _all
+
+* --- NEW: Check for a defined script name, otherwise default to 'log' ---
+if "$script_name" != "" {
+    local nameStub "$script_name"
+}
+else {
+    local nameStub "log"
+}
+
+local date_stamp : di %tdCCYY.NN.DD date(c(current_date), "DMY")
+local time_stamp : di %tcHH.MM.SS clock(c(current_time), "hms")
+local datetime "`date_stamp'_`time_stamp'"
+
+* Filename: scriptName_TIMESTAMP.smcl
+local logfile "$logDir/`nameStub'_`datetime'.smcl"
+
+log using "`logfile'", replace text
+display "----------------------------------------------------------------"
+display "  PROJECT:   CMS Provider Data Unification with HCAHPS and MIPS"
+display "  SCRIPT:    `nameStub'"
+display "  LOG PATH:  `logfile'"
+display "----------------------------------------------------------------"

@@ -1,0 +1,324 @@
+--------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningC
+> ode/logs/mips/facility_header_inspection.txt
+  log type:  text
+ opened on:   8 Feb 2026, 13:53:41
+
+. 
+. display "=================================================================="
+==================================================================
+
+. display "       FACILITY DATA HEADER INSPECTION REPORT"
+       FACILITY DATA HEADER INSPECTION REPORT
+
+. display "=================================================================="
+==================================================================
+
+. 
+. * --- PHASE 1: Main Folder (2014-2022) ---
+. local facilRoot "$mipsRoot/facilityAffiliation"
+
+. local earlyFiles : dir "`facilRoot'" files "facility_names_*.csv"
+
+. 
+. foreach file in `earlyFiles' {
+  2.     display _newline
+  3.     display "------------------------------------------------------------------"
+  4.     display "FILE: `file'"
+  5.     display "------------------------------------------------------------------"
+  6.     
+.     * Use the 'type' command to show raw lines (first 5)
+.     type "`facilRoot'/`file'", lines(5)
+  7. }
+
+
+------------------------------------------------------------------
+FILE: facility_names_2014.csv
+------------------------------------------------------------------
+NPI,PAC ID,Professional Enrollment ID,Last Name,First Name,Middle Name,Suffix,Gender,Credential,Me
+> dical school name,Graduation year,Primary specialty,Secondary specialty 1,Secondary specialty 2,
+> Secondary specialty 3,Secondary specialty 4,All secondary specialties,Organization legal name,Or
+> ganization DBA name,Group Practice PAC ID,Number of Group Practice members,Line 1 Street Address
+> ,Line 2 Street Address,Marker of address line 2 suppression,City,State,Zip Code,Claims based hos
+> pital affiliation CCN 1,Claims based hospital affiliation LBN 1,Claims based hospital affiliatio
+> n CCN 2,Claims based hospital affiliation LBN 2,Claims based hospital affiliation CCN 3,Claims b
+> ased hospital affiliation LBN 3,Claims based hospital affiliation CCN 4,Claims based hospital af
+> filiation LBN 4,Claims based hospital affiliation CCN 5,Claims based hospital affiliation LBN 5,
+> Professional accepts Medicare Assignment,Participating in eRx,Participating in PQRS,Participatin
+> g in EHR,Received PQRS Maintenance of Certification Program Incentive,Participated in Million He
+> arts
+1003000126,7517003643,I20091005000100,ENKESHAFI,ARDALAN, , ,M, ,OTHER,1994,INTERNAL MEDICINE, , , 
+> , , ,HOSPITALIST MEDICINE PHYSICIANS OF MARYLAND PC, ,8729138003,43,827 LINDEN AVE, ,N,BALTIMORE
+> ,MD,212014606,210027,WESTERN MARYLAND HEALTH SYSTEM CORPORATION,511315,POTOMAC VALLEY HOSPITAL O
+> F W VA INC,511311,"HAMPSHIRE MEMORIAL HOSPITAL, INC.", , , , ,Y, ,Y, , , 
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L, ,M, ,UNIVERSITY OF KENTUCKY COLLEGE OF MEDI
+> CINE,2003,PATHOLOGY, , , , , ,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES, ,2
+> 163334699,915,2650 RIDGE AVE, ,Y,EVANSTON,IL,602011718,140010,NORTHSHORE UNIVERSITY HEALTHSYSTEM
+> ,140200,ELMHURST MEMORIAL HOSPITAL,140252,NORTHWEST COMMUNITY HOSPITAL,140130,NORTHWESTERN LAKE 
+> FOREST HOSPITAL, , ,Y,Y,Y, , , 
+1003000142,9931380672,I20110801000609,KHALIL,RASHID, , ,M, ,OTHER,1999,ANESTHESIOLOGY, , , , , ,"M
+> ERCY HEALTH PHYSICIANS - NORTH, LLC.", ,2668522400,269,2222 CHERRY ST, ,Y,TOLEDO,OH,436082675,36
+> 0262,MERCY HEALTH ST ANNE HOSPITAL LLC,360112,MERCY HEALTH- ST. VINCENT MEDICAL CENTER LLC,36008
+> 1,MERCY HEALTH ST CHARLES HOSPITAL LLC, , , , ,Y,Y,Y, , , 
+1003000159,8628041530,I20040818000921,VOGES,MARSHA,S, ,F,NP,OTHER,1983,NURSE PRACTITIONER, , , , ,
+>  ,"AMERICAN CURRENT CARE, PA",CONCENTRA URGENT CARE,9739260019,476,4115 DORCHESTER RD, ,N,CHARLE
+> STON,SC,294057501, , , , , , , , , , ,Y, , , , , 
+
+------------------------------------------------------------------
+FILE: facility_names_2015.csv
+------------------------------------------------------------------
+NPI,PAC ID,Professional Enrollment ID,Last Name,First Name,Middle Name,Suffix,Gender,Credential,Me
+> dical school name,Graduation year,Primary specialty,Secondary specialty 1,Secondary specialty 2,
+> Secondary specialty 3,Secondary specialty 4,All secondary specialties,Organization legal name,Or
+> ganization DBA name,Group Practice PAC ID,Number of Group Practice members,Line 1 Street Address
+> ,Line 2 Street Address,Marker of address line 2 suppression,City,State,Zip Code,Claims based hos
+> pital affiliation CCN 1,Claims based hospital affiliation LBN 1,Claims based hospital affiliatio
+> n CCN 2,Claims based hospital affiliation LBN 2,Claims based hospital affiliation CCN 3,Claims b
+> ased hospital affiliation LBN 3,Claims based hospital affiliation CCN 4,Claims based hospital af
+> filiation LBN 4,Claims based hospital affiliation CCN 5,Claims based hospital affiliation LBN 5,
+> Professional accepts Medicare Assignment,Participating in eRx,Participating in PQRS,Participatin
+> g in EHR,Received PQRS Maintenance of Certification Program Incentive,Participated in Million He
+> arts
+1003001843,5597718650,I20050301000433,LUECHINGER,INGE,C,,F,CNS,OTHER,1998,CLINICAL NURSE SPECIALIS
+> T,,,,,,FAMILY THERAPY PC,,2264677632,1,1296 PARKER SERD,,N,CONYERS,GA,300945951,,,,,,,,,,,M,,,,,
+1235197823,7315913126,I20040902001256,STOKES,BARBARA,M,,F,CSW,OTHER,1980,CLINICAL SOCIAL WORKER,,,
+> ,,,,,,1,23717 HAWTHORNE BLVD,,N,TORRANCE,CA,905055973,,,,,,,,,,,Y,,,,,
+1780720284,0042248858,I20050802001200,STRAUSS,RICHARD,A,,M,CSW,OTHER,1982,CLINICAL SOCIAL WORKER,,
+> ,,,,,,,1,1130 PELHAM S PKWY,3H,N,BRONX,NY,104611023,,,,,,,,,,,Y,,,,,
+1457358269,8820080849,I20040331000829,WOLFSWINKEL,TERRYL,L,,M,DC,NATIONAL COLLEGE OF CHIROPRACTIC,
+> 1984,CHIROPRACTIC,,,,,,OSKALOOSA CHIROPRACTIC CLINIC PC,,2365578937,1,211 N J ST,,N,OSKALOOSA,IA
+> ,525771964,,,,,,,,,,,Y,,,Y,,
+
+------------------------------------------------------------------
+FILE: facility_names_2016.csv
+------------------------------------------------------------------
+1003000126,7517003643,I20091005000100,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,HOS
+> PITALIST MEDICINE PHYSICIANS OF MARYLAND PC,8729138003,148,827 LINDEN AVE,,,BALTIMORE,MD,2120146
+> 06,4435522447,490126,LEWISGALE HOSPITAL ALLEGHANY,210027,WESTERN MARYLAND REGIONAL MEDICAL CENTE
+> R,490048,LEWISGALE MEDICAL CENTER,490024,CARILION ROANOKE MEMORIAL HOSPITAL,,,Y,,,,
+1003000126,7517003643,I20150824000105,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,COM
+> MONWEALTH HOSPITALIST GROUP LLC,4587979323,74,1900 ELECTRIC RD,,,SALEM,VA,241537474,5407764000,4
+> 90126,LEWISGALE HOSPITAL ALLEGHANY,210027,WESTERN MARYLAND REGIONAL MEDICAL CENTER,490048,LEWISG
+> ALE MEDICAL CENTER,490024,CARILION ROANOKE MEMORIAL HOSPITAL,,,Y,,,,
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICI
+> NE,2003,PATHOLOGY,,,,,,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES,2163334699
+> ,1012,2650 RIDGE AVE,,Y,EVANSTON,IL,602011718,,140010,EVANSTON HOSPITAL,140200,ELMHURST MEMORIAL
+>  HOSPITAL,140242,CENTRAL DUPAGE HOSPITAL,140252,NORTHWEST COMMUNITY HOSPITAL 1,140258,ALEXIAN BR
+> OTHERS MEDICAL CENTER 1,Y,Y,,,
+1003000142,9931380672,I20110801000609,KHALIL,RASHID,,,M,,OTHER,1999,ANESTHESIOLOGY,,,,,,"MERCY HEA
+> LTH PHYSICIANS - NORTH, LLC.",2668522400,294,2222 CHERRY ST,,Y,TOLEDO,OH,436082675,,360262,MERCY
+>  ST ANNE HOSPITAL,360112,MERCY ST VINCENT MEDICAL CENTER,360081,MERCY ST CHARLES HOSPITAL,360068
+> ,TOLEDO HOSPITAL THE,360090,ST LUKE'S HOSPITAL,Y,Y,Y,,
+1003000407,2769663509,I20110225000837,GIRARDI,DAVID,J,,M,,PHILADELPHIA COLLEGE OF OSTEOPATHIC MEDI
+> CINE,2003,FAMILY PRACTICE,,,,,,BROOKVILLE HOSPITAL,3072579598,16,100 HOSPITAL RD,BROOKVILLE PHYS
+> ICIAN GROUP HOSPITALIST,,BROOKVILLE,PA,158251367,8148492312,391312,PENN HIGHLANDS BROOKVILLE,390
+> 093,CLARION HOSPITAL,390086,PENN HIGHLANDS DUBOIS,390164,UPMC PRESBYTERIAN SHADYSIDE,,,Y,,,,
+
+------------------------------------------------------------------
+FILE: facility_names_2017.csv
+------------------------------------------------------------------
+NPI,PAC ID,Professional Enrollment ID,Last Name,First Name,Middle Name,Suffix,Gender,Credential,Me
+> dical school name,Graduation year,Primary specialty,Secondary specialty 1,Secondary specialty 2,
+> Secondary specialty 3,Secondary specialty 4,All secondary specialties,Organization legal name,Gr
+> oup Practice PAC ID,Number of Group Practice members,Line 1 Street Address,Line 2 Street Address
+> ,Marker of address line 2 suppression,City,State,Zip Code,Phone Number,Hospital affiliation CCN 
+> 1,Hospital affiliation LBN 1,Hospital affiliation CCN 2,Hospital affiliation LBN 2,Hospital affi
+> liation CCN 3,Hospital affiliation LBN 3,Hospital affiliation CCN 4,Hospital affiliation LBN 4,H
+> ospital affiliation CCN 5,Hospital affiliation LBN 5,Professional accepts Medicare Assignment,Re
+> ported Quality Measures,Used electronic health records,Committed to heart health through the Mil
+> lion Hearts® initiative.
+1487927612,4880850486,I20120726000331,HALL,ESTHER,S,,F,,LIFE CHIROPRACTIC COLLEGE - WEST,2010,CHIR
+> OPRACTIC,,,,,,,,,183 PLACERVILLE DR,SUITE A,,PLACERVILLE,CA,956673933,5306228041,,,,,,,,,,,Y,,,
+1235146762,2365435336,I20040406000367,WHITE,BARBARA,L,,F,CSW,OTHER,1992,CLINICAL SOCIAL WORKER,,,,
+> ,,,,,163 ENGLE ST,,,ENGLEWOOD,NJ,076312530,2014102812,,,,,,,,,,,Y,,,
+1285727842,5799762829,I20040707000479,CASHA,MARK,S,,M,DC,OTHER,1981,CHIROPRACTIC,,,,,,"CASHA-CROSS
+>  CHIROPRACTIC, INC",1951388073,2,5330 PRIMROSE DR,,,FAIR OAKS,CA,956283541,9169677436,,,,,,,,,,,
+> M,,,
+1295821098,0840459889,I20120309000459,MORANZ,JANICE,F,,F,,OHIO STATE UNIVERSITY COLLEGE OF MEDICIN
+> E,1984,DERMATOLOGY,,,,,,"SOUTHWEST INTEGRATIVE HEALTH CENTER, LLC",6800954819,6,5310 HOMESTEAD N
+> ERD,SUITE 400,,ALBUQUERQUE,NM,871101437,5052563648,,,,,,,,,,,Y,,,
+
+------------------------------------------------------------------
+FILE: facility_names_2018.csv
+------------------------------------------------------------------
+NPI, Ind_PAC_ID, Ind_enrl_ID, lst_nm, frst_nm, mid_nm, suff, gndr, Cred, Med_sch, Grd_yr, pri_spec
+> , sec_spec_1, sec_spec_2, sec_spec_3, sec_spec_4, sec_spec_all, org_nm, org_pac_id, num_org_mem,
+>  adr_ln_1, adr_ln_2, ln_2_sprs, cty, st, zip, phn_numbr, hosp_afl_1, hosp_afl_lbn_1, hosp_afl_2,
+>  hosp_afl_lbn_2, hosp_afl_3, hosp_afl_lbn_3, hosp_afl_4, hosp_afl_lbn_4, hosp_afl_5, hosp_afl_lb
+> n_5, assgn, PQRS, EHR, MHI
+1003000126,7517003643,I20150824000105,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,COM
+> MONWEALTH HOSPITALIST GROUP LLC,4587979323,57,1900 ELECTRIC RD,,,SALEM,VA,241537474,5407764000,4
+> 90126,LEWISGALE HOSPITAL ALLEGHANY,,,,,,,,,Y,Y,,
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICI
+> NE,2003,PATHOLOGY,,,,,,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES,2163334699
+> ,1188,2100 PFINGSTEN RD,,,GLENVIEW,IL,600261301,,140010,NORTHSHORE UNIVERSITY HEALTHSYSTEM - EVA
+> NSTON HOSPITAL,,,,,,,,,Y,Y,,
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICI
+> NE,2003,PATHOLOGY,,,,,,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES,2163334699
+> ,1188,2180 PFINGSTEN RD 1ST FLOOR,,Y,GLENVIEW,IL,600261301,,140010,NORTHSHORE UNIVERSITY HEALTHS
+> YSTEM - EVANSTON HOSPITAL,,,,,,,,,Y,Y,,
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICI
+> NE,2003,PATHOLOGY,,,,,,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES,2163334699
+> ,1188,777 PARK W AVE,,,HIGHLAND PARK,IL,600352433,8474328000,140010,NORTHSHORE UNIVERSITY HEALTH
+> SYSTEM - EVANSTON HOSPITAL,,,,,,,,,Y,Y,,
+
+------------------------------------------------------------------
+FILE: facility_names_2019.csv
+------------------------------------------------------------------
+NPI, Ind_PAC_ID, Ind_enrl_ID, lst_nm, frst_nm, mid_nm, suff, gndr, Cred, Med_sch, Grd_yr, pri_spec
+> , sec_spec_1, sec_spec_2, sec_spec_3, sec_spec_4, sec_spec_all, org_nm, org_pac_id, num_org_mem,
+>  adr_ln_1, adr_ln_2, ln_2_sprs, cty, st, zip, phn_numbr, hosp_afl_1, hosp_afl_lbn_1, hosp_afl_2,
+>  hosp_afl_lbn_2, hosp_afl_3, hosp_afl_lbn_3, hosp_afl_4, hosp_afl_lbn_4, hosp_afl_5, hosp_afl_lb
+> n_5, assgn
+1003000126,7517003643,I20150824000105,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,EME
+> RGENCY MEDICINE ASSOCIATES PA PC,8022914522,389,24440 STONE SPRINGS BLVD,,,DULLES,VA,201662247,5
+> 713674400,490112,CJW MEDICAL CENTER,490107,RESTON HOSPITAL CENTER,,,,,,,Y
+1003000126,7517003643,I20150824000105,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,SOU
+> THEASTERN INTENSIVIST SERVICES PC,9335152107,135,1401 JOHNSTON WILLIS DR,,,NORTH CHESTERFIELD,VA
+> ,232354730,8044835000,490112,CJW MEDICAL CENTER,490107,RESTON HOSPITAL CENTER,,,,,,,Y
+1003000126,7517003643,I20150824000105,ENKESHAFI,ARDALAN,,,M,,OTHER,1994,INTERNAL MEDICINE,,,,,,SOU
+> THEASTERN INTENSIVIST SERVICES PC,9335152107,135,411 W RANDOLPH RD,,,HOPEWELL,VA,238602938,80454
+> 11600,490112,CJW MEDICAL CENTER,490107,RESTON HOSPITAL CENTER,,,,,,,Y
+1003000134,4284706367,I20080707000385,CIBULL,THOMAS,L,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDICI
+> NE,2003,PATHOLOGY,,,,,,NORTHSHORE UNIVERSITY HEALTHSYSTEM FACULTY PRACTICE ASSOCIATES,2163334699
+> ,1293,2100 PFINGSTEN RD,,Y,GLENVIEW,IL,600261301,,140010,NORTHSHORE UNIVERSITY HEALTHSYSTEM - EV
+> ANSTON HOSPITAL,,,,,,,,,Y
+
+------------------------------------------------------------------
+FILE: facility_names_2020.csv
+------------------------------------------------------------------
+NPI, Ind_PAC_ID, Ind_enrl_ID, lst_nm, frst_nm, mid_nm, suff, gndr, Cred, Med_sch, Grd_yr, pri_spec
+> , sec_spec_1, sec_spec_2, sec_spec_3, sec_spec_4, sec_spec_all, org_nm, org_pac_id, num_org_mem,
+>  adr_ln_1, adr_ln_2, ln_2_sprs, cty, st, zip, phn_numbr, hosp_afl_1, hosp_afl_lbn_1, hosp_afl_2,
+>  hosp_afl_lbn_2, hosp_afl_3, hosp_afl_lbn_3, hosp_afl_4, hosp_afl_lbn_4, hosp_afl_5, hosp_afl_lb
+> n_5, ind_assgn, grp_assgn, adrs_id
+1225335755,5496916249,I20120423000200,HAZEN,BARRY,DANIEL,,M,,NEW YORK CHIROPRACTIC COLLEGE,2011,CH
+> IROPRACTIC,,,,,,,,,4 MYLIN AVE,,,WILLOW STREET,PA,175849305,,,,,,,,,,,,Y,,PA175849305WI4XXXXAVEX
+> 300
+1225284706,5890828099,I20150415002096,PANAGIOTOU,DEMETRIOS,N,,M,,"JS WEILL MEDICAL COLLEGE, CORNEL
+> L UNIVERSITY",2007,CARDIOVASCULAR DISEASE (CARDIOLOGY),INTERNAL MEDICINE,,,,INTERNAL MEDICINE,,,
+> ,190 RIVER RD,,,EDGEWATER,NJ,070201096,,310130,HACKENSACK MERIDIAN HEALTH PASCACK VALLEY MEDICAL
+> ,310001,HACKENSACK UNIVERSITY MEDICAL CENTER,310008,HOLY NAME MEDICAL CENTER,310012,VALLEY HOSPI
+> TAL,310003,HACKENSACKUMC PALISADES,Y,,NJ070201096ED190XXRDXX300
+1225383433,3577792761,I20140211000571,BROUSALINKI,GELENA,,,F,,R FRANKLIN UNIVERSITY OF MED & SCI/C
+> HICAGO MEDICAL SCHOOL,1989,PHYSICAL THERAPY,,,,,,,,,11685 C BUSTLETON AVE,,,PHILADELPHIA,PA,1911
+> 62513,,,,,,,,,,,,Y,,PA191162513PH11685AVEX400
+1225293095,2668620626,I20141003002305,BADDAY,HASAN,,,M,,OTHER,2007,INTERVENTIONAL PAIN MANAGEMENT,
+> PHYSICAL MEDICINE AND REHABILITATION,,,,PHYSICAL MEDICINE AND REHABILITATION,,,,4700 VON KARMAN 
+> AVE,SUITE 100,,NEWPORT BEACH,CA,926602194,,050224,HOAG MEMORIAL HOSPITAL PRESBYTERIAN,,,,,,,,,Y,
+> ,CA926602194NE4700XAVEX401
+
+------------------------------------------------------------------
+FILE: facility_names_2021.csv
+------------------------------------------------------------------
+NPI, Ind_PAC_ID, Ind_enrl_ID, lst_nm, frst_nm, mid_nm, suff, gndr, Cred, Med_sch, Grd_yr, pri_spec
+> , sec_spec_1, sec_spec_2, sec_spec_3, sec_spec_4, sec_spec_all, org_nm, org_pac_id, num_org_mem,
+>  adr_ln_1, adr_ln_2, ln_2_sprs, cty, st, zip, phn_numbr, hosp_afl_1, hosp_afl_lbn_1, hosp_afl_2,
+>  hosp_afl_lbn_2, hosp_afl_3, hosp_afl_lbn_3, hosp_afl_4, hosp_afl_lbn_4, hosp_afl_5, hosp_afl_lb
+> n_5, ind_assgn, grp_assgn, adrs_id
+1215321872,3870667793,I20150803001151,MASIELLO,EVE,,,F,,OTHER,1982,CLINICAL SOCIAL WORKER,,,,,,,,,
+> 120 COURT ST,,,PLYMOUTH,MA,023603826,7817107356,,,,,,,,,,,M,M,MA023603826PL120XXSTXX300
+1215195664,6204988652,I20090715000375,DURU,CELESTINA,N,,F,,NEW YORK COLLEGE OF PODIATRIC MEDICINE,
+> 2007,PODIATRY,,,,,,,,,2000 ESTERS RD,SUITE 104,,IRVING,TX,750619580,,,,,,,,,,,,Y,M,TX750619580IR
+> 2000XRDXX303
+1215188925,5193982478,I20120130000697,KESHAVARZI,REZA,,,M,,UNIVERSITY OF KENTUCKY COLLEGE OF MEDIC
+> INE,2005,GENERAL SURGERY,,,,,,,,,7330 SW 62ND PL,SUITE 210,,SOUTH MIAMI,FL,331434825,,,,,,,,,,,,
+> Y,M,FL331434825SO7330XPLXX403
+1215138714,8022188820,I20080605000567,PHAM,ANTHONY,,,M,,"UNIVERSITY OF NORTH TEXAS HSC, COLLEGE OF
+>  OSTEOPATHIC MED",2003,PHYSICAL MEDICINE AND REHABILITATION,INTERVENTIONAL PAIN MANAGEMENT,,,,IN
+> TERVENTIONAL PAIN MANAGEMENT,,,,11799 BEECHNUT ST,SUITE A,,HOUSTON,TX,770724116,,,,,,,,,,,,Y,M,T
+> X770724116HO11799STXX301
+
+------------------------------------------------------------------
+FILE: facility_names_2022.csv
+------------------------------------------------------------------
+NPI, Ind_PAC_ID, Ind_enrl_ID, lst_nm, frst_nm, mid_nm, suff, gndr, Cred, Med_sch, Grd_yr, pri_spec
+> , sec_spec_1,    sec_spec_2, sec_spec_3, sec_spec_4, sec_spec_all,    org_nm, org_pac_id, num_or
+> g_mem, adr_ln_1, adr_ln_2, ln_2_sprs, cty, st, zip, phn_numbr,    hosp_afl_1, hosp_afl_lbn_1, ho
+> sp_afl_2, hosp_afl_lbn_2, hosp_afl_3, hosp_afl_lbn_3, hosp_afl_4, hosp_afl_lbn_4, hosp_afl_5, ho
+> sp_afl_lbn_5, ind_assgn, grp_assgn, adrs_id
+1215080320,1658548284,I20120121000116,CHARTRAND,JANET,S,,F,,OTHER,1994,CLINICAL SOCIAL WORKER,,,,,
+> ,,,,4132 KEATON CROSSING BLVD,SUITE 201,,OFALLON,MO,633688223,6362443589,,,,,,,,,,,Y,M,MO6336882
+> 23OF4132XBLVD401
+1215081385,6204843287,I20060316000008,EDWARDS,PRINCETTA,A,,F,CSW,OTHER,1988,CLINICAL SOCIAL WORKER
+> ,,,,,,,,,1314 PARK AVE,SUITE 7,,PLAINFIELD,NJ,070603253,,,,,,,,,,,,Y,M,NJ070603253PL1314XAVEX302
+1215030002,9931163359,I20041116000544,MAURONER,NORMAN,L,JR.,M,MD,LOUISIANA STATE UNIVERSITY SCHOOL
+>  OF MEDICINE IN SHREVEPORT,1978,INTERNAL MEDICINE,,,,,,,,,555 HOSPITAL DR,,,WARRENTON,VA,2018630
+> 28,,490023,FAUQUIER HOSPITAL,490045,NOVANT PRINCE WILLIAM MEDICAL CENTER,490144,NOVANT HEALTH UV
+> A HEALTH HAYMARKET MEDICAL CENTER,,,,,Y,M,VA201863028WA555XXDRXX300
+1215030093,4587972856,I20151006002404,MARINO,MICHAEL,FRANCIS,,M,,OTHER,1983,CLINICAL PSYCHOLOGIST,
+> ,,,,,,,,1305 MIDDLE COUNTRY RD,SUITE 7,,SELDEN,NY,117842554,6312209285,,,,,,,,,,,Y,M,NY117842554
+> SE1305XRDXX404
+
+------------------------------------------------------------------
+FILE: facility_names_2023.csv
+------------------------------------------------------------------
+NPI,Ind_PAC_ID,Ind_enrl_ID,lst_nm,frst_nm,mid_nm,suff,gndr,Cred,Med_sch,Grd_yr,pri_spec,sec_spec_1
+> ,sec_spec_2,sec_spec_3,sec_spec_4,sec_spec_all,Telehlth,org_nm,org_pac_id,num_org_mem,adr_ln_1,a
+> dr_ln_2,ln_2_sprs,cty,st,zip,phn_numbr,ind_assgn,grp_assgn,adrs_id
+1407263999,8729208152,I20141006002245,AVERY,ROBIN,A,,F,,OTHER,1989,CLINICAL PSYCHOLOGIST,,,,,,Y,,,
+> ,9999 NE 2ND AVE,SUITE 209E,,MIAMI SHORES,FL,331382345,,Y,M,FL331382345MI9999XAVEX403
+1407278690,4688974991,I20151119000969,ERNST DANCY,LONNI,L,,F,,NEW YORK CHIROPRACTIC COLLEGE,2013,C
+> HIROPRACTIC,,,,,,,,,,114 MARKET ST,,,LEWISBURG,PA,178371542,,Y,M,PA178371542LE114XXSTXX300
+1407052558,0547587131,I20150319000002,FARRELL,JUSTIN,L,,M,,OTHER,2007,CLINICAL SOCIAL WORKER,,,,,,
+> ,,,,3606 MAIN ST,SUITE 202,,VANCOUVER,WA,986632235,,Y,M,WA986632235VA3606XSTXX303
+1407339344,3072859248,I20190108003832,DIBIASE,DHIRA,,,F,,OTHER,2016,CLINICAL PSYCHOLOGIST,,,,,,,,,
+> ,591 ALIHI PL,,,KAILUA,HI,967343981,,Y,M,HI967343981KA591XXPLXX300
+. 
+. * --- PHASE 2: Subfolders (2023+) ---
+. foreach year in 2023 2024 2025 {
+  2.     
+.     * Check if file exists
+.     capture confirm file "`facilRoot'/`year'/Facility_Affiliation.csv"
+  3.     
+.     if _rc == 0 {
+  4.         display _newline
+  5.         display "------------------------------------------------------------------"
+  6.         display "FILE: `year'/Facility_Affiliation.csv"
+  7.         display "------------------------------------------------------------------"
+  8.         
+.         type "`facilRoot'/`year'/Facility_Affiliation.csv", lines(5)
+  9.     }
+ 10.     else {
+ 11.         display _newline "  [No file found for `year']"
+ 12.     }
+ 13. }
+
+
+------------------------------------------------------------------
+FILE: 2023/Facility_Affiliation.csv
+------------------------------------------------------------------
+NPI,Ind_PAC_ID,lst_nm,frst_nm,mid_nm,suff,facility_type,facility_afl_ccn,parent_ccn
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,210003,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,210022,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,490063,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,490145,
+
+------------------------------------------------------------------
+FILE: 2024/Facility_Affiliation.csv
+------------------------------------------------------------------
+NPI,Ind_PAC_ID,Provider Last Name,Provider First Name,Provider Middle Name,suff,facility_type,Faci
+> lity Affiliations Certification Number,Facility Type Certification Number
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,490107,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,490063,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,390332,
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,390330,
+
+------------------------------------------------------------------
+FILE: 2025/Facility_Affiliation.csv
+------------------------------------------------------------------
+NPI,Ind_PAC_ID,Provider Last Name,Provider First Name,Provider Middle Name,suff,facility_type,Faci
+> lity Affiliations Certification Number,Facility Type Certification Number
+1003000126,7517003643,ENKESHAFI,ARDALAN,,,Hospital,390048,
+1003000142,9931380672,KHALIL,RASHID,,,Hospital,360112,
+1003000423,9133397268,VELOTTA,JENNIFER,A,,Hospital,360098,
+1003000480,0446348254,ROTHCHILD,KEVIN,B,,Hospital,060024,
+. 
+. log close
+      name:  <unnamed>
+       log:  C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningC
+> ode/logs/mips/facility_header_inspection.txt
+  log type:  text
+ closed on:   8 Feb 2026, 13:53:41
+--------------------------------------------------------------------------------------------------
