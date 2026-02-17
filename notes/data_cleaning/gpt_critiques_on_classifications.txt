@@ -1,0 +1,383 @@
+I. Immediate Assessment of Your Current Classification
+What You’ve Done Well
+
+Clear high-revenue contrasts (excellent design choice)
+
+Lucentis/Eylea vs Avastin
+
+Pregabalin vs Gabapentin
+
+Oxymorphone vs other opioids
+
+Dalbavancin vs standard IV antibiotics
+
+These are strong “within-clinical-category” contrasts that isolate margin differences.
+
+Inclusion of chronic low-discretion controls
+
+Metformin
+
+Lisinopril
+
+Atorvastatin
+
+These are ideal “low discretion” benchmarks.
+
+Recognition of abuse-prone and grey-area categories
+
+Opioids
+
+Benzodiazepines
+
+Muscle relaxants
+
+Viscosupplement injections
+
+These are commonly cited in literature as discretionary.
+
+II. Where Your Current Tables Are Thin
+
+Right now, your selection is conceptually correct but empirically sparse relative to:
+
+10,000+ CPT/HCPCS service codes
+
+500 Part B drugs
+
+2,000 Part D drugs
+
+Your current framework covers only a small discretionary subset.
+
+You will face this critique:
+
+“Why were these specific codes selected? What about the rest?”
+
+You need systematic coverage logic.
+
+III. Major Missing High-Discretion Categories
+
+Below are important outpatient discretionary domains not yet represented.
+
+1️⃣ Imaging & Diagnostic Intensity (High Value for Your Study)
+
+These are classic physician-incentive test cases.
+
+Add CPT families:
+
+Advanced imaging (MRI, CT)
+
+Nuclear stress testing
+
+Echocardiography
+
+PET scans
+
+Grey-area example:
+
+MRI for uncomplicated back pain
+
+CT for mild headache
+
+These are central to financial incentive literature.
+
+2️⃣ Interventional Pain & Spine Procedures
+
+You included steroid injections (good), but missing:
+
+Epidural steroid injections
+
+Facet joint injections
+
+Radiofrequency ablation
+
+Nerve blocks
+
+These are high-volume Medicare outpatient revenue drivers.
+
+3️⃣ Dermatology Procedures
+
+High discretion:
+
+Mohs surgery
+
+Cryotherapy
+
+Cosmetic excisions
+
+Skin biopsies (borderline discretionary)
+
+4️⃣ Infusion Therapy Beyond Oncology
+
+You have biologics (good), but missing:
+
+IV iron
+
+IV hydration
+
+IV vitamin therapies
+
+IV antibiotics beyond listed few
+
+Infusion clinics are high-margin.
+
+5️⃣ Part D “Grey-Area” Expansions
+
+Currently you capture opioids, sedatives, antibiotics.
+
+You should add:
+
+Proton Pump Inhibitors (omeprazole vs step-down)
+
+ADHD stimulants
+
+Testosterone replacement
+
+Antipsychotics in elderly
+
+GLP-1 agonists (if in your period)
+
+Brand vs generic substitution broadly
+
+The brand vs generic margin is crucial for your monetary incentive hypothesis.
+
+6️⃣ Part B Drug Substitution Pairs (Very Important)
+
+Your ophthalmology example is excellent.
+
+You should systematically identify:
+
+Clinical Indication	Low Cost	High Cost
+AMD	Avastin	Lucentis/Eylea
+RA	Methotrexate	Biologics
+Anemia	Epoetin alfa	Long-acting darbepoetin
+Inflammation	Steroid	Biologic
+
+You need more within-indication substitution pairs.
+
+IV. Conceptual Risk: “High Cost” ≠ “High Discretion”
+
+Your current classification uses a “High Cost” indicator.
+
+This will be attacked.
+
+Economics critique:
+
+“Cost is not discretion. Oncology biologics are high cost but often clinically required.”
+
+Medical critique:
+
+“You’re implying overuse without accounting for case mix.”
+
+You need to separate:
+
+Clinical necessity
+
+Cost level
+
+Degree of therapeutic substitutability
+
+Guideline ambiguity
+
+What you actually want is:
+
+Therapeutic Discretion Index
+
+Not simply high-cost indicator.
+
+V. How I Would Strengthen Your Framework
+Step 1: Build a Three-Dimensional Classification
+
+For each code:
+
+Clinical necessity level
+
+1 = Essential (e.g., insulin in T1DM)
+
+2 = Guideline first-line
+
+3 = Second-line
+
+4 = Grey-area elective
+
+Substitutability
+
+0 = No substitute
+
+1 = Lower-cost substitute exists
+
+Revenue margin proxy
+
+reimbursement percentile within class
+
+Then define:
+
+Discretion Score = f(Substitutability × Non-essential × Margin)
+
+This is publishable logic.
+
+VI. Specific Additions to Your Tables
+For Part B (expand beyond preview 
+
+appendix_partb_drugs_preview
+
+):
+
+Add:
+
+J0885 Epoetin alfa
+
+J0881 Darbepoetin
+
+J1453 Aprepitant (anti-emetic high cost)
+
+J7050 IV hydration
+
+J7030 IV saline
+
+IV iron J1756
+
+Botox J0585 (cosmetic/neurologic)
+
+For Part D (expand beyond preview 
+
+appendix_partd_drugs_preview
+
+):
+
+Add classes:
+
+GLP-1 agonists
+
+DPP-4 inhibitors
+
+PPIs
+
+Testosterone
+
+Inhaled corticosteroids
+
+Brand vs generic statins
+
+Also add “brand-name flag” across all drugs.
+
+For Services (You didn’t upload, but critical)
+
+Add CPT groups:
+
+70551–70553 (MRI brain)
+
+72148 (MRI lumbar spine)
+
+78452 (Nuclear stress test)
+
+93015 (Cardiac stress test)
+
+62323 (Epidural injection)
+
+64483 (Nerve root injection)
+
+These are essential to your hypothesis.
+
+VII. Likely Critiques You Will Face
+From Medical Community
+
+Case Mix Confounding
+
+“High MIPS scores correlate with sicker patients.”
+
+Guideline Ignorance
+
+“Your classification ignores disease severity.”
+
+Undertreatment Risk
+
+“Lower prescribing may not mean better care.”
+
+You must adjust for:
+
+HCC risk score
+
+Comorbidity burden
+
+Diagnosis-level matching
+
+From Economists
+
+Endogeneity of Satisfaction
+
+Patient satisfaction may correlate with patient type.
+
+Reverse Causality
+
+High-prescribing may increase satisfaction, not vice versa.
+
+Selection into Systems
+
+High-margin providers cluster in certain markets.
+
+You’ll need:
+
+Market fixed effects
+
+Provider fixed effects
+
+Instrumental strategy or lagged design
+
+VIII. Biggest Structural Weakness Right Now
+
+Your classification is hand-selected.
+
+Reviewers will ask:
+
+“Is this comprehensive or cherry-picked?”
+
+To fix this:
+
+Map ALL drugs to ATC classes
+
+Compute margin percentile within class
+
+Flag top quartile margin drugs
+
+Then identify which of those are therapeutically substitutable
+
+Make it data-driven.
+
+IX. What I Would Do Next (Strategically)
+
+Merge all Part D drugs to:
+
+Brand indicator
+
+Generic indicator
+
+Average cost per claim
+
+Compute within-class price dispersion.
+
+Define “High Margin” as top 25% of cost within therapeutic class.
+
+Only call something “discretionary” if:
+
+There exists a lower-cost therapeutic substitute
+
+AND clinical guidelines allow substitution.
+
+That shields you.
+
+X. Final Assessment
+
+Your framework is strong conceptually.
+
+But:
+
+It is currently too narrow.
+
+It equates cost with discretion.
+
+It lacks systematic coverage logic.
+
+If submitted now, reviewers would say:
+
+“Interesting hypothesis, but classification appears selective and not validated.”
+
+If expanded as above, this could be a top-field empirical paper.
