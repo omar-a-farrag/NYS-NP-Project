@@ -61,6 +61,23 @@
 | `prop_male_providers`| Proportion of credentialed providers who are Male. | Unweighted Mean |
 | `prop_grad_1990s` | Proportion of credentialed providers who graduated in the 1990s. | Unweighted Mean |
 
+### "Clinical Culture" vs. "Patient Exposure" Metrics
+*We calculate clinical phenotypes in two ways to answer different research questions.*
+
+| Variable | Type | Description | Aggregation Logic |
+| :--- | :--- | :--- | :--- |
+| `mean_generic_rate` | Culture | Average Generic Fill Rate of all credentialed providers. | Unweighted Mean |
+| `wgt_generic_rate` | Exposure | Patient-weighted Generic Fill Rate (adjusted by total beneficiaries). | Weighted Mean |
+| `mean_opioid_rate` | Culture | Average Opioid Intensity of all credentialed providers. | Unweighted Mean |
+| `wgt_opioid_rate` | Exposure | Patient-weighted Opioid Intensity (adjusted by total beneficiaries). | Weighted Mean |
+| `mean_highcost_rate` | Culture | Average frequency of prescribing top-tier cost drugs. | Unweighted Mean |
+| `wgt_highcost_rate` | Exposure | Patient-weighted frequency of prescribing top-tier cost drugs. | Weighted Mean |
+| `mean_upcode_rate` | Culture | Average E&M Upcoding Rate of all credentialed providers. | Unweighted Mean |
+| `wgt_upcode_rate` | Exposure | Patient-weighted E&M Upcoding Rate. | Weighted Mean |
+| `mean_img_adv_rate` | Culture | Average Advanced Imaging intensity (CT/MRI ratio). | Unweighted Mean |
+| `wgt_img_adv_rate` | Exposure | Patient-weighted Advanced Imaging intensity. | Weighted Mean |
+
+
 ### Facility Volume & Patient Mix
 | Variable | Description | Aggregation Logic |
 | :--- | :--- | :--- |

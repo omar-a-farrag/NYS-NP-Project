@@ -17,11 +17,12 @@ The raw affiliation files undergo significant schema drift:
 **Solution:** A Python-based harmonization script converts all years to a **Long Format** (Key: `NPI-Year-CCN`). This ensures a consistent network map across the decade.
 
 ## 3. Aggregation Logic (The "Roll-Up")
-To create the **Facility Master Panel**, we collapse the provider-level data to the `CCN-Year` level using three distinct operations:
+To create the **Facility Master Panel**, we collapse the provider-level data to the `CCN-Year` level using four distinct operations. This "Dual-Lens" approach allows us to characterize both the provider workforce and the patient experience.
 
 | Variable Type | Operation | Logic |
 | :--- | :--- | :--- |
-| **Clinical Rates**<br>(e.g., Opioid Rate) | **MEAN** | Represents the "Average Clinical Culture" of the medical staff. Unweighted to prevent high-volume specialists from masking the habits of the general staff. |
-| **Demographic Proportions**<br>(e.g., % Male) | **MEAN** | Represents the composition of the workforce. |
-| **Volume Counts**<br>(e.g., Total Benes) | **SUM** | Represents the total patient load of the facility's network. |
-| **Patient Attributes**<br>(e.g., Risk Score) | **WEIGHTED MEAN** | Calculated as $\frac{\sum(Risk \times Patients)}{\sum(Patients)}$. Ensures the facility risk score reflects the actual patient population treated. |
+| **Clinical Culture**<br>(e.g., `mean_opioid_rate`) | **UNWEIGHTED MEAN** | Represents the average behavior of a doctor credentialed at the facility. Prevents high-volume specialists from masking the habits of the general staff. Used for labor market and supply-side analysis. |
+| **Patient Exposure**<br>(e.g., `wgt_opioid_rate`) | **PATIENT-WEIGHTED MEAN** | Calculated as $\frac{\sum(\text{Rate} \times \text{Benes})}{\sum(\text{Benes})}$. Represents the experience of the average patient treated at the facility. Used for outcomes and public health analysis. |
+| **Workforce Demographics**<br>(e.g., `prop_male`) | **UNWEIGHTED MEAN** | Represents the composition of the workforce (e.g., "30% of doctors here graduated in the 1990s"). |
+| **Volume & Capacity**<br>(e.g., `hosp_tot_benes`) | **SUM** | Represents the total patient load and service volume of the facility's network. |
+| **Patient Case Mix**<br>(e.g., `hosp_avg_risk`) | **WEIGHTED MEAN** | Calculated as $\frac{\sum(Risk \times Patients)}{\sum(Patients)}$. Ensures the facility risk score reflects the actual patient population treated. |

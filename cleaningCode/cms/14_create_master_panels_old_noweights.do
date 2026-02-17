@@ -1,8 +1,6 @@
 *===============================================================================
-* SCRIPT: 14_create_master_panels_v13.do
-* PURPOSE: Final Master Panel Assembler.
-* FIX:     Removes request for names in Step 1 (Affiliation) to prevent crash.
-* Names are sourced from Step 3 (Provider Summary) instead.
+* SCRIPT: 14_create_master_panels_v10.do
+* PURPOSE: Creates Master Panels. Handles variable drift & converts PCT to COUNTS.
 *===============================================================================
 
 global component "cms"
@@ -10,10 +8,10 @@ include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_
 
 capture mkdir "$outputRoot/cleaned_data"
 
-display as text "Building Master Panels (v13 - The Debugged Assembler)..."
+display as text "Building Master Panels (v10 - The Fix)..."
 
 *-------------------------------------------------------------------------------
-* STEP 1: PREPARE AFFILIATION NETWORK
+* STEP 1: PREPARE AFFILIATION NETWORK (Demographics + Links)
 *-------------------------------------------------------------------------------
 display "Step 1: Loading Affiliation Data..."
 clear
@@ -36,7 +34,6 @@ use `raw_affil', clear
 
 * A. Unique Affiliation Demographics
 preserve
-    * FIXED: Removed 'last_name first_name' from this list
     keep npi year gender grad_year credential ///
          primary_specialty secondary_specialty_* all_secondary_specialties ///
          group_pac_id num_group_members state zip_code ///
@@ -101,11 +98,13 @@ foreach f in `files' {
     use "`summaryDir'/`f'", clear
     tostring npi, replace
     
-    * Harmonize Identifiers
+    * --- A. IDENTIFIERS (Handle the variations) ---
+    * Some years use "nppes_...", some use "state" directly
     capture rename nppes_provider_last_org_name last_name
     capture rename nppes_provider_first_name first_name
     capture rename nppes_provider_city city
     
+    * Handle State/Zip collision (affil vs cms)
     capture rename nppes_provider_state cms_state
     capture rename state cms_state
     capture rename rndrng_prvdr_st1 cms_address
@@ -116,24 +115,43 @@ foreach f in `files' {
     capture rename provider_type cms_specialty
     capture rename specialty cms_specialty
     
+    * --- B. FINANCIALS ---
     capture rename tot_submitted_chrg_amt tot_sbmtd_chrg
     capture rename tot_mdcr_alowd_amt     tot_alowd_amt
     capture rename tot_mdcr_pymt_amt      tot_pymt_amt
     
+    * --- C. PATIENT ATTRIBUTES ---
+    * (Note: bene_race_*_cnt usually exists as count)
     capture rename bene_race_b_cnt        bene_race_black_cnt
     capture rename bene_race_w_cnt        bene_race_wht_cnt
     capture rename bene_race_h_cnt        bene_race_hspnc_cnt
     capture rename bene_race_o_cnt        bene_race_othr_cnt
     
-    * Conditions (Handle PCT vs Count)
+    * --- D. CHRONIC CONDITIONS (PERCENT TO COUNT CONVERSION) ---
+    * The raw files have PCT (0-75 or 0-100). We need counts for aggregation.
+    * We try to identify the variable, rename it to a temp name, then convert.
+    
+    * Depression
     capture rename bene_cc_depression     temp_depr_pct
     capture rename bene_cc_depr           temp_depr_pct
     capture rename bene_cc_bh_depress_v1_pct temp_depr_pct
     
+    * Diabetes
     capture rename bene_cc_diabetes       temp_diab_pct
     capture rename bene_cc_diab           temp_diab_pct
     capture rename bene_cc_ph_diabetes_v2_pct temp_diab_pct
     
+    * Hypertension
+    capture rename bene_cc_hypertension   temp_hyp_pct
+    capture rename bene_cc_hypert         temp_hyp_pct
+    capture rename bene_cc_ph_hypertension_v2_pct temp_hyp_pct
+    
+    * Stroke
+    capture rename bene_cc_stroke         temp_strk_pct
+    capture rename bene_cc_strk           temp_strk_pct
+    capture rename bene_cc_ph_stroke_tia_v2_pct temp_strk_pct
+    
+    * Append
     append using `master_vol'
     save `master_vol', replace
 }
@@ -141,13 +159,20 @@ foreach f in `files' {
 use `master_vol', clear
 duplicates drop npi year, force
 destring year, replace
+
+* --- RECALCULATE COUNTS FROM PERCENTAGES ---
+* Ensure tot_benes is numeric
 capture destring tot_benes, replace force
 
-* Convert PCT to Counts
-foreach cond in depr diab {
+* Helper to convert (PCT * BENES) / 100
+foreach cond in depr diab hyp strk {
     capture confirm variable temp_`cond'_pct
     if !_rc {
+        * Clean "<75" strings if they exist (sometimes CMS suppresses small cells)
+        * Assuming variables are numeric or we destring them
         capture destring temp_`cond'_pct, replace force
+        
+        * Calculate Count
         gen bene_cc_`cond' = (temp_`cond'_pct / 100) * tot_benes
         replace bene_cc_`cond' = round(bene_cc_`cond')
     }
@@ -156,21 +181,29 @@ foreach cond in depr diab {
     }
 }
 
-* Ensure core vars
-foreach var in bene_race_black_cnt bene_race_hspnc_cnt bene_dual_cnt tot_benes tot_srvcs tot_sbmtd_chrg {
+* Create Weights for Rollup
+gen wgt_risk_score = bene_avg_risk_scre * tot_benes
+gen wgt_age = bene_avg_age * tot_benes
+
+* Ensure core variables exist for keep
+foreach var in bene_race_black_cnt bene_race_hspnc_cnt bene_dual_cnt tot_benes tot_srvcs tot_sbmtd_chrg tot_alowd_amt tot_pymt_amt {
     capture confirm variable `var'
     if _rc {
         gen `var' = 0
     }
 }
 
-* Keep Rich Data (THIS is where names come from)
+* Keep Rich Data
 keep npi year entity_type last_name first_name city cms_state cms_zip cms_specialty ///
      tot_benes tot_srvcs tot_sbmtd_chrg tot_alowd_amt tot_pymt_amt ///
-     drug_* med_* bene_avg_age bene_age_* bene_feml_cnt bene_male_cnt ///
-     bene_race_* bene_dual_cnt bene_ndual_cnt bene_avg_risk_scre ///
-     bene_cc_* 
-	 
+     drug_* med_* ///
+     bene_avg_age bene_age_* ///
+     bene_feml_cnt bene_male_cnt ///
+     bene_race_* ///
+     bene_dual_cnt bene_ndual_cnt ///
+     bene_avg_risk_scre ///
+     bene_cc_* wgt_*
+
 tempfile cms_volume
 save `cms_volume'
 
@@ -183,15 +216,7 @@ use `clinical_measures', clear
 merge 1:1 npi year using `cms_volume', keep(master match) nogenerate
 merge 1:1 npi year using `npi_demos', keep(master match) nogenerate
 
-* --- CREATE WEIGHTING TERMS ---
-gen wterm_generic = partd_generic_rate * tot_benes
-gen wterm_opioid  = partd_opioid_rate * tot_benes
-gen wterm_highcost= partd_high_cost_rate * tot_benes
-gen wterm_upcode  = svc_em_upcode_rate * tot_benes
-gen wterm_img_adv = svc_img_adv_rate * tot_benes
-gen wterm_risk    = bene_avg_risk_scre * tot_benes
-
-* Derived Demographics
+* Derived Variables
 gen is_male = (gender == "M")
 gen is_female = (gender == "F")
 
@@ -234,7 +259,6 @@ drop _merge
 
 collapse (mean) mean_generic_rate=partd_generic_rate ///
                 mean_opioid_rate=partd_opioid_rate ///
-                mean_highcost_rate=partd_high_cost_rate ///
                 mean_upcode_rate=svc_em_upcode_rate ///
                 mean_img_adv_rate=svc_img_adv_rate ///
                 prop_male_providers=is_male ///
@@ -255,22 +279,14 @@ collapse (mean) mean_generic_rate=partd_generic_rate ///
                 hosp_bene_dual=bene_dual_cnt ///
                 hosp_cc_depression=bene_cc_depr ///
                 hosp_cc_diabetes=bene_cc_diab ///
-                doc_count=partd_total_claims ///
-                wterm_generic wterm_opioid wterm_highcost wterm_upcode wterm_img_adv wterm_risk, ///
+                hosp_risk_numerator=wgt_risk_score ///
+                hosp_age_numerator=wgt_age ///
+                doc_count=partd_total_claims, ///
          by(ccn year)
 
-* --- RECOVER WEIGHTED AVERAGES ---
-gen wgt_generic_rate  = wterm_generic / hosp_tot_benes
-gen wgt_opioid_rate   = wterm_opioid / hosp_tot_benes
-gen wgt_highcost_rate = wterm_highcost / hosp_tot_benes
-gen wgt_upcode_rate   = wterm_upcode / hosp_tot_benes
-gen wgt_img_adv_rate  = wterm_img_adv / hosp_tot_benes
-gen hosp_avg_risk_score = wterm_risk / hosp_tot_benes
-
-* Cleanup
-drop wterm_*
-label var mean_opioid_rate "Unweighted Avg Opioid Rate (Doctor Culture)"
-label var wgt_opioid_rate  "Patient-Weighted Avg Opioid Rate (Patient Exposure)"
+gen hosp_avg_risk_score = hosp_risk_numerator / hosp_tot_benes
+gen hosp_avg_age = hosp_age_numerator / hosp_tot_benes
+drop hosp_risk_numerator hosp_age_numerator
 
 save "$outputRoot/cleaned_data/cms_master_facility_panel.dta", replace
-display "SUCCESS! Master Network Built (v13)."
+display "SUCCESS! Master Network Built (v10)."
