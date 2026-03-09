@@ -1,0 +1,208 @@
+=== PROJECT DIRECTORY SCAN ===
+
+--- FOLDER: HCAHPS ---
+hcahps/
+    Dates of survey.xlsx
+    hcahps2008/
+        dbo_vwHQI_FTNT.dta
+        dbo_vwHQI_HOSP.dta
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        dbo_vwHQI_HOSP_MORTALITY_XWLK.dta
+        dbo_vwHQI_HOSP_MPV_MSR.dta
+        dbo_vwHQI_HOSP_MSR_XWLK.dta
+        dbo_vwHQI_PCTL_MSR_XWLK.dta
+        hcahps_national.dta
+        hcahps_state.dta
+        Hospital2008.mdb
+        ... and 1 more files.
+    hcahps2009/
+        dbo_vwHQI_FTNT.dta
+        dbo_vwHQI_HOSP.dta
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+        dbo_vwHQI_HOSP_MPV_MSR.dta
+        dbo_vwHQI_HOSP_MSR_XWLK.dta
+        dbo_vwHQI_PCTL_MSR_XWLK.dta
+        hcahps_national.dta
+        hcahps_state.dta
+        Hospital2009.mdb
+        ... and 1 more files.
+    hcahps2010/
+        dbo_vwHQI_FTNT.dta
+        dbo_vwHQI_HOSP.dta
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        dbo_vwHQI_HOSP_IMG_XWLK.dta
+        dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+        dbo_vwHQI_HOSP_MPV_MSR.dta
+        dbo_vwHQI_HOSP_MSR_XWLK.dta
+        dbo_vwHQI_HOSP_STRUCTURAL_XWLK.dta
+        dbo_vwHQI_PCTL_MSR_XWLK.dta
+        hcahps_national.dta
+        ... and 3 more files.
+    hcahps2011/
+        dbo_vwHQI_FTNT.dta
+        dbo_vwHQI_HOSP.dta
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        dbo_vwHQI_HOSP_IMG_XWLK.dta
+        dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+        dbo_vwHQI_HOSP_MPV_MSR.dta
+        dbo_vwHQI_HOSP_MSR_XWLK.dta
+        dbo_vwHQI_HOSP_STRUCTURAL_XWLK.dta
+        dbo_vwHQI_PCTL_MSR_XWLK.dta
+        hcahps_national.dta
+        ... and 9 more files.
+    hcahps2012/
+        Agency for Healthcare Research and Quality - National.csv
+        Agency for Healthcare Research and Quality - State.csv
+        Agency for Healthcare Research and Quality.csv
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        HCAHPS Measures - National.csv
+        HCAHPS Measures - State.csv
+        HCAHPS Measures.csv
+        hcahps_national.dta
+        hcahps_state.dta
+        Healthcare_Associated_Infections.csv
+        ... and 31 more files.
+    hcahps2013/
+        ACS NSQIP Data File - April 2013.csv
+        Agency for Healthcare Research and Quality - National.csv
+        Agency for Healthcare Research and Quality - State.csv
+        Agency for Healthcare Research and Quality.csv
+        dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+        Emergency Department Throughput-National.csv
+        Emergency Department Throughput-State.csv
+        Emergency Department Throughput.csv
+        FootNote.csv
+        HCAHPS Measures - National.csv
+        ... and 49 more files.
+    hcahps2014/
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        FY2013_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        ... and 50 more files.
+    hcahps20141023/
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        FY2013_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        ... and 36 more files.
+    hcahps2015/
+        ASC_Quality_Facility.csv
+        ASC_Quality_National.csv
+        ASC_Quality_State.csv
+        Complications - Hospital.csv
+        Complications - National.csv
+        Complications - State.csv
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        ... and 52 more files.
+    hcahps2016/
+        Ambulatory Surgical Measures-Facility.csv
+        Ambulatory Surgical Measures-National.csv
+        Ambulatory Surgical Measures-State.csv
+        Complications - Hospital.csv
+        Complications - National.csv
+        Complications - State.csv
+        Footnote Crosswalk.csv
+        FY2014_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2014_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2014_Percent_Change_in_Medicare_Payments.csv
+        ... and 51 more files.
+    hcahps2017/
+        Ambulatory Surgical Measures-Facility.csv
+        Ambulatory Surgical Measures-National.csv
+        Ambulatory Surgical Measures-State.csv
+        Complications and Deaths - Hospital.csv
+        Complications and Deaths - National.csv
+        Complications and Deaths - State.csv
+        FINAL CJR Quality PR - PY1 File Values_October.csv
+        Footnote Crosswalk.csv
+        FY2015_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2015_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        ... and 60 more files.
+    hcahps2018/
+        asc_CCN_pr17q2_18q1.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        asc_national_pr17q2_18q1.csv
+        ASC_State.csv
+        asc_state_pr17q2_18q1.csv
+        CJR PY2 Quality Reporting_October 2018_Production File.csv
+        Complications and Deaths - Hospital.csv
+        Complications and Deaths - National.csv
+        Complications and Deaths - State.csv
+        ... and 68 more files.
+    hcahps2019/
+        ACS NSQIP Data File - October 2019-revised.xlsx
+        ASC_CCN_pr18q2_19q1.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_NATIONAL_pr18q2_19q1.csv
+        ASC_State.csv
+        ASC_STATE_pr18q2_19q1.csv
+        CEBP_IQR_10_17_2018.csv
+        CEBP_IQR_6_decimals_10_17_2018.csv
+        CEBP_IQR_Breakdowns_by_Claim_Type_10_17_2018.csv
+        ... and 71 more files.
+    hcahps2020/
+        3n5g-6b7f.csv
+        48nr-hqxx.csv
+        4aav-bsmy.csv
+        4gkm-5ypv.csv
+        4hje-vua3.csv
+        4j6d-yzce.csv
+        4jcv-atw7.csv
+        5gv4-jwyv.csv
+        5hk7-b79m.csv
+        632h-zaca.csv
+        ... and 64 more files.
+    hcahps2021/
+        ASCQR_OAS_CAHPS_BY_ASC.csv
+        ASCQR_OAS_CAHPS_NATIONAL.csv
+        ASCQR_OAS_CAHPS_STATE.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_State.csv
+        CJR_PY5_Quality_Reporting_July_2021_Production_File.csv
+        CMS_PSI_6_decimal_file.csv
+        Complications_and_Deaths-Hospital.csv
+        Complications_and_Deaths-National.csv
+        ... and 61 more files.
+    hcahps2022/
+        ASCQR_OAS_CAHPS_BY_ASC.csv
+        ASCQR_OAS_CAHPS_NATIONAL.csv
+        ASCQR_OAS_CAHPS_STATE.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_State.csv
+        CJR_PY6_Quality_Reporting_July_2022_Production_File.csv
+        CMS_PSI_6_decimal_file.csv
+        Complications_and_Deaths-Hospital.csv
+        Complications_and_Deaths-National.csv
+        ... and 68 more files.
+    hcahps2023/
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        HOSPITAL_Data_Dictionary.pdf
+    hchaps2024/
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        HOSPITAL_Data_Dictionary.pdf
+

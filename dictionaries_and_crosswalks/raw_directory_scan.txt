@@ -1,0 +1,820 @@
+=== FULL RAW DATA DIRECTORY SCAN (Excluding .dta) ===
+
+--- FOLDER: HCAHPS ---
+hcahps/
+    Dates of survey.xlsx
+    hcahps2008/
+        Hospital2008.mdb
+        Hospital2008.pdf
+    hcahps2009/
+        Hospital2009.mdb
+        Hospital2009.pdf
+    hcahps2010/
+        Hospital2010.mdb
+        Hospital2010.pdf
+    hcahps2011/
+        HOSArchive_20110401.zip
+        HOSArchive_20110801.zip
+        HOSArchive_20111001.zip
+        Hospital2011.mdb
+        Hospital2011.pdf
+    hcahps2012/
+        Agency for Healthcare Research and Quality - National.csv
+        Agency for Healthcare Research and Quality - State.csv
+        Agency for Healthcare Research and Quality.csv
+        HCAHPS Measures - National.csv
+        HCAHPS Measures - State.csv
+        HCAHPS Measures.csv
+        Healthcare_Associated_Infections.csv
+        Healthcare_Associated_Infections_State.csv
+        HOSArchive_20120101.zip
+        HOSArchive_20121201.zip
+        HOSArchive_Revised_Flatfiles_20120701.zip
+        Hospital Acquired Condition - National.csv
+        Hospital Acquired Condition.csv
+        Hospital2012.mdb
+        Hospital2012.pdf
+        Hospital_Data.csv
+        Hospital_Revised_Flatfiles.pdf
+        Measure Dates.csv
+        Medicare Payment and Volume Measures - National.csv
+        Medicare Payment and Volume Measures - State.csv
+        Medicare Payment and Volume Measures.csv
+        Medicare Spending Per Patient.csv
+        Outcome of Care Measures - National.csv
+        Outcome of Care Measures - State.csv
+        Outcome of Care Measures.csv
+        Outpatient Imaging Efficiency Measures - National.csv
+        Outpatient Imaging Efficiency Measures - State.csv
+        Outpatient Imaging Efficiency Measures.csv
+        Process of Care Measures - Children.csv
+        Process of Care Measures - Heart Attack.csv
+        Process of Care Measures - Heart Failure.csv
+        Process of Care Measures - National.csv
+        Process of Care Measures - Pneumonia.csv
+        Process of Care Measures - SCIP.csv
+        Process of Care Measures - State.csv
+        readme.txt
+        READMISSION REDUCTION.CSV
+        Structural Measures.csv
+    hcahps2013/
+        ACS NSQIP Data File - April 2013.csv
+        Agency for Healthcare Research and Quality - National.csv
+        Agency for Healthcare Research and Quality - State.csv
+        Agency for Healthcare Research and Quality.csv
+        Emergency Department Throughput-National.csv
+        Emergency Department Throughput-State.csv
+        Emergency Department Throughput.csv
+        FootNote.csv
+        HCAHPS Measures - National.csv
+        HCAHPS Measures - State.csv
+        HCAHPS Measures.csv
+        Healthcare_Associated_Infections.csv
+        Healthcare_Associated_Infections_National.csv
+        Healthcare_Associated_Infections_State.csv
+        HOSArchive_Revised_Flatfiles_20130401.zip
+        HOSArchive_Revised_Flatfiles_20130701.zip
+        HOSArchive_Revised_Flatfiles_20131001.zip
+        Hospital Acquired Condition - National.csv
+        Hospital Acquired Condition.csv
+        Hospital Structural Measures.csv
+        Hospital2013.mdb
+        Hospital2013.pdf
+        Hospital_Data.csv
+        hvbp_ami_08_16_2013.csv
+        hvbp_hai_08_16_2013.csv
+        hvbp_hcahps_02_07_2013.csv
+        hvbp_hcahps_05_28_2013.csv
+        hvbp_hcahps_08_16_2013.csv
+        hvbp_hf_08_16_2013.csv
+        hvbp_pn_08_16_2013.csv
+        hvbp_scip_08_16_2013.csv
+        hvbp_tps_08_16_2013.csv
+        Immunization-National.csv
+        Immunization-State.csv
+        Immunization.csv
+        Measure Crosswalk.csv
+        Measure Dates.csv
+        Medicare Spending Per Patient - National.csv
+        Medicare Spending Per Patient - State.csv
+        Medicare Spending Per Patient.csv
+        Medicare Volume Measures - National.csv
+        Medicare Volume Measures - State.csv
+        Medicare Volume Measures.csv
+        Outcome of Care Measures - National.csv
+        Outcome of Care Measures - State.csv
+        Outcome of Care Measures.csv
+        Outpatient Imaging Efficiency Measures - National.csv
+        Outpatient Imaging Efficiency Measures - State.csv
+        Outpatient Imaging Efficiency Measures.csv
+        Process of Care Measures - Children.csv
+        Process of Care Measures - Heart Attack.csv
+        Process of Care Measures - Heart Failure.csv
+        Process of Care Measures - National.csv
+        Process of Care Measures - Pneumonia.csv
+        Process of Care Measures - SCIP.csv
+        Process of Care Measures - State.csv
+        readme.txt
+        READMISSION REDUCTION.CSV
+    hcahps2014/
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        FY2013_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        Heart Attack Payment - Hospital.csv
+        Heart Attack Payment - National.csv
+        Heart Attack Payment - State.csv
+        HOSArchive_Revised_Flatfiles_20140101.zip
+        HOSArchive_Revised_FlatFiles_20140417.zip
+        HOSArchive_Revised_Flatfiles_20140717.zip
+        HOSArchive_Revised_Flatfiles_20141023.zip
+        HOSArchive_Revised_Flatfiles_20141218.zip
+        Hospital General Information.csv
+        Hospital2014.mdb
+        Hospital2014.pdf
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL_11_24_2014.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        hvbp_ami_10_28_2014.csv
+        hvbp_efficiency_10_28_2014.csv
+        hvbp_hai_10_28_2014.csv
+        hvbp_hcahps_02_25_2014.csv
+        hvbp_hcahps_10_28_2013.csv
+        hvbp_hcahps_10_28_2014.csv
+        hvbp_hf_10_28_2014.csv
+        hvbp_outcome_10_28_2014.csv
+        hvbp_pn_10_28_2014.csv
+        hvbp_quarters.csv
+        hvbp_scip_10_28_2014.csv
+        HVBP_TPS_10_28_2014.csv
+        Measure Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Medicare Volume - Hospital.csv
+        Medicare Volume - National.csv
+        Medicare Volume - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        readme.txt
+        READMISSION REDUCTION.csv
+        Readmissions Complications and Deaths - Hospital.csv
+        Readmissions Complications and Deaths - National.csv
+        Readmissions Complications and Deaths - State.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+    hcahps20141023/
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        FY2013_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        Hospital General Information.csv
+        Hospital.pdf
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+        hvbp_ami_02_25_2014.csv
+        hvbp_hai_02_25_2014.csv
+        hvbp_hcahps_02_25_2014.csv
+        hvbp_hf_02_25_2014.csv
+        hvbp_outcome_02_25_2014.csv
+        hvbp_pn_02_25_2014.csv
+        hvbp_quarters.csv
+        hvbp_scip_02_25_2014.csv
+        hvbp_tps_02_25_2014.csv
+        Measure Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Medicare Volume - Hospital.csv
+        Medicare Volume - National.csv
+        Medicare Volume - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        readme.txt
+        READMISSION REDUCTION.csv
+        Readmissions Complications and Deaths - Hospital.csv
+        Readmissions Complications and Deaths - National.csv
+        Readmissions Complications and Deaths - State.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+    hcahps2015/
+        ASC_Quality_Facility.csv
+        ASC_Quality_National.csv
+        ASC_Quality_State.csv
+        Complications - Hospital.csv
+        Complications - National.csv
+        Complications - State.csv
+        Footnote Crosswalk.csv
+        FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2013_Percent_Change_in_Medicare_Payments.csv
+        FY2013_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        HOSArchive_Revised_Flatfiles_20150122.zip
+        HOSArchive_Revised_Flatfiles_20150416.zip
+        HOSArchive_Revised_FlatFiles_20150716.zip
+        Hospital General Information.csv
+        Hospital.pdf
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        hvbp_ami_08_06_2015.csv
+        hvbp_Efficiency_08_06_2015.csv
+        hvbp_hai_08_06_2015.csv
+        hvbp_hcahps_02_18_2015.csv
+        hvbp_hcahps_05_28_2015.csv
+        hvbp_hcahps_08_06_2015.csv
+        hvbp_hcahps_10_28_2014.csv
+        hvbp_hf_08_06_2015.csv
+        hvbp_outcome_08_06_2015.csv
+        hvbp_pn_08_06_2015.csv
+        hvbp_quarters.csv
+        hvbp_scip_08_06_2015.csv
+        hvbp_tps_08_06_2015.csv
+        Measure Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        Payment - National.csv
+        Payment - State.csv
+        Payment and Value of Care - Hospital.csv
+        readme.txt
+        READMISSION REDUCTION.csv
+        Readmissions and Deaths - Hospital.csv
+        Readmissions and Deaths - National.csv
+        Readmissions and Deaths - State.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+        Value of Care - National.csv
+    hcahps2016/
+        Ambulatory Surgical Measures-Facility.csv
+        Ambulatory Surgical Measures-National.csv
+        Ambulatory Surgical Measures-State.csv
+        Complications - Hospital.csv
+        Complications - National.csv
+        Complications - State.csv
+        Footnote Crosswalk.csv
+        FY2014_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2014_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2014_Percent_Change_in_Medicare_Payments.csv
+        FY2014_Value_Based_Incentive_Payment_Amount.csv
+        HAI_FluVac_2016Q1_natl_03_17_2017-Corrected.csv
+        HAI_FluVac_2016Q1_state_03_17_2017-Corrected.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        Hospital General Information.csv
+        Hospital.pdf
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL_02_26_2016.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_NATIONAL.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_STATE.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        hos_revised_flatfiles_archive_11_2016.zip
+        hvbp_ami_08_26_2016.csv
+        hvbp_Efficiency_08_26_2016.csv
+        hvbp_hai_08_26_2016.csv
+        hvbp_hcahps_08_26_2016.csv
+        hvbp_imm2_08_26_2016.csv
+        hvbp_outcome_08_26_2016.csv
+        hvbp_pn_08_26_2016.csv
+        hvbp_scip_08_26_2016.csv
+        hvbp_tps_08_26_2016.csv
+        Measure Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        Payment - National.csv
+        Payment - State.csv
+        Payment and Value of Care - Hospital.csv
+        PR_IPF_FluVac_2016Q1_natl_03_15_2017-Corrected.csv
+        PR_IPF_FluVac_2016Q1_state_03_15_2017-Corrected.csv
+        readme.txt
+        READMISSION REDUCTION.csv
+        Readmissions and Deaths - Hospital.csv
+        Readmissions and Deaths - National.csv
+        Readmissions and Deaths - State.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+        Value of Care - National.csv
+    hcahps2017/
+        Ambulatory Surgical Measures-Facility.csv
+        Ambulatory Surgical Measures-National.csv
+        Ambulatory Surgical Measures-State.csv
+        Complications and Deaths - Hospital.csv
+        Complications and Deaths - National.csv
+        Complications and Deaths - State.csv
+        FINAL CJR Quality PR - PY1 File Values_October.csv
+        Footnote Crosswalk.csv
+        FY2015_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2015_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2015_Percent_Change_in_Medicare_Payments.csv
+        FY2015_Value_Based_Incentive_Payment_Amount.csv
+        HBIPS_Oct2017_19SEP.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        Hospital General Information.csv
+        Hospital Returns - Hospital.csv
+        Hospital Returns - National.csv
+        Hospital Returns - State.csv
+        Hospital.pdf
+        HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_AHRQ_PSI_90_6decimals.csv
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_NATIONAL.csv
+        HOSPITAL_QUARTERLY_IPFQR_MEASURES_STATE.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_OCM_HOSPITAL.csv
+        hvbp_ami_11_14_2016.csv
+        hvbp_clinical_care_outcomes_11_10_2016.csv
+        hvbp_efficiency_11_10_2016.csv
+        hvbp_hcahps_11_10_2016.csv
+        hvbp_hcahps_11_10_2016_temp.xlsx
+        hvbp_imm2_11_10_2016.csv
+        hvbp_pc_11_10_2016.csv
+        hvbp_safety_11_10_2016.csv
+        hvbp_tps_11_10_2016.csv
+        Measure Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        Payment - National.csv
+        Payment - State.csv
+        Payment and Value of Care - Hospital.csv
+        readme.txt
+        READMISSION REDUCTION.csv
+        Readmissions and Deaths - VA.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+        TimelyandEffectiveCare_Oct2017_25SEP17.csv
+        Value of Care - National.csv
+        VA_IPSHEP_Oct2017CMS_19SEP17.csv
+        VA_PSI_Oct2017_07SEP17.csv
+        VHA measure dates.csv
+        VHA provider level data.csv
+    hcahps2018/
+        asc_CCN_pr17q2_18q1.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        asc_national_pr17q2_18q1.csv
+        ASC_State.csv
+        asc_state_pr17q2_18q1.csv
+        CJR PY2 Quality Reporting_October 2018_Production File.csv
+        Complications and Deaths - Hospital.csv
+        Complications and Deaths - National.csv
+        Complications and Deaths - State.csv
+        DoD_TE_October 2018 Production 08_30_18.csv
+        DoD_TRISS_Final File Oct 2018.csv
+        Footnote Crosswalk.csv
+        footnotes_deliver_17q2_18q1.csv
+        FY2016_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_ Amt.csv
+        FY2016_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2016_Percent_Change_in_Medicare_Payments.csv
+        FY2016_Value_Based_Incentive_Payment_Amount.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        hopd_CCN_pr17q2_18q1.csv
+        hopd_national_pr17q2_18q1.csv
+        hopd_state_pr17q2_18q1.csv
+        Hospital General Information.csv
+        Hospital.pdf
+        HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+        HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_OCM_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        hvbp_clinical_care_11_07_2017.csv
+        hvbp_efficiency_11_07_2017.csv
+        hvbp_hcahps_11_07_2017.csv
+        hvbp_safety_11_07_2017.csv
+        hvbp_tps_11_07_2017.csv
+        IPFQR_FUH_QualityMeasures_Facility.csv
+        IPFQR_FUH_QualityMeasures_National.csv
+        IPFQR_FUH_QualityMeasures_State.csv
+        IPFQR_QualityMeasures_Facility.csv
+        IPFQR_QualityMeasures_National.csv
+        IPFQR_QualityMeasures_State.csv
+        Labels - Measures for Public Reporting OAS CAHPS-October 2018.csv
+        Measure Dates October 2018.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending per Patient - Hospital.csv
+        Medicare Hospital Spending per Patient - National.csv
+        Medicare Hospital Spending per Patient - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        Payment - National.csv
+        Payment - State.csv
+        Payment and Value of Care - Hospital.csv
+        readme.txt
+        Readmission Reduction.csv
+        Readmissions and Deaths - COPD - VA.csv
+        Readmissions and Deaths - VA_07_10_2018.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+        Unplanned Hospital Visits - Hospital.csv
+        Unplanned Hospital Visits - National.csv
+        Unplanned Hospital Visits - State.csv
+        Value of Care - National.csv
+        VA_IPF_08_06_2018.csv
+        VA_PSI.csv
+        VA_TE.csv
+        Veterans_Health_Administration_Measure_Dates.csv
+        Veterans_Health_Administration_Provider_Level_Data.csv
+    hcahps2019/
+        ACS NSQIP Data File - October 2019-revised.xlsx
+        ASC_CCN_pr18q2_19q1.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_NATIONAL_pr18q2_19q1.csv
+        ASC_State.csv
+        ASC_STATE_pr18q2_19q1.csv
+        CEBP_IQR_10_17_2018.csv
+        CEBP_IQR_6_decimals_10_17_2018.csv
+        CEBP_IQR_Breakdowns_by_Claim_Type_10_17_2018.csv
+        CEBP_IQR_national_10_17_2018.csv
+        CEBP_IQR_state_10_17_2018.csv
+        CJR PY3 Quality Reporting_July 2019_Production File.csv
+        CMS_PSI_6_decimal_file.csv
+        Complications and Deaths - Hospital.csv
+        Complications and Deaths - National.csv
+        Complications and Deaths - State.csv
+        Data_Updates_October_2019_updated.csv
+        DoD_TE_October 2019 Production.csv
+        DoD_TRISS_Final File October 2019.csv
+        Footnote Crosswalk.csv
+        footnotes_deliver_18q2_19q1.csv
+        FY2017_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt_2018-11-30.csv
+        FY2017_Net_Change_in_Base_Op_DRG_Payment_Amt_2018-11-30.csv
+        FY2017_Percent_Change_in_Medicare_Payments_2018-12-03.csv
+        FY2017_Value_Based_Incentive_Payment_Amount_2018-11-30.csv
+        HCAHPS - Hospital.csv
+        HCAHPS - National.csv
+        HCAHPS - State.csv
+        Healthcare Associated Infections - Hospital.csv
+        Healthcare Associated Infections - National.csv
+        Healthcare Associated Infections - State.csv
+        HOPD_CCN_pr18q2_19q1.csv
+        HOPD_NATIONAL_pr18q2_19q1.csv
+        HOPD_STATE_pr18q2_19q1.csv
+        Hospital General Information.csv
+        Hospital.pdf
+        HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+        HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_OCM_Hospital.csv
+        HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HAI_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+        HOSPITAL_QUARTERLY_QUALITYMEASURE_RRP_HOSPITAL.csv
+        hvbp_clinical_care_11_09_2018.csv
+        hvbp_efficiency_11_09_2018.csv
+        hvbp_hcahps_11_09_2018.csv
+        hvbp_safety_11_09_2018.csv
+        hvbp_tps_11_09_2018.csv
+        IPFQR_QualityMeasures_Facility.csv
+        IPFQR_QualityMeasures_National.csv
+        IPFQR_QualityMeasures_State.csv
+        Measure_Dates.csv
+        Medicare Hospital Spending by Claim.csv
+        Medicare Hospital Spending Per Patient - Hospital.csv
+        Medicare Hospital Spending Per Patient - National.csv
+        Medicare Hospital Spending Per Patient - State.csv
+        Outpatient Imaging Efficiency - Hospital.csv
+        Outpatient Imaging Efficiency - National.csv
+        Outpatient Imaging Efficiency - State.csv
+        Outpatient Procedures - Volume.csv
+        Payment - National.csv
+        Payment - State.csv
+        Payment and Value of Care - Hospital.csv
+        Readmissions and Deaths - COPD - VA.csv
+        Structural Measures - Hospital.csv
+        Timely and Effective Care - Hospital.csv
+        Timely and Effective Care - National.csv
+        Timely and Effective Care - State.csv
+        Unplanned Hospital Visits - Hospital.csv
+        Unplanned Hospital Visits - National.csv
+        Unplanned Hospital Visits - State.csv
+        Value of Care - National.csv
+        VA_IPF.csv
+        VA_PSI.csv
+        VA_TE.csv
+        Veterans_Health_Administration_Measure_Dates.csv
+        Veterans_Health_Administration_Provider_Level_Data.csv
+    hcahps2020/
+        3n5g-6b7f.csv
+        48nr-hqxx.csv
+        4aav-bsmy.csv
+        4gkm-5ypv.csv
+        4hje-vua3.csv
+        4j6d-yzce.csv
+        4jcv-atw7.csv
+        5gv4-jwyv.csv
+        5hk7-b79m.csv
+        632h-zaca.csv
+        6pfg-whmx.csv
+        6qxe-iqz8.csv
+        77hc-ibv8.csv
+        84jm-wiui.csv
+        98ix-2iqy.csv
+        99ue-w85f.csv
+        9g7e-btyt.csv
+        9n3s-kdb3.csv
+        akfs-5dgr.csv
+        apyc-v239.csv
+        avtz-f2ge.csv
+        axe7-s95e.csv
+        bs2r-24vh.csv
+        bzsr-4my4.csv
+        c7us-v4mf.csv
+        cvcs-xecj.csv
+        dc76-gh7x.csv
+        dgck-syfz.csv
+        dgmq-aat3.csv
+        di9i-zzrc.csv
+        e6hj-umam.csv
+        esr2-9zyn.csv
+        g3fg-3myg.csv
+        gbq5-7hzr.csv
+        HospitalCompare-DataDictionary_v2.pdf
+        if5v-4x48.csv
+        isrn-hqyy.csv
+        iy27-wz37.csv
+        jfnd-nl7s.csv
+        k2ze-bqvw.csv
+        k653-4ka8.csv
+        muwa-iene.csv
+        nrth-mfg3.csv
+        p7bc-fjpi.csv
+        pdc_s3_hos_data_su86_ag6b.csv
+        ptds-r8im.csv
+        pudb-wetr.csv
+        q9vs-r7wp.csv
+        qatj-nmws.csv
+        qqw3-t4ie.csv
+        rrqw-56er.csv
+        rs6n-9qwg.csv
+        s5pj-hua3.csv
+        s5xg-sys6.csv
+        su9h-3pvj.csv
+        tf3h-mrrs.csv
+        tqkv-mgxq.csv
+        u625-zae7.csv
+        uyx4-5s7f.csv
+        vtqa-m4zn.csv
+        wkfw-kthe.csv
+        wue8-3vwe.csv
+        x663-bwbj.csv
+        xrgf-x36b.csv
+        xubh-q36u.csv
+        y9us-9xdf.csv
+        yd3s-jyhd.csv
+        ygty-mm5a.csv
+        yizn-abxn.csv
+        ynj2-r877.csv
+        ypbt-wvdk.csv
+        yq43-i98g.csv
+        yv7e-xc69.csv
+        z8ax-x9j1.csv
+    hcahps2021/
+        ASCQR_OAS_CAHPS_BY_ASC.csv
+        ASCQR_OAS_CAHPS_NATIONAL.csv
+        ASCQR_OAS_CAHPS_STATE.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_State.csv
+        CJR_PY5_Quality_Reporting_July_2021_Production_File.csv
+        CMS_PSI_6_decimal_file.csv
+        Complications_and_Deaths-Hospital.csv
+        Complications_and_Deaths-National.csv
+        Complications_and_Deaths-State.csv
+        Data_Updates_October_2021.csv
+        Footnote_Crosswalk.csv
+        FY2019_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2019_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2019_Percent_Change_in_Medicare_Payments.csv
+        FY2019_Value_Based_Incentive_Payment_Amount.csv
+        FY_2021_HAC_Reduction_Program_Hospital.csv
+        FY_2021_Hospital_Readmissions_Reduction_Program_Hospital.csv
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        Healthcare_Associated_Infections-Hospital.csv
+        Healthcare_Associated_Infections-National.csv
+        Healthcare_Associated_Infections-State.csv
+        HospitalCompare-DataDictionary.pdf
+        Hospital_General_Information.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        hvbp_clinical_outcomes.csv
+        hvbp_efficiency_and_cost_reduction.csv
+        hvbp_person_and_community_engagement.csv
+        hvbp_safety.csv
+        hvbp_tps.csv
+        IPFQR_QualityMeasures_Facility.csv
+        IPFQR_QualityMeasures_National.csv
+        IPFQR_QualityMeasures_State.csv
+        Measure_Dates.csv
+        Medicare_Hospital_Spending_by_Claim.csv
+        Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+        Medicare_Hospital_Spending_Per_Patient-National.csv
+        Medicare_Hospital_Spending_Per_Patient-State.csv
+        OAS_CAHPS_Footnotes.csv
+        OQR_OAS_CAHPS_BY_HOSPITAL.csv
+        OQR_OAS_CAHPS_NATIONAL.csv
+        OQR_OAS_CAHPS_STATE.csv
+        Outpatient_Imaging_Efficiency-Hospital.csv
+        Outpatient_Imaging_Efficiency-National.csv
+        Outpatient_Imaging_Efficiency-State.csv
+        Payment-National.csv
+        Payment-State.csv
+        Payment_and_Value_of_Care-Hospital.csv
+        PCH_EXTERNAL_BEAM_RADIOTHERAPY_HOSPITAL.csv
+        PCH_HCAHPS_HOSPITAL.csv
+        PCH_HCAHPS_NATIONAL.csv
+        PCH_HCAHPS_STATE.csv
+        PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+        PCH_ONCOLOGY_CARE_MEASURES_HOSPITAL.csv
+        PCH_OUTCOMES_HOSPITAL.csv
+        PCH_OUTCOMES_NATIONAL.csv
+        pdc_s3_hos_data_su86_ag6b.csv
+        readme.txt
+        Timely_and_Effective_Care-Hospital.csv
+        Timely_and_Effective_Care-National.csv
+        Timely_and_Effective_Care-State.csv
+        Unplanned_Hospital_Visits-Hospital.csv
+        Unplanned_Hospital_Visits-National.csv
+        Unplanned_Hospital_Visits-State.csv
+        Value_of_Care-National.csv
+        VA_IPF.csv
+        VA_TE.csv
+        Veterans_Health_Administration_Provider_Level_Data.csv
+    hcahps2022/
+        ASCQR_OAS_CAHPS_BY_ASC.csv
+        ASCQR_OAS_CAHPS_NATIONAL.csv
+        ASCQR_OAS_CAHPS_STATE.csv
+        ASC_Facility.csv
+        ASC_National.csv
+        ASC_State.csv
+        CJR_PY6_Quality_Reporting_July_2022_Production_File.csv
+        CMS_PSI_6_decimal_file.csv
+        Complications_and_Deaths-Hospital.csv
+        Complications_and_Deaths-National.csv
+        Complications_and_Deaths-State.csv
+        Data_Updates_October_2022.csv
+        Footnote_Crosswalk.csv
+        FY2020_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2020_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+        FY2020_Percent_Change_in_Medicare_Payments.csv
+        FY2020_Value_Based_Incentive_Payment_Amount.csv
+        FY_2022_HAC_Reduction_Program_Hospital.csv
+        FY_2022_Hospital_Readmissions_Reduction_Program_Hospital.csv
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        Healthcare_Associated_Infections-Hospital.csv
+        Healthcare_Associated_Infections-National.csv
+        Healthcare_Associated_Infections-State.csv
+        Honors thesis-Omar Farrag - Shortcut.lnk
+        HospitalCareCompare-DataDictionary.pdf
+        Hospital_General_Information.csv
+        HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+        hvbp_clinical_outcomes.csv
+        hvbp_efficiency_and_cost_reduction.csv
+        hvbp_person_and_community_engagement.csv
+        hvbp_safety.csv
+        hvbp_tps.csv
+        IPFQR_QualityMeasures_Facility.csv
+        IPFQR_QualityMeasures_Facility_Revised.csv
+        IPFQR_QualityMeasures_National.csv
+        IPFQR_QualityMeasures_National_Revised.csv
+        IPFQR_QualityMeasures_State.csv
+        IPFQR_QualityMeasures_State_Revised.csv
+        Maternal_Health-Hospital.csv
+        Maternal_Health-National.csv
+        Maternal_Health-State.csv
+        Measure_Dates.csv
+        Medicare_Hospital_Spending_by_Claim.csv
+        Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+        Medicare_Hospital_Spending_Per_Patient-National.csv
+        Medicare_Hospital_Spending_Per_Patient-State.csv
+        OAS_CAHPS_Footnotes.csv
+        OQR_OAS_CAHPS_BY_HOSPITAL.csv
+        OQR_OAS_CAHPS_NATIONAL.csv
+        OQR_OAS_CAHPS_STATE.csv
+        Outpatient_Imaging_Efficiency-Hospital.csv
+        Outpatient_Imaging_Efficiency-National.csv
+        Outpatient_Imaging_Efficiency-State.csv
+        Payment-National.csv
+        Payment-State.csv
+        Payment_and_Value_of_Care-Hospital.csv
+        PCH_HCAHPS_HOSPITAL.csv
+        PCH_HCAHPS_NATIONAL.csv
+        PCH_HCAHPS_STATE.csv
+        PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+        PCH_ONCOLOGY_CARE_MEASURES_HOSPITAL.csv
+        PCH_OUTCOMES_HOSPITAL.csv
+        PCH_OUTCOMES_NATIONAL.csv
+        readme.txt
+        Timely_and_Effective_Care-Hospital.csv
+        Timely_and_Effective_Care-National.csv
+        Timely_and_Effective_Care-National_Revised.csv
+        Timely_and_Effective_Care-State.csv
+        Timely_and_Effective_Care-State_Revised.csv
+        Unplanned_Hospital_Visits-Hospital.csv
+        Unplanned_Hospital_Visits-National.csv
+        Unplanned_Hospital_Visits-State.csv
+        Value_of_Care-National.csv
+        VA_IPF.csv
+        VA_TE.csv
+        Veterans_Health_Administration_Provider_Level_Data.csv
+    hcahps2023/
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        HOSPITAL_Data_Dictionary.pdf
+    hchaps2024/
+        HCAHPS-Hospital.csv
+        HCAHPS-National.csv
+        HCAHPS-State.csv
+        HOSPITAL_Data_Dictionary.pdf
+

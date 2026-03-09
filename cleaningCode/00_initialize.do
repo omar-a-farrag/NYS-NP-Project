@@ -41,6 +41,7 @@ global mipsRoot     "$projectRoot/cliniciansAndGroups"
 global codeDir      "$projectRoot/cleaningCode"
 global logDir       "$codeDir/logs"
 global outputDir    "$projectRoot/outputs_while_cleaning" 
+global dictionary   "$projectRoot/dictionaries_and_crosswalks"
 
 global outputRoot   "$projectRoot/outputs_while_cleaning"
 global figDir       "$outputRoot/figures"

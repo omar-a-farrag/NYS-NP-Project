@@ -51,9 +51,9 @@ foreach v of varlist exists* {
 }
 
 sort name
-export delimited "$logDir/facility_alignment_map.csv", replace
+export delimited "$dictionary/facility_alignment_map.csv", replace
 
 display "----------------------------------------------------"
 display "DIAGNOSTIC COMPLETE." 
-display "Map saved to: $logDir/facility_alignment_map.csv"
+display "Map saved to: $dictionary/facility_alignment_map.csv"
 log close

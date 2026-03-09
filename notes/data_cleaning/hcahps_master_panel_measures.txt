@@ -1,0 +1,21 @@
+Nurse Comm (H_COMP_1)
+
+Doctor Comm (H_COMP_2)
+
+Staff Responsiveness (H_COMP_3)
+
+Pain Management (H_COMP_4)
+
+Meds Comm (H_COMP_5)
+
+Discharge Info (H_COMP_6)
+
+Cleanliness (H_CLEAN_HOSP)
+
+Quietness (H_QUIET_HOSP)
+
+Overall Rating (H_HOSP_RATING)
+
+Recommend (H_RECMND)
+
+Care Transitions (H_COMP_7; for 2013-2014 and beyond)

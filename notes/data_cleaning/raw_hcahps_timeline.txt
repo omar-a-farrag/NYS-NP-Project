@@ -1,0 +1,11 @@
+`. The Access Era (2008–2011): Wrapped in Microsoft Access .mdb files (e.g., Hospital2008.mdb). We will need to write an extractor to pry the tables out.
+
+2. The Early CSV Era (2012–2013): Flat files emerge! Named HCAHPS Measures.csv.
+
+3. The Standard CSV Era (2014–2019): CMS settles on HCAHPS - Hospital.csv.
+
+4. The Socrata Hash Anomaly (2020): Total chaos. Files are named things like 4j6d-yzce.csv. This happens when someone downloads directly from the CMS open data API endpoint without renaming them.
+
+5. The Snake-Case Era (2021–2022): CMS changes the name to Patient_survey__HCAHPS_-Hospital.csv.
+
+6. The Modern Era (2023–2024): They clean it up to HCAHPS-Hospital.csv.
