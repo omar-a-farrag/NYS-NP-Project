@@ -1,0 +1,98 @@
+Omar Farrag,
+
+CS2597335 was closed on 01/07/2026 06:00:16 PM EST. Please review the details below for more information about this ticket.
+
+Ticket Status: Closed
+Subject: Care Compare
+
+
+Reason for Contacting Us:
+
+(For DaC) Question about Data Period and Frequency I hope this email finds you doing well. My name is Omar and I am an economics research assistant. I am currently working on a project that looks at HCAHPS scores and the provision of care to Medicare patients. I am reaching out because I have two questions regarding the Doctors and Clinicians datasets, specifically: 1. On the page that provides the archived data snapshots (linked here), the data only go back to April of 2018. I was hoping you could direct me to where the data prior to this time live? I am looking for data as far back as possible, and I believe that reporting has been going on since at least 2014. 2. On the same page, the data snapshots are provided by month. I was wondering whether this is because the data themselves are of monthly frequency (i.e. that each file only reports the data for that month and year) or is it instead that the data snapshot holds the data for that year up until that month (e.g. the April 2022 snapshot has data from Jan. 2022 - April 2022, and so I would only need to download the Dec. file for a given year to get the data for that entire year)? Please let me know if you would like me to clarify anything. I am looking to download, at minimum, the National Downloadable File, Facility Affiliation Data, Clinician Public Reporting: Overall MIPS Performance, and Utilization Data datasets.
+
+Resolution: 
+
+Good afternoon Omar,
+#2597335
+I hope this email finds you doing well. My name is Omar and I am an economics research assistant. I am currently working on a project that looks at HCAHPS scores and the provision of care to Medicare patients. I am reaching out because I have two questions regarding the Doctors and Clinicians datasets, specifically:
+
+1. On the page that provides the archived data snapshots (linked herehttps://data.cms.gov/provider-data/archived-data/doctors-clinicians#2018-annual-files), the data only go back to April of 2018. I was hoping you could direct me to where the data prior to this time live? I am looking for data as far back as possible, and I believe that reporting has been going on since at least 2014.
+
+Response: Per the CMS Rule data only needs to be displayed on the website for 7 years. Data can be located within the archive section for prior years. CMS Care Compare has been pay for performance since 2017. The previous CMS program Physician Quality Reporting System (PQRS) was in effect prior to 2017 and was a pay for reporting program therefore that data is separate. You would need to access pay for reporting data from the PQRS program where it was provided annually.
+
+
+2. On the same page, the data snapshots are provided by month. I was wondering whether this is because the data themselves are of monthly frequency (i.e. that each file only reports the data for that month and year) or is it instead that the data snapshot holds the data for that year up until that month (e.g. the April 2022 snapshot has data from Jan. 2022 - April 2022, and so I would only need to download the Dec. file for a given year to get the data for that entire year)?
+
+Response: DAC only goes back to 2017. Please review the Data Archive Factsheet here: https://www.cms.gov/files/document/2022-doctors-clinicians-mips-data-archive-fact-sheet-132-kb.pdf- for more information and help for our to use the archive data. Our reporting requirements also mean we don't publicly report any measures <2 years old. Every snapshot contains the following MIPS performance files which are consistent throughout the year, while the other demographic files are updated on a bi-weekly basis.
+
+QPP data CSV Live Site equivalent
+Group measures grp_public_reporting PY 2023 Group Public Reporting: MIPS Measures and Attestations
+
+Group CAHPS measures grp_public_reporting_cahps PY 2023 Group Public Reporting: Patient Experience
+
+Individual measures ec_public_reporting Doctors and Clinicians Quality Payment Program PY 2023 Clinician Public Reporting: MIPS Measures and Attestations
+
+Final Scores ec_score_file PY 2023 Clinician Public Reporting: Overall MIPS Performance
+
+Virtual Group measures vg_public_reporting PY 2023 Virtual Group Public Reporting: MIPS Measures and Attestations
+
+
+The Table of Contents within the Data Dictionary contains links and descriptions to the above data sources.
+
+Archive Snapshot Timeline:
+• 9/22 snapshot: PY2017–PY2019 data
+• 10/22-02/23 snapshot: PY2020 data (start of current system)
+• 3/23-06/24 snapshot: PY2021 data
+• 7/24-9/25 (current) snapshot: PY2022 data
+• 12/18 snapshot: PY2023 data
+
+Inquiry: In the fact sheet for the MIPS Data Archive, the link you refer to in the document leads to downloading a zip file. In this zip file, there are only MIPS data for the performance years of 2017-2019. Where can I access the remaining years, following 2019? Or are these only accessible via the Doctors and clinicians archived data snapshots?
+
+Response: Correct, you can access these through the Snapshots. See the above timeline for more information.
+
+As I note above, I looked at the Fact Sheet: MIPS Data Archive on Care Compare, after your first time responding back to me. I used the link in that sheet, which leads to downloading a zip file. It contains the Performance Years from 2017-2019 (for MIPS individual and group reporting). So, are there no performance years beyond these?
+
+Response: The more recent snapshots (see timeline) will give access to PY2020-PY2023 data.
+
+I would assume that the reporting of data relative to performance year did not stop, and so I am confused as to where the data for the remaining performance years are. Outside of this zip file, I've only seen data in the "snapshot" archives (and thank you for clarifying my question on the frequency of the snapshot data).
+Second, my question on the data for facility affiliation and the NDF still applies -- I know there are data for this going back to at least 2014, but I do not know how to access it. I was hoping you could point me to where the data are or at least tell me that it is no longer publicly accessible.
+
+Response: Data from PY2017-PY2023 will be available via the snapshot. Data before 2017 is not available.
+
+The Doctors and Clinicians Team
+
+################################################################################################################################################
+
+OTHER RESPONSES (prior to the one above):
+
+Good afternoon Omar, Thank you for your inquiry to the CCSQ Service Center. Question about Data Period and Frequency. 1. On the page that provides the archived data snapshots (linked here), the data only go back to April of 2018. I was hoping you could direct me to where the data prior to this time live? I am looking for data as far back as possible, and I believe that reporting has been going on since at least 2014. Response: Again, please refer to the previous response provided that directs you to the Factsheet: MIPS Data Archive on Care Compare where data back to 2017 can be obtained. Below is the overview of the FAQ: OVERVIEW: Overview In October 2022, the Centers for Medicare & Medicaid Services (CMS) expanded the archive for Doctors and Clinicians (DAC) on the Provider Data Catalog (PDC) to provide access to all years of historic Merit-based Incentive Payment System (MIPS) program performance data that were publicly reported on Care Compare and the PDC. The expanded archive supports CMS's goals related to data transparency, aligning the types of information reported for all provider settings, and enabling data users access to past years' MIPS performance information. CMS has publicly reported MIPS performance information since the program's 2017 inception. However, prior to this archive expansion, CMS only publicly reported one year of MIPS performance data at a time. With the addition of previous years' performance data and demographic information to the archive, users have access to all publicly reported MIPS measure and attestation performance, along with category and final scores, from the start of the MIPS program (i.e., performance year 2017) to the most recent performance year. In expanding the archive, CMS has responded to clinicians, researchers, and other interested parties who want access to all historic MIPS performance data previously publicly reported. Users can access the archive files here. The Fact Sheet is located at the following url: Frequently Asked Questions | CMS 2. On the same page, the data snapshots are provided by month. I was wondering whether this is because the data themselves are of monthly frequency (i.e. that each file only reports the data for that month and year) or is it instead that the data snapshot holds the data for that year up until that month (e.g. the April 2022 snapshot has data from Jan. 2022 - April 2022, and so I would only need to download the Dec. file for a given year to get the data for that entire year)? Please let me know if you would like me to clarify anything. I am looking to download, at minimum, the National Downloadable File, Facility Affiliation Data, Clinician Public Reporting: Overall MIPS Performance, and Utilization Data datasets. Response: The National Downloadable File is a "snapshot" which is updated every 2 weeks using from Provider Enrollment, Chain, and Ownership System (PECOS) data and recent claims, so it should be considered dynamic based on a provider's recent services. The below information can be found in the FAQ here: Frequently Asked Questions | CMS . How often is general and performance information about doctors, clinicians, groups, and Accountable Care Organizations (ACOs) updated on the Medicare.gov compare tool profile pages and the Provider Data Catalog (PDC)? General information for doctors, clinicians, and groups, such as addresses and phone numbers, is updated twice a month. Their performance information is updated on an annual basis. Performance information for Shared Savings Program ACOs is also updated on an annual basis. What data sources are used for doctors', clinicians', and groups' profile pages on the Medicare.gov compare tool and the Provider Data Catalog (PDC)? Performance information for doctors, clinicians, and groups comes from the Quality Payment Program (QPP). General information is primarily from the Provider Enrollment, Chain, and Ownership System (PECOS). Some of the information in PECOS, such as group affiliations and practice locations, is obtained or verified using claims data. Board certification is derived from certification and accrediting organizations, such as the American Board of Medical Specialties, the American Board of Optometry, and the American Board of Wound Medicine and Surgery. For details about all data files currently used in the PDC, refer to the ¬¬"Provider Data Catalog: Doctors and Clinicians Data Dictionary." Best, The doctors and Clinicians Team
+
+#########################################################################################################################################################################################################################
+
+Omar Farrag,
+
+Your Ticket CS2629226, has been resolved.
+
+Please view your ticket details before clicking the corresponding options at the bottom of this page to accept the resolution or reopen your ticket.
+
+Ticket Status: Resolved
+Subject: Student Research & Media Questions
+
+
+Reason for Contacting Us:
+
+I hope this email finds you doing well. My name is Omar and I am an economics research assistant. I am currently working on a project that looks at HCAHPS, PQRS, and MIPS scores and the provision of care to Medicare patients. I am reaching out because I would like to obtain the historical PQRS reports in CSV format for the years 2007-2016. I am aware that the PQRS reporting underwent several iterations and expansions during this time. Nonetheless, I would like to access what was reported and published at the time. I have tried to find the data on the current CMS website, within the CMS archive, and via other data reporters but have not been able to find any PQRS data, only PDF reports. I would be grateful for your help to either provide me with the data or direct me to whom I should contact in order to receive the data, if QPP is not responsible for answering my question. Please let me know if there is anything else you need me to provide or clarify.
+
+
+Resolution: 
+
+Thank you for contacting the CCSQ Service Center. It was a pleasure working with you.
+
+We are unable to answer your question at this Help Desk. I would reach out to the Medicare carrier in your state. I am unsure where you are located, but one of the Medicare Carriers that may be able to provide more information is Noridian Healthcare Solutions. This carrier covers multiple states. The contact number is 877-908-8431 and the website is
+https://med.noridianmedicare.com/
+
+If you have any further questions, please feel free to give us a call.
+
+Sincerely,
+
+

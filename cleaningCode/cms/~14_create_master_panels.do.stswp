@@ -269,7 +269,7 @@ use "$outputRoot/cleaned_data/cms_master_provider_base.dta", clear
 merge 1:m npi year using `npi_ccn_link', keep(master match) nogenerate
 
 * Merge the newly created facility means directly into the provider panel
-merge m:1 ccn year using "$phase1/cms_master_facility_panel.dta", keep(master match) nogenerate
+merge m:1 ccn year using "$outputRoot/cleaned_data/cms_master_facility_panel.dta", keep(master match) nogenerate
 
 save "$outputRoot/cleaned_data/cms_master_provider_panel.dta", replace
 display "  > Saved Ultimate Provider Panel."

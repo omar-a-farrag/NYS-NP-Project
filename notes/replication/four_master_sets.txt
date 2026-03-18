@@ -1,0 +1,36 @@
+The 4 Master Datasets (Your "Terminal Nodes")
+Because of the strict, non-destructive left-joins we enforced in your .do scripts, your final scripts output datasets that contain everything accumulated from the prior steps.
+
+These four files are the only ones that matter for your regressions. The polishing script will take these exact files, clean them up, encode the text, compress them, and rename them into professional, public-facing files:
+
+1. The Master Inpatient Provider Panel
+
+Source: cms_phase4_inpatient_provider.dta
+
+What it is: The crown jewel. Every physician linked to an acute care hospital, complete with their individual CMS volume/prescribing, their facility's aggregated averages (fac_*), their hospital's HCAHPS scores (h_*), and their individual MIPS performance.
+
+Polished Name: master_provider_inpatient_2013_2023.dta
+
+2. The Master Outpatient ASC Provider Panel
+
+Source: cms_phase4_outpatient_asc_provider.dta
+
+What it is: The outpatient equivalent. Physicians linked to Ambulatory Surgical Centers, containing their volume, ASC-specific facility averages, ASC quality metrics (asc_rate_*), and MIPS scores.
+
+Polished Name: master_provider_outpatient_asc_2015_2023.dta
+
+3. The Master Inpatient Facility Panel
+
+Source: cms_phase4_inpatient_facility.dta
+
+What it is: The hospital-level aggregate file. Contains hospital structure, HCAHPS scores, mortality rates, and the volume-weighted average MIPS scores (fac_mips_*) of the doctors who work there.
+
+Polished Name: master_facility_inpatient_2013_2023.dta
+
+4. The Master Outpatient ASC Facility Panel
+
+Source: cms_phase3_outpatient_asc_facility.dta (Note: Terminal at Phase 3 because ASC facilities don't receive aggregate MIPS scores).
+
+What it is: The ASC-level aggregate file containing structural data and ASC quality reporting metrics.
+
+Polished Name: master_facility_outpatient_asc_2015_2024.dta

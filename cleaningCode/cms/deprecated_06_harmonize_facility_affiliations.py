@@ -5,8 +5,10 @@ import re
 import sys
 import warnings
 
+# Suppress the SettingWithCopyWarning for cleaner console output
 warnings.filterwarnings('ignore', category=pd.errors.SettingWithCopyWarning)
 
+# --- 1. SETUP PATHS ---
 script_path = os.path.abspath(__file__)
 script_dir = os.path.dirname(script_path)
 project_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
@@ -18,12 +20,11 @@ if not os.path.exists(output_dir): os.makedirs(output_dir)
 
 print(f"=== CMS FACILITY HARMONIZER (FINAL OMNI-SCRIPT) ===")
 
-# Added the 2016 "v" column mappings so the regex can find them when headers are missing
 SCHEMA_MAP = {
-    'npi': [r'^npi$', r'^v1$'],
-    'pac_id': [r'pac_?id', r'pacid', r'^v2$'],
+    'npi': [r'^npi$'],
+    'pac_id': [r'pac_?id', r'pacid'],
     'enrollment_id': [r'enrollment_?id', r'pecos'],
-    'gender': [r'gndr', r'gender', r'^v8$'],
+    'gender': [r'gndr', r'gender'],
     'credential': [r'cred', r'crdntls'],
     'grad_year': [r'grd_?yr', r'graduation'],
     'primary_specialty': [r'pri_?spec', r'primary_?specialty', r'provider_?type'],
@@ -48,11 +49,7 @@ def find_match(raw_cols, patterns):
     for pattern in patterns:
         regex = re.compile(pattern)
         for col in raw_cols:
-            # THE FIX: Strip spaces and underscores from the raw CSV header before regex matching!
-            clean_col = str(col).lower().replace(' ', '').replace('_', '')
-            # Clean the pattern slightly so it aligns with the stripped string
-            clean_pattern = pattern.replace('_?', '').replace('_', '')
-            if re.search(clean_pattern, clean_col): return col
+            if regex.search(col.lower()): return col
     return None
 
 def process_dataframe(df, year, fname):
@@ -71,31 +68,33 @@ def process_dataframe(df, year, fname):
          wide_ccn_cols = [find_match(raw_cols, [f'hospitalaffiliationccn{i}']) for i in range(1,6)]
     elif find_match(raw_cols, [r'hosp_afl_1']):
          wide_ccn_cols = [find_match(raw_cols, [f'hosp_afl_{i}']) for i in range(1,6)]
-    elif find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v30']): # Added v30 for 2016
+    elif find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc']):
          wide_ccn_cols = [
-             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v30']),
-             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v32']),
-             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v34']),
-             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v36']),
-             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc', r'v38'])
+             find_match(raw_cols, [r'claimsbasedhospitalaffiliationcc']),
+             find_match(raw_cols, [r'v30']),
+             find_match(raw_cols, [r'v32']),
+             find_match(raw_cols, [r'v34']),
+             find_match(raw_cols, [r'v36'])
          ]
     
     df.rename(columns=rename_dict, inplace=True)
     
+    # FORMAT NORMALIZATION WITH MEMORY FIX
     if long_ccn_col:
         df.rename(columns={long_ccn_col: 'ccn'}, inplace=True)
         df['ccn'] = df['ccn'].astype(str).str.strip().replace('nan', '')
-        df = df[df['ccn'] != ''].copy() 
+        df = df[df['ccn'] != ''].copy() # ADDED .COPY() MEMORY FIX
     elif any(wide_ccn_cols):
         valid_wide = [c for c in wide_ccn_cols if c in raw_cols] 
         id_vars = [c for c in df.columns if c in rename_dict.values() or c == 'year']
         df = df.melt(id_vars=id_vars, value_vars=valid_wide, value_name='ccn')
         df.drop(columns=['variable'], inplace=True, errors='ignore') 
         df['ccn'] = df['ccn'].astype(str).str.strip().replace('nan', '')
-        df = df[df['ccn'] != ''].copy() 
+        df = df[df['ccn'] != ''].copy() # ADDED .COPY() MEMORY FIX
     else:
         df['ccn'] = ""
 
+    # SCHEMA ENFORCEMENT
     for col in FINAL_COLS:
         if col not in df.columns: df[col] = ""
     
@@ -108,7 +107,7 @@ def process_dataframe(df, year, fname):
     print(f"  [+] Saved {fname} ({len(final_df)} rows)")
 
 
-# --- STAGE 1: 2014-2022 100% CSV FILES ---
+# --- 2. PROCESS PRE-2023 CSV FILES (100% DATA) & BACKFILL 2013 ---
 print("\n--- STAGE 1: 2014-2022 100% CSV FILES ---")
 
 files = glob.glob(os.path.join(base_affil_dir, "facility_names_*.csv"))
@@ -121,21 +120,18 @@ for f in files:
     if 2014 <= year <= 2022:
         print(f"Reading {fname} (100% Data)...")
         try:
-            # THE FIX: Handle 2016's missing headers
-            if year == 2016:
-                df = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python', encoding='latin1', header=None)
-                df.columns = [f'v{i+1}' for i in range(len(df.columns))]
-            else:
-                try:
-                    df = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python')
-                except UnicodeDecodeError:
-                    df = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python', encoding='latin1')
+            # THE FIX: Try UTF-8 first, fallback to Latin1 if it hits special characters
+            try:
+                df = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python')
+            except UnicodeDecodeError:
+                df = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python', encoding='latin1')
             
             save_name = f"{year}_facility_affiliation_harmonized.dta"
             process_dataframe(df, year, save_name)
             
             if year == 2014:
                 print(f"  [>] Backfilling 2013 cleanly from fresh 2014 100% data...")
+                # Also apply the Latin1 fix to the backfill load just in case!
                 try:
                     df_fresh = pd.read_csv(f, dtype=str, on_bad_lines='skip', engine='python')
                 except UnicodeDecodeError:
@@ -145,7 +141,7 @@ for f in files:
         except Exception as e:
             print(f"  [!] Error: {e}")
 
-# --- STAGE 2: 2023-2025 RAW CSV FILES ---
+# --- 3. PROCESS 2023-2025 RAW CSV FILES ---
 print("\n--- STAGE 2: 2023-2025 RAW CSV FILES ---")
 def get_npi_col(df):
     for c in df.columns:
@@ -161,6 +157,7 @@ for yr in ['2023', '2024', '2025']:
         
         if fac_files and dac_files:
             try:
+                # Add Latin1 fallback to modern years just to be completely bulletproof
                 try:
                     df_fac = pd.read_csv(fac_files[0], dtype=str, on_bad_lines='skip', engine='python')
                     df_dac = pd.read_csv(dac_files[0], dtype=str, on_bad_lines='skip', engine='python')

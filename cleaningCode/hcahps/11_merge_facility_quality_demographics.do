@@ -38,12 +38,12 @@ preserve
     save `asc_market_data', replace
 restore
 
-save "$outputRoot/cleaned_data/cms_phase3_outpatient_asc_facility.dta", replace
+save "$phase3/cms_phase3_outpatient_asc_facility.dta", replace
 
 *-------------------------------------------------------------------------------
 * STEP 2: BUILD PHASE 3 INPATIENT/HOPD FACILITY NETWORK
 *-------------------------------------------------------------------------------
-use "$outputRoot/cleaned_data/cms_ultimate_facility_network.dta", clear
+use "$master/cms_ultimate_facility_network.dta", clear
 sort ccn year
 
 capture drop rrp_* mortality_* hvbp_* hac_* mspb_* hopd_*
@@ -53,12 +53,12 @@ drop _merge
 merge 1:1 ccn year using `hopd_qual', keep(master match)
 drop _merge
 
-save "$outputRoot/cleaned_data/cms_phase3_inpatient_facility.dta", replace
+save "$phase3/cms_phase3_inpatient_facility.dta", replace
 
 *-------------------------------------------------------------------------------
 * STEP 3: BUILD PHASE 3 INPATIENT/HOPD PROVIDER NETWORK
 *-------------------------------------------------------------------------------
-use "$outputRoot/cleaned_data/cms_ultimate_provider_network.dta", clear
+use "$master/cms_ultimate_provider_network.dta", clear
 sort ccn year
 
 capture drop rrp_* mortality_* hvbp_* hac_* mspb_* hopd_*
@@ -68,12 +68,12 @@ drop _merge
 merge m:1 ccn year using `hopd_qual', keep(master match)
 drop _merge
 
-save "$outputRoot/cleaned_data/cms_phase3_inpatient_provider.dta", replace
+save "$phase3/cms_phase3_inpatient_provider.dta", replace
 
 *-------------------------------------------------------------------------------
 * STEP 4: BUILD PHASE 3 ASC PROVIDER NETWORK (ZIP LINKAGE)
 *-------------------------------------------------------------------------------
-use "$outputRoot/cleaned_data/cms_master_provider_panel.dta", clear
+use "$phase1/cms_master_provider_panel.dta", clear
 
 tostring cms_zip, replace force
 replace cms_zip = substr(cms_zip, 1, 5)
@@ -81,5 +81,5 @@ replace cms_zip = substr(cms_zip, 1, 5)
 merge m:1 cms_zip year using `asc_market_data', keep(match)
 drop _merge
 
-save "$outputRoot/cleaned_data/cms_phase3_outpatient_asc_provider.dta", replace
+save "$phase3/cms_phase3_outpatient_asc_provider.dta", replace
 display "=== PHASE 3 NETWORK ASSEMBLY COMPLETE! ==="

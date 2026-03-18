@@ -1,7 +1,7 @@
 *===============================================================================
 * SCRIPT: 14_create_master_panels_v14.do
 * PURPOSE: Final Master Panel Assembler.
-* FIX: Natively injects fac_ prefixed facility-level means into the Provider Panel.
+* FIX: Solves the "Ghost Bloat" by enforcing strict matches in Step 4.
 *===============================================================================
 
 global component "cms"
@@ -9,7 +9,7 @@ include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_
 
 capture mkdir "$outputRoot/cleaned_data"
 
-display as text "Building Master Panels (v14 - The Native Injector)..."
+display as text "Building Master Panels (v14 - The Anti-Bloat Assembler)..."
 
 *-------------------------------------------------------------------------------
 * STEP 1: PREPARE AFFILIATION NETWORK
@@ -54,10 +54,6 @@ restore
 * B. Network Link (NPI-CCN)
 keep npi year ccn
 drop if ccn == ""
-capture tostring npi, replace force
-replace npi = strtrim(npi)
-capture tostring ccn, replace force
-replace ccn = strtrim(ccn)
 duplicates drop npi year ccn, force
 tempfile npi_ccn_link
 save `npi_ccn_link'
@@ -68,7 +64,6 @@ save `npi_ccn_link'
 display "Step 2: Importing Python Measures..."
 import delimited "$outputRoot/cleaned_data/cms_aggregated_clinical_measures.csv", clear
 tostring npi, replace
-replace npi = strtrim(npi)
 destring year, replace
 
 gen partd_generic_rate = 1 - (partd_brand_claims / partd_total_claims)
@@ -128,7 +123,6 @@ foreach f in `files' {
 }
 
 use `master_vol', clear
-replace npi = strtrim(npi)
 duplicates drop npi year, force
 destring year, replace
 capture destring tot_benes, replace force
@@ -156,19 +150,18 @@ keep npi year entity_type last_name first_name city cms_state cms_zip cms_specia
      drug_* med_* bene_avg_age bene_age_* bene_feml_cnt bene_male_cnt ///
      bene_race_* bene_dual_cnt bene_ndual_cnt bene_avg_risk_scre ///
      bene_cc_* 
-	 
-tempfile cms_volume
+	 tempfile cms_volume
 save `cms_volume'
 
 *-------------------------------------------------------------------------------
-* STEP 4: CREATE BASE PROVIDER PANEL 
+* STEP 4: CREATE PROVIDER MASTER PANEL (ANTI-BLOAT)
 *-------------------------------------------------------------------------------
-display "Step 4: Merging Base Provider Data..."
+display "Step 4: Merging Everything (Strict Matching)..."
 
-use `cms_volume', clear
-* Left Join the clinical measures so non-prescribing doctors stay in the panel
-merge 1:1 npi year using `clinical_measures', keep(master match) nogenerate
-* Left Join the demographics
+use `clinical_measures', clear
+* V14 FIX: keep(match) drops ghost NPIs that don't have volume/demographic data
+merge 1:1 npi year using `cms_volume', keep(match) nogenerate
+* Note: keep(master match) is okay here, as not all docs have affiliations
 merge 1:1 npi year using `npi_demos', keep(master match) nogenerate
 
 gen wterm_generic = partd_generic_rate * tot_benes
@@ -205,71 +198,51 @@ order npi year last_name first_name gender grad_year grad_decade ///
       tot_benes tot_srvcs tot_sbmtd_chrg ///
       bene_avg_risk_scre bene_avg_age
 
-* Save as a temporary base panel
-save "$phase1/cms_master_provider_base.dta", replace
-display "  > Saved Base Provider Panel."
+save "$phase1/cms_master_provider_panel.dta", replace
+display "  > Saved Provider Panel."
 
 *-------------------------------------------------------------------------------
-* STEP 5: CREATE FACILITY MASTER PANEL (PREFIXED WITH FAC_)
+* STEP 5: CREATE FACILITY MASTER PANEL
 *-------------------------------------------------------------------------------
 display "Step 5: Creating Facility Panel..."
 
 use `npi_ccn_link', clear
-merge m:1 npi year using "$outputRoot/cleaned_data/cms_master_provider_base.dta", keep(match) nogenerate
+merge m:1 npi year using "$outputRoot/cleaned_data/cms_master_provider_panel.dta", keep(match) nogenerate
 
-collapse (mean) fac_mean_generic_rate=partd_generic_rate ///
-                fac_mean_opioid_rate=partd_opioid_rate ///
-                fac_mean_highcost_rate=partd_high_cost_rate ///
-                fac_mean_upcode_rate=svc_em_upcode_rate ///
-                fac_mean_img_adv_rate=svc_img_adv_rate ///
-                fac_avg_risk_score=bene_avg_risk_scre ///
-                fac_prop_male_docs=is_male ///
-                fac_prop_female_docs=is_female ///
-                fac_prop_grad_pre1980=grad_pre_1980 ///
-                fac_prop_grad_1980s=grad_1980s ///
-                fac_prop_grad_1990s=grad_1990s ///
-                fac_prop_grad_2000s=grad_2000s ///
-                fac_prop_grad_2010s=grad_2010s ///
-                fac_prop_grad_2020s=grad_2020s ///
-         (sum)  fac_tot_benes=tot_benes ///
-                fac_tot_srvcs=tot_srvcs ///
-                fac_tot_chrg=tot_sbmtd_chrg ///
-                fac_bene_feml=bene_feml_cnt ///
-                fac_bene_male=bene_male_cnt ///
-                fac_bene_black=bene_race_black_cnt ///
-                fac_bene_hspnc=bene_race_hspnc_cnt ///
-                fac_bene_dual=bene_dual_cnt ///
-                fac_cc_depression=bene_cc_depr ///
-                fac_cc_diabetes=bene_cc_diab ///
-                fac_doc_count=partd_total_claims ///
+collapse (mean) mean_generic_rate=partd_generic_rate ///
+                mean_opioid_rate=partd_opioid_rate ///
+                mean_highcost_rate=partd_high_cost_rate ///
+                mean_upcode_rate=svc_em_upcode_rate ///
+                mean_img_adv_rate=svc_img_adv_rate ///
+                hosp_avg_risk_score=bene_avg_risk_scre ///
+                prop_male_providers=is_male ///
+                prop_female_providers=is_female ///
+                prop_grad_pre_1980=grad_pre_1980 ///
+                prop_grad_1980s=grad_1980s ///
+                prop_grad_1990s=grad_1990s ///
+                prop_grad_2000s=grad_2000s ///
+                prop_grad_2010s=grad_2010s ///
+                prop_grad_2020s=grad_2020s ///
+         (sum)  hosp_tot_benes=tot_benes ///
+                hosp_tot_srvcs=tot_srvcs ///
+                hosp_tot_chrg=tot_sbmtd_chrg ///
+                hosp_bene_feml=bene_feml_cnt ///
+                hosp_bene_male=bene_male_cnt ///
+                hosp_bene_black=bene_race_black_cnt ///
+                hosp_bene_hspnc=bene_race_hspnc_cnt ///
+                hosp_bene_dual=bene_dual_cnt ///
+                hosp_cc_depression=bene_cc_depr ///
+                hosp_cc_diabetes=bene_cc_diab ///
+                doc_count=partd_total_claims ///
                 wterm_generic wterm_opioid wterm_highcost wterm_upcode wterm_img_adv wterm_risk, ///
          by(ccn year)
 
-gen fac_wgt_generic_rate  = wterm_generic / fac_tot_benes
-gen fac_wgt_opioid_rate   = wterm_opioid / fac_tot_benes
-gen fac_wgt_highcost_rate = wterm_highcost / fac_tot_benes
-gen fac_wgt_upcode_rate   = wterm_upcode / fac_tot_benes
-gen fac_wgt_img_adv_rate  = wterm_img_adv / fac_tot_benes
-replace fac_avg_risk_score = wterm_risk / fac_tot_benes
-
-* Drop the temporary weighting terms so they don't clutter the final panel
-drop wterm_*
+gen wgt_generic_rate  = wterm_generic / hosp_tot_benes
+gen wgt_opioid_rate   = wterm_opioid / hosp_tot_benes
+gen wgt_highcost_rate = wterm_highcost / hosp_tot_benes
+gen wgt_upcode_rate   = wterm_upcode / hosp_tot_benes
+gen wgt_img_adv_rate  = wterm_img_adv / hosp_tot_benes
+replace hosp_avg_risk_score = wterm_risk / hosp_tot_benes
 
 save "$phase1/cms_master_facility_panel.dta", replace
 display "  > Saved Facility Panel."
-
-*-------------------------------------------------------------------------------
-* STEP 6: EXPAND PROVIDER PANEL & INJECT FACILITY MEANS
-*-------------------------------------------------------------------------------
-display "Step 6: Injecting Facility Rates into Provider Panel..."
-
-use "$outputRoot/cleaned_data/cms_master_provider_base.dta", clear
-
-* Expand panel to NPI-CCN-Year level (so each provider gets their facility's rates)
-merge 1:m npi year using `npi_ccn_link', keep(master match) nogenerate
-
-* Merge the newly created facility means directly into the provider panel
-merge m:1 ccn year using "$phase1/cms_master_facility_panel.dta", keep(master match) nogenerate
-
-save "$outputRoot/cleaned_data/cms_master_provider_panel.dta", replace
-display "  > Saved Ultimate Provider Panel."

@@ -1,0 +1,2071 @@
+general_cms_data/
+    .gitignore
+    directory_tree.py
+    directory_tree.txt
+    .git/
+        COMMIT_EDITMSG
+        config
+        description
+        HEAD
+        index
+        gk/
+            config
+        hooks/
+            applypatch-msg.sample
+            commit-msg.sample
+            fsmonitor-watchman.sample
+            post-update.sample
+            pre-applypatch.sample
+            pre-commit.sample
+            pre-merge-commit.sample
+            pre-push.sample
+            pre-rebase.sample
+            pre-receive.sample
+            prepare-commit-msg.sample
+            push-to-checkout.sample
+            sendemail-validate.sample
+            update.sample
+        info/
+            exclude
+        logs/
+            HEAD
+            refs/
+                heads/
+                    main
+                remotes/
+                    origin/
+                        main
+        objects/
+            00/
+                4832a2af4e70499e8dd8fe2659d71e5495bb20
+            01/
+                8b7e806c95d0118ccd67e0e9bfeb101207f7e7
+            02/
+                e21f398fdaebfe3e6b94d893ce48c176b491a5
+            04/
+                0812c0ab37137d5d2933690be54574a6c13308
+                1dccebc9938805717079c8e49f7d3e12cc02eb
+                6ac6d4c319fd36b1804c2e8d60bf7176250375
+            05/
+                6da100a92bd48f7c05eb2335c3caeace59aa6e
+            06/
+                400594a391b50b264b90994a6f9ffdbd154fda
+                fa3b51c3eedd359095d920b4d2d41f0b679ea8
+            0b/
+                141bc3309c4400bdb22f5aa49f9f510a380287
+                a6024e5bee81eeb599a978d3757229baa32250
+            0d/
+                f31fa911f4c45927b5c8a56c59e085d133f806
+            0f/
+                330220bad9619463f8614d2b06fe8562c757f7
+            10/
+                5ba40b6fde22cbaad5e4b09ab352a6477d2265
+            11/
+                9985bb5d3416a9d90841192a5b4a925cc5bbde
+            12/
+                58b930a8e619a2cd50b506bf4727c4f8479443
+                d8396d11edb2a6c2c134a767d64fc63187b8f6
+            13/
+                a7beada3e6633ef8dac327f00260da175f3c75
+            15/
+                d01a010bd492cb3eea33e13428c47a159f22f1
+            16/
+                624858bc30391ecbe0b9b944c53025ea7b248a
+            19/
+                9f7f24a8e89f81a7504566598a1b6db26e4161
+                ab4a283bc13d750f2d8714a49c6da956fcd25b
+            1b/
+                c5ff06902e2f549776cfb5dcaabc9f498ab38e
+            1f/
+                6a4eed2e2374369b23c698ddaa6a40630d856d
+            25/
+                0a0b1d7196274e3577072cfb7b52bbc6ce657a
+            27/
+                a34b6ff91f24869bfa2b5382874080ef1c2965
+            28/
+                8296306fc506526bcfb1d06cdd2bfd607b47bd
+            2b/
+                8d14caa5179e5e38d4cfef0364d84c958acae1
+            30/
+                a46ecba1a365a4427c4fc643ac8d661d46a222
+            31/
+                3948fbdc9ef800a84528ca2b365c2fc19de6df
+            33/
+                d540e8929f9266128ed627aa96bfea6cdc6ab9
+            34/
+                f18db52e505ff11f241103ddf33d1edc37838e
+            35/
+                a597ece26198406bdc434b1d1252bed8308b17
+            36/
+                8b62b9c8258b64990abec00bc8d75a24399111
+            37/
+                00f4734c989249e046aa8289a9ea2bc254b315
+            39/
+                b4d16aafe4659fbd47bdf4519237fc2ae4273b
+            3e/
+                5cf8731b8f08afd56c796e328f02eb1481e761
+                b46c348aa3c720541e85146b00e9e2a8504744
+            3f/
+                e442c1468f78e90698a0144b5b94efcadea9d4
+            41/
+                38aa29fdb23c4db8fce6b7e25071a337805e2d
+            45/
+                8149746440c94c56c8c55a6cb4ef3cf7f7b8a2
+            48/
+                d054b48ced4ea67b49008e4bdbf0d9bf0e49e2
+            49/
+                e04c63a639c983658ffbbda982c1278da4341b
+            4b/
+                fe387d8e5bf322588bb7d914e2ebeecf49b57e
+            4f/
+                76c730e95602056a2a0fed60b6b2160fcfe20b
+                a5d7949605fda3362770a980ab49fb4df8267f
+            53/
+                40112cafe8f3b472054fc3120d326a50fd377b
+                65c561c2a0f8b74089de2c03666981239add07
+            55/
+                95906e3fed57b8349b96f4b7416a1229e88127
+                d561a4bbf46a05268ca9ca2af457deb63b097f
+            59/
+                b7b7473a8b8e150a673ec5aa6b3e4dbe804919
+            5f/
+                688edec4c98e0d7de6f3b3fda153ecdb52bf6f
+            61/
+                755b5f8303d9c2b1d7cfa6ba8808575ce89856
+            62/
+                b323f0d94b8beaf807d8e61e2108912febb73d
+            64/
+                51b87115055b21612ad25d620a829f3f86d047
+            68/
+                5a8ce84a15c916a38ef25b4c89057544cd522f
+            69/
+                0ed668c9aeb26329e47752e738add4fc700bd3
+            6b/
+                82b57755e8435f83ad25b6ec837676c21813ff
+            71/
+                13ef75c307779fe63536e7b0f99c93ab820078
+                90252412381c6a91c519c29841299eb1fbc88d
+            72/
+                6c3946e3873c415efd33bbdd0c455e1c15bad5
+                ad3fc335e6fefebd1b13186d530baec960fb6a
+            73/
+                fadd4471cb331e96de0d5c966bf6fde09fa597
+            75/
+                5237bcd3a0abad96137cced9e1fe9d1f30cb68
+            76/
+                21a266a7680ad78e27e7f1d9b95f4ff917f1b3
+            79/
+                606620e5009a5f40c756c0bbb32226952dd17f
+                f104cb6d627cab9605620fa15a9b13406c5d3c
+            7e/
+                1840a6403a54920f171ee25870d99feeba5194
+                2c5bb346bcb5cd503e6c2cde6882a28d311324
+            81/
+                e961580fc3358b81e6f945ad3265af3ceee799
+            83/
+                3a4e97e8149a9a0443edc810d5189d8e64c139
+                d6a474b86e5263144502f3509e62b7f2db7765
+            86/
+                de499174416e330d033af4a29d3fb2d641ec8c
+            89/
+                05146f2056a7ff55b281668882c8bcd847a0a8
+            8c/
+                a067a2cb034c3f2ffabbbe4eaefb24c3004f5d
+            8d/
+                f3906c94aaf6bd1a2ad5b4a6a28619fc538fd1
+            90/
+                f85b54b88053d013b4e9a40f4665f32ef19a6f
+            93/
+                8f51853e607c452a27fd0fefd1906674e03f2a
+            95/
+                628f5fe0b5414131c826208d24e2f6ce15fe42
+                fef74aefc4cb9f66b6f8d29cb64afab792cc83
+            96/
+                2eb07640796a1dfd82d13150ac169f2d6ffc40
+                dbdcb9e894698204d0995eea81b22057e9211b
+            97/
+                cf99d05d8c4d8d99bfc70a94633cc39e0eed1f
+                ff80b5a9d461a81cd0050373947dec8ed0ae63
+            9a/
+                30ba61babc42249489ddb7e0887fb908b7079c
+                61cfe0fbd07c2a9e8ab9c30b14da263fb80d9e
+                e3b492c6b48aa5c12cfd100b376372c9acd7b3
+            9b/
+                26cb334f46f617d700e3e2c63adb5295a0240a
+                81356ed3f5cdbf43eee4cef22f7422871197e9
+            9f/
+                1423fcc92d703e23f4560b72adba939bcdc6ac
+                6d30bf26e9d39e92bbee0c69faaa2a75cb412e
+            a1/
+                6fba9c978bd03854c6674e89986b1a47e3505b
+            a3/
+                ef32ed027f96535af496704e4599c828f0b59b
+            a9/
+                403f6f7f98ac333d9776bc5688ab7d3e8b333e
+            aa/
+                1ca2939ceed4dc47c1c8162e9b191413b57e92
+                dfeaa9ce6f3533e7ae0fa86d0795085221c995
+            ae/
+                7a5e119fb772d2aeb7ee2e1c2ee22bcecb862c
+            b1/
+                2ec52e1cc4cb0c29b05c2538b66781d88a94f7
+                41f2a776f009254da2c978fe9b780a5ddeec45
+            b3/
+                1b1126e56449b40be35a47a1790b7e9f71fcaa
+            b4/
+                492f61a22ecacf7e3adc3fadbb5f46c620263e
+                5e6e7d0f192e283d35d586c6fd6c26e48ea4ce
+            b6/
+                83eae3194a1bb3cadc6341a732b252ec98dbd8
+                e865706025ccd4dddf4cac44e618a09e811b6b
+            b8/
+                9959d457d7cb0bd7a99d19ff3ab66a5c6a561c
+                d9c89d98859c5f5770edaa8dcfb4a4ae7b7692
+            b9/
+                a380d4416f0d9dc722c7ee4f1b9c78aca2db1b
+            bc/
+                8f43f3229fab3a25e314a5b7330b42b277db93
+            be/
+                0154fa35ebbae0af380d916550cbb279dc08e0
+                8f5efd0678efbb2f7c4b90a956f9bdddfa9197
+                ac76b63e4fe212de933a0f1268a0888a7aa3d6
+            bf/
+                7faeeb69cde7498300ab06c732207299c0c2ab
+                a057f9e16c07bc323793243b73a3d2406f18d2
+            c0/
+                abc67762223322a6d2fb40dbdba33d1b9cb692
+            c3/
+                abb0cd9ea8042a5ea0465aece0c3661f3eca57
+            c4/
+                7f86f5c158bc543ad869718850f3bb2a2b36de
+                9bc7dd109eb3b1cccebe8c8f207d4a709c94b2
+            c5/
+                7238d31db8bf8e885e2df6d41d551e4256ba2c
+            c6/
+                449717a88efa6c00c8fb589ea30371eb4e5b4b
+            c7/
+                e3ae79a42e92c83c9139873cbf2d1225c39e01
+            c8/
+                95e6a30894d2ddf862673928cdd1535d813a05
+            ca/
+                8a6ffce16758569bb222d70b25c6b541d8672e
+            cb/
+                91950301107976137fede25f6f464d9ccac0d7
+                bddd447f079b42c5b797a19c026af6f8de407b
+            cc/
+                8399092ca46931b2639ab2cab259bfdf5c988b
+            cf/
+                17709cd4813a85f70a097d8639dc1e8ef3b7e5
+                fdc2decc1de24a8bc537c087b6a03ac8749c79
+            d0/
+                2f9df5499b6e9d018f03888349d1c525cec87a
+            d1/
+                fc1e4f660f2cec8fc7a4992352eee509a236a8
+            d3/
+                22cef1a19044a17f7d6c4fdea9307f67832342
+            d5/
+                c0b4ec421f3fcb04bf26ecc5a99d32f8f657f6
+            d7/
+                20c12f7e92dc694530bd2732498fe994866e42
+            d8/
+                15fed5bbdc6860f10dff4e3b7c5bcb0dbe655a
+            d9/
+                4e205647e7bc0d6d6997253f4107a6bcc07155
+                61678793f8788705b5fcb824a4f8b942eaefae
+            dc/
+                b2739b37b0295d5d679ac787bbd0fd12991e35
+            de/
+                153395d37affd0ce100e2027609cf39ac4525f
+                abca0f5ea204b610a6e69bc1282a3f48caa16c
+            e0/
+                9298e8f57ad6cc6065bd378b185c1c314eeaf8
+                a9c779e49f37a43d500f9144cf463982c1b04b
+            e1/
+                285f1c45e79a36a1b6c55d375203e514633000
+                5f049abf8425e554cd211b0c9b5c4be7814e23
+                a257e7edf08e2818a9c1c213d5c1c4a23e1fe1
+            e2/
+                03638ba05bc2ef0c5eb32238d980e14616c515
+                300814d511afd59a9767271a77d73c13a6f220
+            e6/
+                9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+            ec/
+                1f20d20805eea2425c7baf3bfebce482e91a04
+                38c802c1ceec05936bfed0dfca95f31d54f0a0
+            ed/
+                19e78aedd8119c030ef70a1cc3664bed5b295e
+                fe4fb59951326077edde42577867d0bb0c7062
+            ef/
+                a7097bcb022f6972fa6ddf22fc72875b5bcb3e
+            f0/
+                11f07d5c4b11bd659831b486fb9f59ba6fcf75
+                6925447ee261389593d3fb305aad8bae99363c
+            f1/
+                1049a1a9e7760fb73264b5cfb6ee05b1503b26
+            f7/
+                4f0d37fe004bdae5c9ab039723708a3f06d3fa
+            fc/
+                07605c2b5abcecf8079dbf2fc6aca53114b851
+            fe/
+                a817e00c80b97d4a24340237f8e7c952f7790c
+            info/
+            pack/
+        refs/
+            heads/
+                main
+            remotes/
+                origin/
+                    main
+            tags/
+    associated_hosp_infections/
+        2012/
+            Healthcare_Associated_Infections-Hospital.csv
+        2013/
+            Healthcare_Associated_Infections-Hospital.csv
+        2014/
+            Healthcare Associated Infections-Hospital.csv
+        2015/
+            Healthcare Associated Infections-Hospital.csv
+        2016/
+            Healthcare Associated Infections-Hospital.csv
+        2017/
+            Healthcare Associated Infections-Hospital.csv
+        2018/
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            Hospital.pdf
+        2019/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HospitalCompare-DataDictionary.pdf
+        2020/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HospitalCompare-DataDictionary.pdf
+        2021/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HospitalCareCompare-DataDictionary.pdf
+        2022/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HOSPITAL_Data_Dictionary.pdf
+        2023/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HOSPITAL_Data_Dictionary.pdf
+        2024/
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HOSPITAL_Data_Dictionary.pdf
+    cleaningCode/
+        00_initialize.do
+        CMS_convertingToDTA.do
+        data_cleaning_roadmap.md
+        cms/
+            01_create_samples.do
+            02_variable_diagnostics.do
+            03_inspect_facility_headers.do
+            04_create_facility_samples_DEPRECATED.do
+            05_facility_diagnostics.do
+            06_harmonize_facility.do
+            06_harmonize_facility_affiliations.py
+            07a_value_diagnostics.do
+            07b_facility_value_diagnostics.do
+            08_generate_specialty_table.py
+            08_harmonize_cms.do
+            09a_robust_discovery.py
+            09b_create_clinical_dictionaries.py
+            10_create_systematic_crosswalks.py
+            11_aggregate_clinical_measures.py
+            11_aggregate_clinical_measures_OLD.py
+            12_create_systematic_appendix_tables.py
+            14_create_master_panels.do
+            deprecatednoweights_14_create_master_panels.do
+            deprecatedw_05b_prep_modern_affiliations.py
+            deprecatedw_06_harmonize_facility_smart.py
+            deprecated_09_cms_append_and_merge.do
+        hcahps/
+            00_scan_directories.py
+            01_peek_hcahps_schemas.py
+            02_harmonize_hcahps_smart.py
+            03b_diagnostic_hcahps_dates.py
+            03_peek_hospital_general.py
+            04_harmonize_hospital_general.py
+            05_merge_hcahps_to_master.do
+            06_diagnostic_quality_inventory.py
+            07_diagnostic_universal_peek.py
+            08_diagnostic_2008_2012_peek.py
+            09_harmonize_inpatient_quality.py
+            10_harmonize_outpatient_quality.py
+            11_merge_facility_quality_demographics.do
+            cms_quality_inventory_map.csv
+            hcahps_survey_dates_summary.csv
+        hospital_infections/
+        logs/
+            CMS_convertToDTA_2025.11.19_16.43.19.smcl
+            cms/
+                07b_facility_value_diagnostics_2026.02.08_16.00.00.smcl
+                07b_facility_value_diagnostics_2026.02.10_11.14.41.smcl
+                07b_facility_value_diagnostics_2026.02.10_11.19.05.smcl
+                07b_facility_value_diagnostics_2026.02.10_11.28.45.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.10.04.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.10.16.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.18.32.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.22.35.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.30.59.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.42.11.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.46.45.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.48.15.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.49.41.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.00.53.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.04.37.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.10.46.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.27.38.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.34.15.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.35.37.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.50.59.smcl
+                07b_facility_value_diagnostics_2026.02.11_17.52.18.smcl
+                07b_facility_value_diagnostics_2026.02.17_08.02.11.smcl
+                07b_facility_value_diagnostics_2026.02.17_08.09.17.smcl
+                07b_facility_value_diagnostics_2026.02.17_08.11.48.smcl
+                log_2026.02.07_16.05.40.smcl
+                log_2026.02.07_16.05.56.smcl
+                log_2026.02.07_16.12.28.smcl
+                log_2026.02.07_16.16.11.smcl
+                log_2026.02.08_12.32.06.smcl
+                log_2026.02.08_14.49.55.smcl
+                log_2026.03.03_16.32.16.smcl
+                log_2026.03.03_16.36.36.smcl
+                log_2026.03.04_06.37.46.smcl
+                log_2026.03.04_06.54.22.smcl
+                log_2026.03.04_07.00.18.smcl
+                log_2026.03.04_07.45.53.smcl
+                log_2026.03.04_07.47.26.smcl
+                log_2026.03.04_07.48.14.smcl
+                log_2026.03.06_06.51.04.smcl
+                log_2026.03.06_07.04.44.smcl
+                log_2026.03.06_07.13.19.smcl
+                variable_alignment_map.csv
+            general/
+                07b_facility_value_diagnostics_2026.02.08_16.20.51.smcl
+                log_2026.03.02_11.19.47.smcl
+                log_2026.03.02_12.12.30.smcl
+                log_2026.03.02_12.30.09.smcl
+                log_2026.03.03_14.30.40.smcl
+            mips/
+                07b_facility_value_diagnostics_2026.02.08_14.59.25.smcl
+                07b_facility_value_diagnostics_2026.02.08_15.02.19.smcl
+                07b_facility_value_diagnostics_2026.02.08_15.03.55.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.38.12.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.40.52.smcl
+                07b_facility_value_diagnostics_2026.02.11_15.41.08.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.13.50.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.14.14.smcl
+                07b_facility_value_diagnostics_2026.02.11_16.14.31.smcl
+                facility_alignment_map.csv
+                facility_header_inspection.txt
+                facility_specialty_growth_tracker.csv
+                log_2026.02.08_13.28.02.smcl
+                log_2026.02.08_13.42.46.smcl
+                log_2026.02.08_13.53.41.smcl
+                log_2026.02.08_13.58.41.smcl
+                log_2026.02.08_13.59.09.smcl
+                log_2026.02.08_14.01.19.smcl
+                log_2026.02.08_14.20.02.smcl
+                log_2026.02.08_14.35.05.smcl
+                log_2026.02.08_14.40.34.smcl
+                log_2026.02.08_14.48.19.smcl
+                log_2026.02.08_14.50.16.smcl
+                log_2026.02.08_14.54.23.smcl
+                log_2026.02.08_14.54.43.smcl
+                log_2026.03.05_06.52.22.smcl
+        mips/
+            facilityAffiliation/
+                dta/
+                    harmonized/
+    cliniciansAndGroups/
+        data_dictionary.pdf
+        link_to_data_source.docx
+        facilityAffiliation/
+            facility_names_2014.csv
+            facility_names_2015.csv
+            facility_names_2016.csv
+            facility_names_2017.csv
+            facility_names_2018.csv
+            facility_names_2019.csv
+            facility_names_2020.csv
+            facility_names_2021.csv
+            facility_names_2022.csv
+            facility_names_2023.csv
+            facility_names_2024.csv
+            facility_names_2025.csv
+            2023/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+            2024/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+            2025/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+            dta/
+                5pct_sample/
+                    facility_names_2014_sample.dta
+                    facility_names_2015_sample.dta
+                    facility_names_2016_sample.dta
+                    facility_names_2017_sample.dta
+                    facility_names_2018_sample.dta
+                    facility_names_2019_sample.dta
+                    facility_names_2020_sample.dta
+                    facility_names_2021_sample.dta
+                    facility_names_2022_sample.dta
+                    facility_names_2023_sample.dta
+                    facility_names_2024_sample.dta
+                    facility_names_2025_sample.dta
+                harmonized/
+                    2013_facility_affiliation_harmonized.dta
+                    2014_facility_affiliation_harmonized.dta
+                    2015_facility_affiliation_harmonized.dta
+                    2016_facility_affiliation_harmonized.dta
+                    2017_facility_affiliation_harmonized.dta
+                    2018_facility_affiliation_harmonized.dta
+                    2019_facility_affiliation_harmonized.dta
+                    2020_facility_affiliation_harmonized.dta
+                    2021_facility_affiliation_harmonized.dta
+                    2022_facility_affiliation_harmonized.dta
+                    2023_facility_affiliation_harmonized.dta
+                    2024_facility_affiliation_harmonized.dta
+                    2025_facility_affiliation_harmonized.dta
+                    old/
+                        facility_names_2014_harmonized.dta
+                        facility_names_2015_harmonized.dta
+                        facility_names_2016_harmonized.dta
+                        facility_names_2017_harmonized.dta
+                        facility_names_2018_harmonized.dta
+                        facility_names_2019_harmonized.dta
+                        facility_names_2020_harmonized.dta
+                        facility_names_2021_harmonized.dta
+                        facility_names_2022_harmonized.dta
+                        facility_names_2023_harmonized.dta
+                        facility_names_2024_harmonized.dta
+                        facility_names_2025_harmonized.dta
+        mipsClinician_overallPerformance/
+            2017/
+                ec_scores.csv
+            2018/
+                ec_score_file.csv
+            2019/
+                ec_score_file.csv
+            2020/
+                ec_score_file.csv
+            2021/
+                ec_score_file.csv
+            2022/
+                ec_score_file.csv
+            2023/
+                ec_score_file.csv
+        mipsGroup_overallPerformance/
+            2017/
+                grp_scores.csv
+            2018/
+            2019/
+            2020/
+            2021/
+            2022/
+            2023/
+        national_dac/
+            2022/
+                DAC_NationalDownloadableFile.csv
+            2023/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+            2024/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+            2025/
+                DAC_NationalDownloadableFile.csv
+                Facility_Affiliation.csv
+        old/
+            facility_names_2014.csv
+            facility_names_2015.csv
+            facility_names_2016.csv
+            facility_names_2017.csv
+            facility_names_2018.csv
+            facility_names_2019.csv
+            facility_names_2020.csv
+            facility_names_2021.csv
+        utilization/
+    cms/
+        cms_datasets_crosswalk.xlsx
+        cms_national_file_links.pdf
+        hcup_hospital_identifers.pdf
+        by_provider/
+            all_depts/
+                csv/
+                    provider_2013.csv
+                    provider_2014.csv
+                    provider_2015.csv
+                    provider_2016.csv
+                    provider_2017.csv
+                    provider_2018.csv
+                    provider_2019.csv
+                    provider_2020.csv
+                    provider_2021.csv
+                    Provider_2022.csv
+                    Provider_2023.csv
+                dta/
+                    5pct_sample/
+                    full_sample/
+            dta/
+                5pct_sample/
+                    provider_2013_sample.dta
+                    provider_2014_sample.dta
+                    provider_2015_sample.dta
+                    provider_2016_sample.dta
+                    provider_2017_sample.dta
+                    provider_2018_sample.dta
+                    provider_2019_sample.dta
+                    provider_2020_sample.dta
+                    provider_2021_sample.dta
+                    provider_2022_sample.dta
+                    provider_2023_sample.dta
+                harmonized/
+                    provider_2013_harmonized.dta
+                    provider_2014_harmonized.dta
+                    provider_2015_harmonized.dta
+                    provider_2016_harmonized.dta
+                    provider_2017_harmonized.dta
+                    provider_2018_harmonized.dta
+                    provider_2019_harmonized.dta
+                    provider_2020_harmonized.dta
+                    provider_2021_harmonized.dta
+                    provider_2022_harmonized.dta
+                    provider_2023_harmonized.dta
+            limited_depts/
+                csv/
+                    Provider_2013.csv
+                    Provider_2014.csv
+                    Provider_2015.csv
+                    Provider_2016.csv
+                    Provider_2017.csv
+                    Provider_2018.csv
+                    Provider_2019.csv
+                    Provider_2020.csv
+                    Provider_2021.csv
+                dta/
+                    Provider_2013.dta
+                    Provider_2014.dta
+                    Provider_2015.dta
+                    Provider_2016.dta
+                    Provider_2017.dta
+                    Provider_2018.dta
+                    Provider_2019.dta
+                    Provider_2020.dta
+                    Provider_2021.dta
+        by_provider_service/
+            all_depts/
+                csv/
+                    provider_service_2013.csv
+                    provider_service_2014.csv
+                    provider_service_2015.csv
+                    provider_service_2016.csv
+                    provider_service_2017.csv
+                    provider_service_2018.csv
+                    provider_service_2019.csv
+                    provider_service_2020.csv
+                    provider_service_2021.csv
+                    provider_service_2022.csv
+                    provider_service_2023.csv
+                dta/
+                    5pct_sample/
+                    full_sample/
+            dta/
+                5pct_sample/
+                    provider_service_2013_sample.dta
+                    provider_service_2014_sample.dta
+                    provider_service_2015_sample.dta
+                    provider_service_2016_sample.dta
+                    provider_service_2017_sample.dta
+                    provider_service_2018_sample.dta
+                    provider_service_2019_sample.dta
+                    provider_service_2020_sample.dta
+                    provider_service_2021_sample.dta
+                    provider_service_2022_sample.dta
+                    provider_service_2023_sample.dta
+                harmonized/
+                    provider_service_2013_harmonized.dta
+                    provider_service_2014_harmonized.dta
+                    provider_service_2015_harmonized.dta
+                    provider_service_2016_harmonized.dta
+                    provider_service_2017_harmonized.dta
+                    provider_service_2018_harmonized.dta
+                    provider_service_2019_harmonized.dta
+                    provider_service_2020_harmonized.dta
+                    provider_service_2021_harmonized.dta
+                    provider_service_2022_harmonized.dta
+                    provider_service_2023_harmonized.dta
+            limited_depts/
+                csv/
+                    Provider_Service_2013.csv
+                    Provider_Service_2014.csv
+                    Provider_Service_2015.csv
+                    Provider_Service_2016.csv
+                    Provider_Service_2017.csv
+                    Provider_Service_2018.csv
+                    Provider_Service_2019.csv
+                    Provider_Service_2020.csv
+                    Provider_Service_2021.csv
+                dta/
+                    Provider_Service_2013.dta
+                    Provider_Service_2014.dta
+                    Provider_Service_2015.dta
+                    Provider_Service_2016.dta
+                    Provider_Service_2017.dta
+                    Provider_Service_2018.dta
+                    Provider_Service_2019.dta
+                    Provider_Service_2020.dta
+                    Provider_Service_2021.dta
+        data/
+            read_me_omar.docx
+            cleaned/
+                cms_combined_sets/
+                    cms_cleaned.dta
+                cms_hcahps_combined/
+                    CMS_hcahps_merged.dta
+                    CMS_hcahps_merged_condensed.dta
+                facility_names/
+                    cleaned_facility_names_allyears.dta
+                hchaps/
+                    general_combined_2008_2014.dta
+                    hcahps_2008_2022.dta
+            raw/
+                by_provider/
+                    csv_files/
+                        Provider_2013.csv
+                        Provider_2014.csv
+                        Provider_2015.csv
+                        Provider_2016.csv
+                        Provider_2017.csv
+                        Provider_2018.csv
+                        Provider_2019.csv
+                        Provider_2020.csv
+                        Provider_2021.csv
+                by_provider_service/
+                    csv_files/
+                        Provider_Service_2013.csv
+                        Provider_Service_2014.csv
+                        Provider_Service_2015.csv
+                        Provider_Service_2016.csv
+                        Provider_Service_2017.csv
+                        Provider_Service_2018.csv
+                        Provider_Service_2019.csv
+                        Provider_Service_2020.csv
+                        Provider_Service_2021.csv
+                facility_names/
+                    csv_files/
+                        facility_names_2014.csv
+                        facility_names_2015.csv
+                        facility_names_2016.csv
+                        facility_names_2017.csv
+                        facility_names_2018.csv
+                        facility_names_2019.csv
+                        facility_names_2020.csv
+                        facility_names_2021.csv
+                    stata_files/
+                        facility_names_2014.dta
+                        facility_names_2015.dta
+                        facility_names_2016.dta
+                        facility_names_2017.dta
+                        facility_names_2018.dta
+                        facility_names_2019.dta
+                        facility_names_2020.dta
+                        facility_names_2021.dta
+                        npi_names.dta
+                part_d/
+                    csv_files/
+                        Part_D_2013.csv
+                        Part_D_2014.csv
+                        Part_D_2015.csv
+                        Part_D_2016.csv
+                        Part_D_2017.csv
+                        Part_D_2018.csv
+                        Part_D_2019.csv
+                        Part_D_2020.csv
+                        Part_D_2021.csv
+        notes/
+            hchapsVsMips.md
+            mips_overview.md
+        partD/
+            all_depts/
+                csv/
+                    partD_2013.csv
+                    partD_2014.csv
+                    partD_2015.csv
+                    partD_2016.csv
+                    partD_2017.csv
+                    partD_2018.csv
+                    partD_2019.csv
+                    partD_2020.csv
+                    partD_2021.csv
+                    partD_2022.csv
+                    partD_2023.csv
+                dta/
+                    5pct_sample/
+                    full_sample/
+            dta/
+                5pct_sample/
+                    partd_2013_sample.dta
+                    partd_2014_sample.dta
+                    partd_2015_sample.dta
+                    partd_2016_sample.dta
+                    partd_2017_sample.dta
+                    partd_2018_sample.dta
+                    partd_2019_sample.dta
+                    partd_2020_sample.dta
+                    partd_2021_sample.dta
+                    partd_2022_sample.dta
+                    partd_2023_sample.dta
+                harmonized/
+                    partd_2013_harmonized.dta
+                    partd_2014_harmonized.dta
+                    partd_2015_harmonized.dta
+                    partd_2016_harmonized.dta
+                    partd_2017_harmonized.dta
+                    partd_2018_harmonized.dta
+                    partd_2019_harmonized.dta
+                    partd_2020_harmonized.dta
+                    partd_2021_harmonized.dta
+                    partd_2022_harmonized.dta
+                    partd_2023_harmonized.dta
+            limited_depts/
+                csv/
+                    Part_D_2013.csv
+                    Part_D_2014.csv
+                    Part_D_2015.csv
+                    Part_D_2016.csv
+                    Part_D_2017.csv
+                    Part_D_2018.csv
+                    Part_D_2019.csv
+                    Part_D_2020.csv
+                    Part_D_2021.csv
+                dta/
+                    Part_D_2013.dta
+                    Part_D_2014.dta
+                    Part_D_2015.dta
+                    Part_D_2016.dta
+                    Part_D_2017.dta
+                    Part_D_2018.dta
+                    Part_D_2019.dta
+                    Part_D_2020.dta
+                    Part_D_2021.dta
+    dictionaries_and_crosswalks/
+        cms_legacy_peek_results.txt
+        cms_universal_peek_results.txt
+        crosswalk_partd_brand_generic.csv
+        crosswalk_partd_empirical_costs.csv
+        crosswalk_rbcs_services.csv
+        directory_scan_results.txt
+        drug_class_map.csv
+        facility_alignment_map.csv
+        hcahps_survey_dates_summary.csv
+        new_categories_added.txt
+        raw_directory_scan.txt
+        RBCS_RY_2025.csv
+        service_class_map.csv
+        universe_partb_drugs.csv
+        universe_partd_drugs.csv
+        universe_services.csv
+    hcahps/
+        Dates of survey.xlsx
+        harmonized/
+            hcahps_master_panel.csv
+            hcahps_structural_panel.csv
+            inpatient_quality_panel.csv
+            outpatient_asc_quality_panel.csv
+            outpatient_hopd_quality_panel.csv
+        hcahps2008/
+            dbo_vwHQI_FTNT.dta
+            dbo_vwHQI_HOSP.dta
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            dbo_vwHQI_HOSP_MORTALITY_XWLK.dta
+            dbo_vwHQI_HOSP_MPV_MSR.dta
+            dbo_vwHQI_HOSP_MSR_XWLK.dta
+            dbo_vwHQI_PCTL_MSR_XWLK.dta
+            hcahps_national.dta
+            hcahps_state.dta
+            Hospital2008.mdb
+            Hospital2008.pdf
+        hcahps2009/
+            dbo_vwHQI_FTNT.dta
+            dbo_vwHQI_HOSP.dta
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+            dbo_vwHQI_HOSP_MPV_MSR.dta
+            dbo_vwHQI_HOSP_MSR_XWLK.dta
+            dbo_vwHQI_PCTL_MSR_XWLK.dta
+            hcahps_national.dta
+            hcahps_state.dta
+            Hospital2009.mdb
+            Hospital2009.pdf
+        hcahps2010/
+            dbo_vwHQI_FTNT.dta
+            dbo_vwHQI_HOSP.dta
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            dbo_vwHQI_HOSP_IMG_XWLK.dta
+            dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+            dbo_vwHQI_HOSP_MPV_MSR.dta
+            dbo_vwHQI_HOSP_MSR_XWLK.dta
+            dbo_vwHQI_HOSP_STRUCTURAL_XWLK.dta
+            dbo_vwHQI_PCTL_MSR_XWLK.dta
+            hcahps_national.dta
+            hcahps_state.dta
+            Hospital2010.mdb
+            Hospital2010.pdf
+        hcahps2011/
+            dbo_vwHQI_FTNT.dta
+            dbo_vwHQI_HOSP.dta
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            dbo_vwHQI_HOSP_IMG_XWLK.dta
+            dbo_vwHQI_HOSP_MORTALITY_READM_XWLK.dta
+            dbo_vwHQI_HOSP_MPV_MSR.dta
+            dbo_vwHQI_HOSP_MSR_XWLK.dta
+            dbo_vwHQI_HOSP_STRUCTURAL_XWLK.dta
+            dbo_vwHQI_PCTL_MSR_XWLK.dta
+            hcahps_national.dta
+            hcahps_state.dta
+            HOSArchive_20110401.zip
+            HOSArchive_20110801.zip
+            HOSArchive_20111001.zip
+            Hospital2011.mdb
+            Hospital2011.pdf
+            vwHQI_HOSP_AHRQ.dta
+            vwHQI_HOSP_HAC.dta
+            vwMeasure_Dates.dta
+        hcahps2012/
+            Agency for Healthcare Research and Quality - National.csv
+            Agency for Healthcare Research and Quality - State.csv
+            Agency for Healthcare Research and Quality.csv
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            HCAHPS Measures - National.csv
+            HCAHPS Measures - State.csv
+            HCAHPS Measures.csv
+            hcahps_national.dta
+            hcahps_state.dta
+            Healthcare_Associated_Infections.csv
+            Healthcare_Associated_Infections_State.csv
+            HOSArchive_20120101.zip
+            HOSArchive_20121201.zip
+            HOSArchive_Revised_Flatfiles_20120701.zip
+            Hospital Acquired Condition - National.csv
+            Hospital Acquired Condition.csv
+            Hospital2012.mdb
+            Hospital2012.pdf
+            Hospital_Data.csv
+            Hospital_Revised_Flatfiles.pdf
+            Measure Dates.csv
+            Medicare Payment and Volume Measures - National.csv
+            Medicare Payment and Volume Measures - State.csv
+            Medicare Payment and Volume Measures.csv
+            Medicare Spending Per Patient.csv
+            Outcome of Care Measures - National.csv
+            Outcome of Care Measures - State.csv
+            Outcome of Care Measures.csv
+            Outpatient Imaging Efficiency Measures - National.csv
+            Outpatient Imaging Efficiency Measures - State.csv
+            Outpatient Imaging Efficiency Measures.csv
+            Process of Care Measures - Children.csv
+            Process of Care Measures - Heart Attack.csv
+            Process of Care Measures - Heart Failure.csv
+            Process of Care Measures - National.csv
+            Process of Care Measures - Pneumonia.csv
+            Process of Care Measures - SCIP.csv
+            Process of Care Measures - State.csv
+            readme.txt
+            READMISSION REDUCTION.CSV
+            Structural Measures.csv
+        hcahps2013/
+            ACS NSQIP Data File - April 2013.csv
+            Agency for Healthcare Research and Quality - National.csv
+            Agency for Healthcare Research and Quality - State.csv
+            Agency for Healthcare Research and Quality.csv
+            dbo_vwHQI_HOSP_HCAHPS_MSR.dta
+            Emergency Department Throughput-National.csv
+            Emergency Department Throughput-State.csv
+            Emergency Department Throughput.csv
+            FootNote.csv
+            HCAHPS Measures - National.csv
+            HCAHPS Measures - State.csv
+            HCAHPS Measures.csv
+            Healthcare_Associated_Infections.csv
+            Healthcare_Associated_Infections_National.csv
+            Healthcare_Associated_Infections_State.csv
+            HOSArchive_Revised_Flatfiles_20130401.zip
+            HOSArchive_Revised_Flatfiles_20130701.zip
+            HOSArchive_Revised_Flatfiles_20131001.zip
+            Hospital Acquired Condition - National.csv
+            Hospital Acquired Condition.csv
+            Hospital Structural Measures.csv
+            Hospital2013.mdb
+            Hospital2013.pdf
+            Hospital_Data.csv
+            hvbp_ami_08_16_2013.csv
+            hvbp_hai_08_16_2013.csv
+            hvbp_hcahps_02_07_2013.csv
+            hvbp_hcahps_05_28_2013.csv
+            hvbp_hcahps_08_16_2013.csv
+            hvbp_hf_08_16_2013.csv
+            hvbp_pn_08_16_2013.csv
+            hvbp_scip_08_16_2013.csv
+            hvbp_tps_08_16_2013.csv
+            Immunization-National.csv
+            Immunization-State.csv
+            Immunization.csv
+            Measure Crosswalk.csv
+            Measure Dates.csv
+            Medicare Spending Per Patient - National.csv
+            Medicare Spending Per Patient - State.csv
+            Medicare Spending Per Patient.csv
+            Medicare Volume Measures - National.csv
+            Medicare Volume Measures - State.csv
+            Medicare Volume Measures.csv
+            Outcome of Care Measures - National.csv
+            Outcome of Care Measures - State.csv
+            Outcome of Care Measures.csv
+            Outpatient Imaging Efficiency Measures - National.csv
+            Outpatient Imaging Efficiency Measures - State.csv
+            Outpatient Imaging Efficiency Measures.csv
+            Process of Care Measures - Children.csv
+            Process of Care Measures - Heart Attack.csv
+            Process of Care Measures - Heart Failure.csv
+            Process of Care Measures - National.csv
+            Process of Care Measures - Pneumonia.csv
+            Process of Care Measures - SCIP.csv
+            Process of Care Measures - State.csv
+            readme.txt
+            READMISSION REDUCTION.CSV
+        hcahps2014/
+            Footnote Crosswalk.csv
+            FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2013_Percent_Change_in_Medicare_Payments.csv
+            FY2013_Value_Based_Incentive_Payment_Amount.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            Heart Attack Payment - Hospital.csv
+            Heart Attack Payment - National.csv
+            Heart Attack Payment - State.csv
+            HOSArchive_Revised_Flatfiles_20140101.zip
+            HOSArchive_Revised_FlatFiles_20140417.zip
+            HOSArchive_Revised_Flatfiles_20140717.zip
+            HOSArchive_Revised_Flatfiles_20141023.zip
+            HOSArchive_Revised_Flatfiles_20141218.zip
+            Hospital General Information.csv
+            Hospital2014.mdb
+            Hospital2014.pdf
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL_11_24_2014.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            hvbp_ami_10_28_2014.csv
+            hvbp_efficiency_10_28_2014.csv
+            hvbp_hai_10_28_2014.csv
+            hvbp_hcahps_02_25_2014.csv
+            hvbp_hcahps_10_28_2013.csv
+            hvbp_hcahps_10_28_2014.csv
+            hvbp_hf_10_28_2014.csv
+            hvbp_outcome_10_28_2014.csv
+            hvbp_pn_10_28_2014.csv
+            hvbp_quarters.csv
+            hvbp_scip_10_28_2014.csv
+            HVBP_TPS_10_28_2014.csv
+            Measure Dates.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending per Patient - Hospital.csv
+            Medicare Hospital Spending per Patient - National.csv
+            Medicare Hospital Spending per Patient - State.csv
+            Medicare Volume - Hospital.csv
+            Medicare Volume - National.csv
+            Medicare Volume - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            readme.txt
+            READMISSION REDUCTION.csv
+            Readmissions Complications and Deaths - Hospital.csv
+            Readmissions Complications and Deaths - National.csv
+            Readmissions Complications and Deaths - State.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+        hcahps2015/
+            ASC_Quality_Facility.csv
+            ASC_Quality_National.csv
+            ASC_Quality_State.csv
+            Complications - Hospital.csv
+            Complications - National.csv
+            Complications - State.csv
+            Footnote Crosswalk.csv
+            FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2013_Percent_Change_in_Medicare_Payments.csv
+            FY2013_Value_Based_Incentive_Payment_Amount.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            HOSArchive_Revised_Flatfiles_20150122.zip
+            HOSArchive_Revised_Flatfiles_20150416.zip
+            HOSArchive_Revised_FlatFiles_20150716.zip
+            Hospital General Information.csv
+            Hospital.pdf
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            hvbp_ami_08_06_2015.csv
+            hvbp_Efficiency_08_06_2015.csv
+            hvbp_hai_08_06_2015.csv
+            hvbp_hcahps_02_18_2015.csv
+            hvbp_hcahps_05_28_2015.csv
+            hvbp_hcahps_08_06_2015.csv
+            hvbp_hcahps_10_28_2014.csv
+            hvbp_hf_08_06_2015.csv
+            hvbp_outcome_08_06_2015.csv
+            hvbp_pn_08_06_2015.csv
+            hvbp_quarters.csv
+            hvbp_scip_08_06_2015.csv
+            hvbp_tps_08_06_2015.csv
+            Measure Dates.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending per Patient - Hospital.csv
+            Medicare Hospital Spending per Patient - National.csv
+            Medicare Hospital Spending per Patient - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            Payment - National.csv
+            Payment - State.csv
+            Payment and Value of Care - Hospital.csv
+            readme.txt
+            READMISSION REDUCTION.csv
+            Readmissions and Deaths - Hospital.csv
+            Readmissions and Deaths - National.csv
+            Readmissions and Deaths - State.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+            Value of Care - National.csv
+        hcahps2016/
+            Ambulatory Surgical Measures-Facility.csv
+            Ambulatory Surgical Measures-National.csv
+            Ambulatory Surgical Measures-State.csv
+            Complications - Hospital.csv
+            Complications - National.csv
+            Complications - State.csv
+            Footnote Crosswalk.csv
+            FY2014_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2014_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2014_Percent_Change_in_Medicare_Payments.csv
+            FY2014_Value_Based_Incentive_Payment_Amount.csv
+            HAI_FluVac_2016Q1_natl_03_17_2017-Corrected.csv
+            HAI_FluVac_2016Q1_state_03_17_2017-Corrected.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            Hospital General Information.csv
+            Hospital.pdf
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL_02_26_2016.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_NATIONAL.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_STATE.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            hos_revised_flatfiles_archive_11_2016.zip
+            hvbp_ami_08_26_2016.csv
+            hvbp_Efficiency_08_26_2016.csv
+            hvbp_hai_08_26_2016.csv
+            hvbp_hcahps_08_26_2016.csv
+            hvbp_imm2_08_26_2016.csv
+            hvbp_outcome_08_26_2016.csv
+            hvbp_pn_08_26_2016.csv
+            hvbp_scip_08_26_2016.csv
+            hvbp_tps_08_26_2016.csv
+            Measure Dates.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending per Patient - Hospital.csv
+            Medicare Hospital Spending per Patient - National.csv
+            Medicare Hospital Spending per Patient - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            Payment - National.csv
+            Payment - State.csv
+            Payment and Value of Care - Hospital.csv
+            PR_IPF_FluVac_2016Q1_natl_03_15_2017-Corrected.csv
+            PR_IPF_FluVac_2016Q1_state_03_15_2017-Corrected.csv
+            readme.txt
+            READMISSION REDUCTION.csv
+            Readmissions and Deaths - Hospital.csv
+            Readmissions and Deaths - National.csv
+            Readmissions and Deaths - State.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+            Value of Care - National.csv
+        hcahps2017/
+            Ambulatory Surgical Measures-Facility.csv
+            Ambulatory Surgical Measures-National.csv
+            Ambulatory Surgical Measures-State.csv
+            Complications and Deaths - Hospital.csv
+            Complications and Deaths - National.csv
+            Complications and Deaths - State.csv
+            FINAL CJR Quality PR - PY1 File Values_October.csv
+            Footnote Crosswalk.csv
+            FY2015_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2015_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2015_Percent_Change_in_Medicare_Payments.csv
+            FY2015_Value_Based_Incentive_Payment_Amount.csv
+            HBIPS_Oct2017_19SEP.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            Hospital General Information.csv
+            Hospital Returns - Hospital.csv
+            Hospital Returns - National.csv
+            Hospital Returns - State.csv
+            Hospital.pdf
+            HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_AHRQ_PSI_90_6decimals.csv
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_NATIONAL.csv
+            HOSPITAL_QUARTERLY_IPFQR_MEASURES_STATE.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_OCM_HOSPITAL.csv
+            hvbp_ami_11_14_2016.csv
+            hvbp_clinical_care_outcomes_11_10_2016.csv
+            hvbp_efficiency_11_10_2016.csv
+            hvbp_hcahps_11_10_2016.csv
+            hvbp_hcahps_11_10_2016_temp.xlsx
+            hvbp_imm2_11_10_2016.csv
+            hvbp_pc_11_10_2016.csv
+            hvbp_safety_11_10_2016.csv
+            hvbp_tps_11_10_2016.csv
+            Measure Dates.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending per Patient - Hospital.csv
+            Medicare Hospital Spending per Patient - National.csv
+            Medicare Hospital Spending per Patient - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            Payment - National.csv
+            Payment - State.csv
+            Payment and Value of Care - Hospital.csv
+            readme.txt
+            READMISSION REDUCTION.csv
+            Readmissions and Deaths - VA.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+            TimelyandEffectiveCare_Oct2017_25SEP17.csv
+            Value of Care - National.csv
+            VA_IPSHEP_Oct2017CMS_19SEP17.csv
+            VA_PSI_Oct2017_07SEP17.csv
+            VHA measure dates.csv
+            VHA provider level data.csv
+        hcahps2018/
+            asc_CCN_pr17q2_18q1.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            asc_national_pr17q2_18q1.csv
+            ASC_State.csv
+            asc_state_pr17q2_18q1.csv
+            CJR PY2 Quality Reporting_October 2018_Production File.csv
+            Complications and Deaths - Hospital.csv
+            Complications and Deaths - National.csv
+            Complications and Deaths - State.csv
+            DoD_TE_October 2018 Production 08_30_18.csv
+            DoD_TRISS_Final File Oct 2018.csv
+            Footnote Crosswalk.csv
+            footnotes_deliver_17q2_18q1.csv
+            FY2016_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_ Amt.csv
+            FY2016_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2016_Percent_Change_in_Medicare_Payments.csv
+            FY2016_Value_Based_Incentive_Payment_Amount.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            hopd_CCN_pr17q2_18q1.csv
+            hopd_national_pr17q2_18q1.csv
+            hopd_state_pr17q2_18q1.csv
+            Hospital General Information.csv
+            Hospital.pdf
+            HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+            HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_OCM_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            hvbp_clinical_care_11_07_2017.csv
+            hvbp_efficiency_11_07_2017.csv
+            hvbp_hcahps_11_07_2017.csv
+            hvbp_safety_11_07_2017.csv
+            hvbp_tps_11_07_2017.csv
+            IPFQR_FUH_QualityMeasures_Facility.csv
+            IPFQR_FUH_QualityMeasures_National.csv
+            IPFQR_FUH_QualityMeasures_State.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Labels - Measures for Public Reporting OAS CAHPS-October 2018.csv
+            Measure Dates October 2018.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending per Patient - Hospital.csv
+            Medicare Hospital Spending per Patient - National.csv
+            Medicare Hospital Spending per Patient - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            Payment - National.csv
+            Payment - State.csv
+            Payment and Value of Care - Hospital.csv
+            readme.txt
+            Readmission Reduction.csv
+            Readmissions and Deaths - COPD - VA.csv
+            Readmissions and Deaths - VA_07_10_2018.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+            Unplanned Hospital Visits - Hospital.csv
+            Unplanned Hospital Visits - National.csv
+            Unplanned Hospital Visits - State.csv
+            Value of Care - National.csv
+            VA_IPF_08_06_2018.csv
+            VA_PSI.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Measure_Dates.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2019/
+            ACS NSQIP Data File - October 2019-revised.xlsx
+            ASC_CCN_pr18q2_19q1.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_NATIONAL_pr18q2_19q1.csv
+            ASC_State.csv
+            ASC_STATE_pr18q2_19q1.csv
+            CEBP_IQR_10_17_2018.csv
+            CEBP_IQR_6_decimals_10_17_2018.csv
+            CEBP_IQR_Breakdowns_by_Claim_Type_10_17_2018.csv
+            CEBP_IQR_national_10_17_2018.csv
+            CEBP_IQR_state_10_17_2018.csv
+            CJR PY3 Quality Reporting_July 2019_Production File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications and Deaths - Hospital.csv
+            Complications and Deaths - National.csv
+            Complications and Deaths - State.csv
+            Data_Updates_October_2019_updated.csv
+            DoD_TE_October 2019 Production.csv
+            DoD_TRISS_Final File October 2019.csv
+            Footnote Crosswalk.csv
+            footnotes_deliver_18q2_19q1.csv
+            FY2017_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt_2018-11-30.csv
+            FY2017_Net_Change_in_Base_Op_DRG_Payment_Amt_2018-11-30.csv
+            FY2017_Percent_Change_in_Medicare_Payments_2018-12-03.csv
+            FY2017_Value_Based_Incentive_Payment_Amount_2018-11-30.csv
+            HCAHPS - Hospital.csv
+            HCAHPS - National.csv
+            HCAHPS - State.csv
+            Healthcare Associated Infections - Hospital.csv
+            Healthcare Associated Infections - National.csv
+            Healthcare Associated Infections - State.csv
+            HOPD_CCN_pr18q2_19q1.csv
+            HOPD_NATIONAL_pr18q2_19q1.csv
+            HOPD_STATE_pr18q2_19q1.csv
+            Hospital General Information.csv
+            Hospital.pdf
+            HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_EBRT_HOSPITAL.csv
+            HOSPITAL_ANNUAL_QUALITYMEASURE_PCH_OCM_Hospital.csv
+            HOSPITAL_QUARTERLY_HAC_DOMAIN_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HAI_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_NATIONAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HCAHPS_STATE.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_PCH_HOSPITAL.csv
+            HOSPITAL_QUARTERLY_QUALITYMEASURE_RRP_HOSPITAL.csv
+            hvbp_clinical_care_11_09_2018.csv
+            hvbp_efficiency_11_09_2018.csv
+            hvbp_hcahps_11_09_2018.csv
+            hvbp_safety_11_09_2018.csv
+            hvbp_tps_11_09_2018.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Measure_Dates.csv
+            Medicare Hospital Spending by Claim.csv
+            Medicare Hospital Spending Per Patient - Hospital.csv
+            Medicare Hospital Spending Per Patient - National.csv
+            Medicare Hospital Spending Per Patient - State.csv
+            Outpatient Imaging Efficiency - Hospital.csv
+            Outpatient Imaging Efficiency - National.csv
+            Outpatient Imaging Efficiency - State.csv
+            Outpatient Procedures - Volume.csv
+            Payment - National.csv
+            Payment - State.csv
+            Payment and Value of Care - Hospital.csv
+            Readmissions and Deaths - COPD - VA.csv
+            Structural Measures - Hospital.csv
+            Timely and Effective Care - Hospital.csv
+            Timely and Effective Care - National.csv
+            Timely and Effective Care - State.csv
+            Unplanned Hospital Visits - Hospital.csv
+            Unplanned Hospital Visits - National.csv
+            Unplanned Hospital Visits - State.csv
+            Value of Care - National.csv
+            VA_IPF.csv
+            VA_PSI.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Measure_Dates.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2020/
+            3n5g-6b7f.csv
+            48nr-hqxx.csv
+            4aav-bsmy.csv
+            4gkm-5ypv.csv
+            4hje-vua3.csv
+            4j6d-yzce.csv
+            4jcv-atw7.csv
+            5gv4-jwyv.csv
+            5hk7-b79m.csv
+            632h-zaca.csv
+            6pfg-whmx.csv
+            6qxe-iqz8.csv
+            77hc-ibv8.csv
+            84jm-wiui.csv
+            98ix-2iqy.csv
+            99ue-w85f.csv
+            9g7e-btyt.csv
+            9n3s-kdb3.csv
+            akfs-5dgr.csv
+            apyc-v239.csv
+            avtz-f2ge.csv
+            axe7-s95e.csv
+            bs2r-24vh.csv
+            bzsr-4my4.csv
+            c7us-v4mf.csv
+            cvcs-xecj.csv
+            dc76-gh7x.csv
+            dgck-syfz.csv
+            dgmq-aat3.csv
+            di9i-zzrc.csv
+            e6hj-umam.csv
+            esr2-9zyn.csv
+            g3fg-3myg.csv
+            gbq5-7hzr.csv
+            HospitalCompare-DataDictionary_v2.pdf
+            if5v-4x48.csv
+            isrn-hqyy.csv
+            iy27-wz37.csv
+            jfnd-nl7s.csv
+            k2ze-bqvw.csv
+            k653-4ka8.csv
+            muwa-iene.csv
+            nrth-mfg3.csv
+            p7bc-fjpi.csv
+            pdc_s3_hos_data_su86_ag6b.csv
+            ptds-r8im.csv
+            pudb-wetr.csv
+            q9vs-r7wp.csv
+            qatj-nmws.csv
+            qqw3-t4ie.csv
+            rrqw-56er.csv
+            rs6n-9qwg.csv
+            s5pj-hua3.csv
+            s5xg-sys6.csv
+            su9h-3pvj.csv
+            tf3h-mrrs.csv
+            tqkv-mgxq.csv
+            u625-zae7.csv
+            uyx4-5s7f.csv
+            vtqa-m4zn.csv
+            wkfw-kthe.csv
+            wue8-3vwe.csv
+            x663-bwbj.csv
+            xrgf-x36b.csv
+            xubh-q36u.csv
+            y9us-9xdf.csv
+            yd3s-jyhd.csv
+            ygty-mm5a.csv
+            yizn-abxn.csv
+            ynj2-r877.csv
+            ypbt-wvdk.csv
+            yq43-i98g.csv
+            yv7e-xc69.csv
+            z8ax-x9j1.csv
+        hcahps2021/
+            ASCQR_OAS_CAHPS_BY_ASC.csv
+            ASCQR_OAS_CAHPS_NATIONAL.csv
+            ASCQR_OAS_CAHPS_STATE.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_State.csv
+            CJR_PY5_Quality_Reporting_July_2021_Production_File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications_and_Deaths-Hospital.csv
+            Complications_and_Deaths-National.csv
+            Complications_and_Deaths-State.csv
+            Data_Updates_October_2021.csv
+            Footnote_Crosswalk.csv
+            FY2019_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2019_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2019_Percent_Change_in_Medicare_Payments.csv
+            FY2019_Value_Based_Incentive_Payment_Amount.csv
+            FY_2021_HAC_Reduction_Program_Hospital.csv
+            FY_2021_Hospital_Readmissions_Reduction_Program_Hospital.csv
+            HCAHPS-Hospital.csv
+            HCAHPS-National.csv
+            HCAHPS-State.csv
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HospitalCompare-DataDictionary.pdf
+            Hospital_General_Information.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            hvbp_clinical_outcomes.csv
+            hvbp_efficiency_and_cost_reduction.csv
+            hvbp_person_and_community_engagement.csv
+            hvbp_safety.csv
+            hvbp_tps.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Measure_Dates.csv
+            Medicare_Hospital_Spending_by_Claim.csv
+            Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+            Medicare_Hospital_Spending_Per_Patient-National.csv
+            Medicare_Hospital_Spending_Per_Patient-State.csv
+            OAS_CAHPS_Footnotes.csv
+            OQR_OAS_CAHPS_BY_HOSPITAL.csv
+            OQR_OAS_CAHPS_NATIONAL.csv
+            OQR_OAS_CAHPS_STATE.csv
+            Outpatient_Imaging_Efficiency-Hospital.csv
+            Outpatient_Imaging_Efficiency-National.csv
+            Outpatient_Imaging_Efficiency-State.csv
+            Payment-National.csv
+            Payment-State.csv
+            Payment_and_Value_of_Care-Hospital.csv
+            PCH_EXTERNAL_BEAM_RADIOTHERAPY_HOSPITAL.csv
+            PCH_HCAHPS_HOSPITAL.csv
+            PCH_HCAHPS_NATIONAL.csv
+            PCH_HCAHPS_STATE.csv
+            PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+            PCH_ONCOLOGY_CARE_MEASURES_HOSPITAL.csv
+            PCH_OUTCOMES_HOSPITAL.csv
+            PCH_OUTCOMES_NATIONAL.csv
+            pdc_s3_hos_data_su86_ag6b.csv
+            readme.txt
+            Timely_and_Effective_Care-Hospital.csv
+            Timely_and_Effective_Care-National.csv
+            Timely_and_Effective_Care-State.csv
+            Unplanned_Hospital_Visits-Hospital.csv
+            Unplanned_Hospital_Visits-National.csv
+            Unplanned_Hospital_Visits-State.csv
+            Value_of_Care-National.csv
+            VA_IPF.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2022/
+            ASCQR_OAS_CAHPS_BY_ASC.csv
+            ASCQR_OAS_CAHPS_NATIONAL.csv
+            ASCQR_OAS_CAHPS_STATE.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_State.csv
+            CJR_PY6_Quality_Reporting_July_2022_Production_File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications_and_Deaths-Hospital.csv
+            Complications_and_Deaths-National.csv
+            Complications_and_Deaths-State.csv
+            Data_Updates_October_2022.csv
+            Footnote_Crosswalk.csv
+            FY2020_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2020_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2020_Percent_Change_in_Medicare_Payments.csv
+            FY2020_Value_Based_Incentive_Payment_Amount.csv
+            FY_2022_HAC_Reduction_Program_Hospital.csv
+            FY_2022_Hospital_Readmissions_Reduction_Program_Hospital.csv
+            HCAHPS-Hospital.csv
+            HCAHPS-National.csv
+            HCAHPS-State.csv
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            Honors thesis-Omar Farrag - Shortcut.lnk
+            HospitalCareCompare-DataDictionary.pdf
+            Hospital_General_Information.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            hvbp_clinical_outcomes.csv
+            hvbp_efficiency_and_cost_reduction.csv
+            hvbp_person_and_community_engagement.csv
+            hvbp_safety.csv
+            hvbp_tps.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_Facility_Revised.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_National_Revised.csv
+            IPFQR_QualityMeasures_State.csv
+            IPFQR_QualityMeasures_State_Revised.csv
+            Maternal_Health-Hospital.csv
+            Maternal_Health-National.csv
+            Maternal_Health-State.csv
+            Measure_Dates.csv
+            Medicare_Hospital_Spending_by_Claim.csv
+            Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+            Medicare_Hospital_Spending_Per_Patient-National.csv
+            Medicare_Hospital_Spending_Per_Patient-State.csv
+            OAS_CAHPS_Footnotes.csv
+            OQR_OAS_CAHPS_BY_HOSPITAL.csv
+            OQR_OAS_CAHPS_NATIONAL.csv
+            OQR_OAS_CAHPS_STATE.csv
+            Outpatient_Imaging_Efficiency-Hospital.csv
+            Outpatient_Imaging_Efficiency-National.csv
+            Outpatient_Imaging_Efficiency-State.csv
+            Payment-National.csv
+            Payment-State.csv
+            Payment_and_Value_of_Care-Hospital.csv
+            PCH_HCAHPS_HOSPITAL.csv
+            PCH_HCAHPS_NATIONAL.csv
+            PCH_HCAHPS_STATE.csv
+            PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+            PCH_ONCOLOGY_CARE_MEASURES_HOSPITAL.csv
+            PCH_OUTCOMES_HOSPITAL.csv
+            PCH_OUTCOMES_NATIONAL.csv
+            readme.txt
+            Timely_and_Effective_Care-Hospital.csv
+            Timely_and_Effective_Care-National.csv
+            Timely_and_Effective_Care-National_Revised.csv
+            Timely_and_Effective_Care-State.csv
+            Timely_and_Effective_Care-State_Revised.csv
+            Unplanned_Hospital_Visits-Hospital.csv
+            Unplanned_Hospital_Visits-National.csv
+            Unplanned_Hospital_Visits-State.csv
+            Value_of_Care-National.csv
+            VA_IPF.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2023/
+            ASCQR_OAS_CAHPS_BY_ASC.csv
+            ASCQR_OAS_CAHPS_NATIONAL.csv
+            ASCQR_OAS_CAHPS_STATE.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_State.csv
+            CJR_Quality_Reporting_July_2022_Production_File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications_and_Deaths-Hospital.csv
+            Complications_and_Deaths-National.csv
+            Complications_and_Deaths-State.csv
+            Data_Updates_October_2023.csv
+            Footnote_Crosswalk.csv
+            FY2021_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Percent_Change_in_Medicare_Payments.csv
+            FY2021_Value_Based_Incentive_Payment_Amount.csv
+            FY_2023_HAC_Reduction_Program_Hospital.csv
+            FY_2023_Hospital_Readmissions_Reduction_Program_Hospital.csv
+            HCAHPS-Hospital.csv
+            HCAHPS-National.csv
+            HCAHPS-State.csv
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HOSPITAL_Data_Dictionary.pdf
+            Hospital_General_Information.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            hvbp_clinical_outcomes.csv
+            hvbp_efficiency_and_cost_reduction.csv
+            hvbp_person_and_community_engagement.csv
+            hvbp_safety.csv
+            hvbp_tps.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Maternal_Health-Hospital.csv
+            Maternal_Health-National.csv
+            Maternal_Health-State.csv
+            Measure_Dates.csv
+            Medicare_Hospital_Spending_by_Claim.csv
+            Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+            Medicare_Hospital_Spending_Per_Patient-National.csv
+            Medicare_Hospital_Spending_Per_Patient-State.csv
+            OAS_CAHPS_Footnotes.csv
+            OQR_OAS_CAHPS_BY_HOSPITAL.csv
+            OQR_OAS_CAHPS_NATIONAL.csv
+            OQR_OAS_CAHPS_STATE.csv
+            Outpatient_Imaging_Efficiency-Hospital.csv
+            Outpatient_Imaging_Efficiency-National.csv
+            Outpatient_Imaging_Efficiency-State.csv
+            Payment-National.csv
+            Payment-State.csv
+            Payment_and_Value_of_Care-Hospital.csv
+            PCH_HCAHPS_HOSPITAL.csv
+            PCH_HCAHPS_NATIONAL.csv
+            PCH_HCAHPS_STATE.csv
+            PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+            PCH_ONCOLOGY_CARE_MEASURES_HOSPITAL.csv
+            PCH_Unplanned_Hospital_Visits_HOSPITAL.csv
+            PCH_Unplanned_Hospital_Visits_NATIONAL.csv
+            readme.txt
+            Timely_and_Effective_Care-Hospital.csv
+            Timely_and_Effective_Care-National.csv
+            Timely_and_Effective_Care-State.csv
+            Unplanned_Hospital_Visits-Hospital.csv
+            Unplanned_Hospital_Visits-National.csv
+            Unplanned_Hospital_Visits-State.csv
+            Value_of_Care-National.csv
+            VA_IPF.csv
+            VA_IPF_Revised.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2024/
+            ASCQR_OAS_CAHPS_BY_ASC.csv
+            ASCQR_OAS_CAHPS_NATIONAL.csv
+            ASCQR_OAS_CAHPS_STATE.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_State.csv
+            CJR_Quality_Reporting_January_2024_Production_File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications_and_Deaths-Hospital.csv
+            Complications_and_Deaths-National.csv
+            Complications_and_Deaths-State.csv
+            Data_Updates_October_2024.csv
+            Footnote_Crosswalk.csv
+            FY2021_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Percent_Change_in_Medicare_Payments.csv
+            FY2021_Value_Based_Incentive_Payment_Amount.csv
+            FY_2024_HAC_Reduction_Program_Hospital.csv
+            FY_2024_Hospital_Readmissions_Reduction_Program_Hospital.csv
+            HCAHPS-Hospital.csv
+            HCAHPS-National.csv
+            HCAHPS-State.csv
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            Health_Equity_Hospital.csv
+            Health_Equity_National.csv
+            Health_Equity_State.csv
+            HOSPITAL_Data_Dictionary.pdf
+            Hospital_General_Information.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            hvbp_clinical_outcomes.csv
+            hvbp_efficiency_and_cost_reduction.csv
+            hvbp_person_and_community_engagement.csv
+            hvbp_safety.csv
+            hvbp_tps.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Maternal_Health-Hospital.csv
+            Maternal_Health-National.csv
+            Maternal_Health-State.csv
+            Measure_Dates.csv
+            Medicare_Hospital_Spending_by_Claim.csv
+            Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+            Medicare_Hospital_Spending_Per_Patient-National.csv
+            Medicare_Hospital_Spending_Per_Patient-State.csv
+            OAS_CAHPS_Footnotes.csv
+            OQR_OAS_CAHPS_BY_HOSPITAL.csv
+            OQR_OAS_CAHPS_NATIONAL.csv
+            OQR_OAS_CAHPS_STATE.csv
+            Outpatient_Imaging_Efficiency-Hospital.csv
+            Outpatient_Imaging_Efficiency-National.csv
+            Outpatient_Imaging_Efficiency-State.csv
+            PATIENT_REPORTED_OUTCOMES_FACILITY.csv
+            Payment-National.csv
+            Payment-State.csv
+            Payment_and_Value_of_Care-Hospital.csv
+            PCH_Complications_Unplanned_Hospital_Visits_HOSPITAL.csv
+            PCH_Complications_Unplanned_Hospital_Visits_NATIONAL.csv
+            PCH_HCAHPS_HOSPITAL.csv
+            PCH_HCAHPS_NATIONAL.csv
+            PCH_HCAHPS_STATE.csv
+            PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+            PCH_Palliative_Care_HOSPITAL.csv
+            PCH_Palliative_Care_NATIONAL.csv
+            readme.txt
+            Timely_and_Effective_Care-Hospital.csv
+            Timely_and_Effective_Care-National.csv
+            Timely_and_Effective_Care-State.csv
+            Unplanned_Hospital_Visits-Hospital.csv
+            Unplanned_Hospital_Visits-National.csv
+            Unplanned_Hospital_Visits-State.csv
+            Value_of_Care-National.csv
+            VA_IPF.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        hcahps2025/
+            ASCQR_OAS_CAHPS_BY_ASC.csv
+            ASCQR_OAS_CAHPS_NATIONAL.csv
+            ASCQR_OAS_CAHPS_STATE.csv
+            ASC_Facility.csv
+            ASC_National.csv
+            ASC_State.csv
+            Birthing_Friendly_Hospitals_Geocoded.csv
+            CJR_Quality_Reporting_January_2025_Production_File.csv
+            CMS_PSI_6_decimal_file.csv
+            Complications_and_Deaths-Hospital.csv
+            Complications_and_Deaths-National.csv
+            Complications_and_Deaths-State.csv
+            Data_Updates_October_2025.csv
+            Footnote_Crosswalk.csv
+            FY2021_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+            FY2021_Percent_Change_in_Medicare_Payments.csv
+            FY2021_Value_Based_Incentive_Payment_Amount.csv
+            FY_2025_HAC_Reduction_Program_Hospital.csv
+            FY_2025_Hospital_Readmissions_Reduction_Program_Hospital.csv
+            HCAHPS-Hospital.csv
+            HCAHPS-National.csv
+            HCAHPS-State.csv
+            Healthcare_Associated_Infections-Hospital.csv
+            Healthcare_Associated_Infections-National.csv
+            Healthcare_Associated_Infections-State.csv
+            HOSPITAL_Data_Dictionary.pdf
+            Hospital_General_Information.csv
+            HOSPITAL_QUARTERLY_MSPB_6_DECIMALS.csv
+            hvbp_clinical_outcomes.csv
+            hvbp_efficiency_and_cost_reduction.csv
+            hvbp_person_and_community_engagement.csv
+            hvbp_safety.csv
+            hvbp_tps.csv
+            IPFQR_QualityMeasures_Facility.csv
+            IPFQR_QualityMeasures_National.csv
+            IPFQR_QualityMeasures_State.csv
+            Maternal_Health-Hospital.csv
+            Measure_Dates.csv
+            Medicare_Hospital_Spending_by_Claim.csv
+            Medicare_Hospital_Spending_Per_Patient-Hospital.csv
+            Medicare_Hospital_Spending_Per_Patient-National.csv
+            Medicare_Hospital_Spending_Per_Patient-State.csv
+            OQR_OAS_CAHPS_BY_HOSPITAL.csv
+            OQR_OAS_CAHPS_NATIONAL.csv
+            OQR_OAS_CAHPS_STATE.csv
+            Outpatient_Imaging_Efficiency-Hospital.csv
+            Outpatient_Imaging_Efficiency-National.csv
+            Outpatient_Imaging_Efficiency-State.csv
+            PATIENT_REPORTED_OUTCOMES_FACILITY.csv
+            PCH_Complications_Unplanned_Hospital_Visits_HOSPITAL.csv
+            PCH_Complications_Unplanned_Hospital_Visits_NATIONAL.csv
+            PCH_HCAHPS_HOSPITAL.csv
+            PCH_HCAHPS_NATIONAL.csv
+            PCH_HCAHPS_STATE.csv
+            PCH_HEALTHCARE_ASSOCIATED_INFECTIONS_HOSPITAL.csv
+            PCH_Palliative_Care_HOSPITAL.csv
+            PCH_Palliative_Care_NATIONAL.csv
+            Promoting_Interoperability-Hospital.csv
+            readme.txt
+            Timely_and_Effective_Care-Hospital.csv
+            Timely_and_Effective_Care-National.csv
+            Timely_and_Effective_Care-State.csv
+            Unplanned_Hospital_Visits-Hospital.csv
+            Unplanned_Hospital_Visits-National.csv
+            Unplanned_Hospital_Visits-State.csv
+            VA_IPF.csv
+            VA_TE.csv
+            Veterans_Health_Administration_Provider_Level_Data.csv
+        old/
+            hcahps20141023/
+                Footnote Crosswalk.csv
+                FY2013_Distribution_of_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+                FY2013_Net_Change_in_Base_Op_DRG_Payment_Amt.csv
+                FY2013_Percent_Change_in_Medicare_Payments.csv
+                FY2013_Value_Based_Incentive_Payment_Amount.csv
+                HCAHPS - Hospital.csv
+                HCAHPS - National.csv
+                HCAHPS - State.csv
+                Healthcare Associated Infections - Hospital.csv
+                Healthcare Associated Infections - National.csv
+                Healthcare Associated Infections - State.csv
+                Hospital General Information.csv
+                Hospital.pdf
+                HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_HOSPITAL.csv
+                HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_NATIONAL.csv
+                HOSPITAL_QUARTERLY_QUALITYMEASURE_IPFQR_STATE.csv
+                hvbp_ami_02_25_2014.csv
+                hvbp_hai_02_25_2014.csv
+                hvbp_hcahps_02_25_2014.csv
+                hvbp_hf_02_25_2014.csv
+                hvbp_outcome_02_25_2014.csv
+                hvbp_pn_02_25_2014.csv
+                hvbp_quarters.csv
+                hvbp_scip_02_25_2014.csv
+                hvbp_tps_02_25_2014.csv
+                Measure Dates.csv
+                Medicare Hospital Spending by Claim.csv
+                Medicare Hospital Spending per Patient - Hospital.csv
+                Medicare Hospital Spending per Patient - National.csv
+                Medicare Hospital Spending per Patient - State.csv
+                Medicare Volume - Hospital.csv
+                Medicare Volume - National.csv
+                Medicare Volume - State.csv
+                Outpatient Imaging Efficiency - Hospital.csv
+                Outpatient Imaging Efficiency - National.csv
+                Outpatient Imaging Efficiency - State.csv
+                Outpatient Procedures - Volume.csv
+                readme.txt
+                READMISSION REDUCTION.csv
+                Readmissions Complications and Deaths - Hospital.csv
+                Readmissions Complications and Deaths - National.csv
+                Readmissions Complications and Deaths - State.csv
+                Structural Measures - Hospital.csv
+                Timely and Effective Care - Hospital.csv
+                Timely and Effective Care - National.csv
+                Timely and Effective Care - State.csv
+            hcahps2023_old/
+                HCAHPS-Hospital.csv
+                HCAHPS-National.csv
+                HCAHPS-State.csv
+                HOSPITAL_Data_Dictionary.pdf
+            hchaps2024_old/
+                HCAHPS-Hospital.csv
+                HCAHPS-National.csv
+                HCAHPS-State.csv
+                HOSPITAL_Data_Dictionary.pdf
+    mips/
+        facilityAffiliation/
+            dta/
+                harmonized/
+    notes/
+        data_cleaning/
+            # HCAHPS Raw Data Notes.md
+            # Sources for Data.md
+            cms_reponses_to_inquiries.txt
+            data_cleaning_notes.txt
+            facility_quality_data_dictionary.md
+            gpt_critiques_on_classifications.txt
+            hcahps_master_panel_measures.txt
+            mips_vs_hcahps.docx
+            outline_deciding_on_classifications.md
+            potential_critiques_of_drug_services_classification.md
+            raw_hcahps_timeline.txt
+        replication/
+            DATA_DICTIONARY_PHASES_2_3_MASTER.md
+            phase1_cms/
+                CMS_Harmonization_Methodology.md
+                Data_Dictionary.md
+                Facility_Attribution_Methodology.md
+                readme_cms.txt.txt
+            phase2_hcahps/
+                PHASE_2_HCAHPS_METHODOLOGY_README.md
+            phase3_inpatient_outpatient/
+                PHASE_3_CLINICAL_QUALITY_METHODOLOGY_README.md
+        samples_for_upload/
+            cms_aggregated_clinical_measures_sample.csv
+            cms_master_facility_panel_sample.csv
+            cms_master_provider_panel_sample.csv
+            cms_master_provider_panel_sample.dta
+            cms_phase3_inpatient_provider_sample.dta
+            cms_phase3_outpatient_asc_provider_sample.dta
+            cms_ultimate_provider_network_sample.dta
+            facility_names_2015_harmonized_sample.csv
+            partd_2015_sample.csv
+            provider_2017_harmonized_sample.csv
+            provider_service_2015_sample.csv
+    outputs_while_cleaning/
+        cleaned_data/
+            cms_aggregated_clinical_measures.csv
+            cms_master_facility_panel.dta
+            cms_master_provider_panel.dta
+            cms_phase3_inpatient_facility.dta
+            cms_phase3_inpatient_provider.dta
+            cms_phase3_outpatient_asc_facility.dta
+            cms_phase3_outpatient_asc_provider.dta
+            cms_ultimate_facility_network.dta
+            cms_ultimate_provider_network.dta
+            hcahps_final_panel.dta
+        figures/
+        tables/
+            appendix_drug_classification.tex
+            appendix_drug_classification_preview.aux
+            appendix_drug_classification_preview.log
+            appendix_drug_classification_preview.pdf
+            appendix_drug_classification_preview.tex
+            appendix_empirical_cost_thresholds.tex
+            appendix_empirical_cost_thresholds_preview.aux
+            appendix_empirical_cost_thresholds_preview.log
+            appendix_empirical_cost_thresholds_preview.pdf
+            appendix_empirical_cost_thresholds_preview.tex
+            appendix_partb_drugs.tex
+            appendix_partb_drugs_preview.aux
+            appendix_partb_drugs_preview.log
+            appendix_partb_drugs_preview.pdf
+            appendix_partb_drugs_preview.tex
+            appendix_partd_drugs.tex
+            appendix_partd_drugs_preview.aux
+            appendix_partd_drugs_preview.log
+            appendix_partd_drugs_preview.pdf
+            appendix_partd_drugs_preview.tex
+            appendix_rbcs_classification.tex
+            appendix_rbcs_classification_preview.aux
+            appendix_rbcs_classification_preview.log
+            appendix_rbcs_classification_preview.pdf
+            appendix_rbcs_classification_preview.tex
+            appendix_services.tex
+            appendix_services_preview.aux
+            appendix_services_preview.log
+            appendix_services_preview.pdf
+            appendix_services_preview.tex
+            appendix_service_classification.tex
+            appendix_service_classification_preview.aux
+            appendix_service_classification_preview.log
+            appendix_service_classification_preview.pdf
+            appendix_service_classification_preview.tex
+            preview_table.pdf
+            preview_table.synctex.gz
+            preview_table.tex
+            specialty_presence_formatted.csv
+            specialty_presence_formatted.tex

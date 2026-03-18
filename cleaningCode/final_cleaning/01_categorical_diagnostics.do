@@ -1,0 +1,55 @@
+*===============================================================================
+* SCRIPT: 01_categorical_diagnostics.do
+* PURPOSE: Extracts unique values and frequencies for all categorical variables.
+*===============================================================================
+
+include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
+
+display as text "=== RUNNING EXPANDED CATEGORICAL DIAGNOSTICS ==="
+
+* Define an output folder for your dictionaries
+capture mkdir "$projectRoot/outputs_while_cleaning/dictionaries"
+local dictDir "$projectRoot/outputs_while_cleaning/dictionaries"
+
+* Load the most comprehensive dataset
+use "$phase4/cms_phase4_inpatient_provider$fileSuffix.dta", clear
+
+* Define the expanded list of string variables to inspect
+local cat_vars "cms_specialty affil_primary_spec credential cms_state affil_state entity_type gender hosp_type ownership emergency_services accepts_assignment secondary_specialty_1 secondary_specialty_2 secondary_specialty_3 secondary_specialty_4 all_secondary_specialties city cms_zip affil_zip county"
+
+foreach var of local cat_vars {
+    
+    * Safely check if the variable exists in this specific panel
+    capture confirm variable `var'
+    
+    if _rc == 0 {
+        display "Scraping `var'..."
+        
+        preserve
+            * Ensure it is treated as a string for the diagnostic extraction
+            capture confirm string variable `var'
+            if _rc != 0 {
+                tostring `var', replace force
+            }
+            
+            * Keep only the variable and drop missing strings
+            keep `var'
+            drop if `var' == ""
+            drop if `var' == "."
+            
+            * Calculate the exact frequency of each unique string
+            contract `var', freq(count)
+            
+            * Sort by highest frequency to lowest
+            gsort -count
+            
+            * Export to a clean CSV
+            export delimited using "`dictDir'/diagnostic_`var'.csv", replace
+        restore
+    }
+    else {
+        display "  > Skipping '`var'' (Not found in this dataset)"
+    }
+}
+
+display "=== DIAGNOSTICS COMPLETE. CHECK YOUR DICTIONARIES FOLDER ==="
