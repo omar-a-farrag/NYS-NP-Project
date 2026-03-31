@@ -4,9 +4,11 @@
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-07
 *===============================================================================
+clear
 
 * --- 0. SET LOGGING COMPONENT ---
 global component "cms"
+global script_name "02_variable_diagnostics"
 
 * --- 1. INITIALIZE ENVIRONMENT ---
 * (Paste your absolute path to 00_initialize.do here)
@@ -25,15 +27,20 @@ display as text "Starting Diagnostic Scan..."
 foreach f in by_provider by_provider_service partD {
     
     display "Scanning folder: `f'..."
-    local sampleDir "$cmsRoot/`f'/dta/5pct_sample"
+	if "$test" == "no" {
+        local providerDir "$cmsRoot/`f'/dta/full_sample"
+    }
+    else {
+        local providerDir "$cmsRoot/`f'/dta/5pct_sample"
+    }	
     
     * Get list of .dta files
-    local dtaFiles : dir "`sampleDir'" files "*_sample.dta"
+    local dtaFiles : dir "`providerDir'" files "*.dta"
     
     * --- FIX: Loop directly over `dtaFiles` (not `local dtaFiles`) ---
     foreach dta in `dtaFiles' {
         
-        quietly use "`sampleDir'/`dta'", clear
+        quietly use "`providerDir'/`dta'", clear
         
         * Get variable names
         describe, replace clear

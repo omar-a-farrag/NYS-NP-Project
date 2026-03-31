@@ -4,8 +4,11 @@
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-10
 *===============================================================================
+clear
 
 global component "cms"
+global script_name "08_harmonize_cms"
+
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 
 display as text "Starting CMS Harmonization (v4 - Complete Variable Map)..."
@@ -17,12 +20,19 @@ foreach f in `folders' {
     display "----------------------------------------------------"
     display "PROCESSING FOLDER: `f'"
     
-    local sampleDir "$cmsRoot/`f'/dta/5pct_sample"
+    * Dynamically select the input folder
+    if "$test" == "no" {
+        local sampleDir "$cmsRoot/`f'/dta/full_sample"
+    }
+    else {
+        local sampleDir "$cmsRoot/`f'/dta/5pct_sample"
+    }
+	
     local destDir   "$cmsRoot/`f'/dta/harmonized"
     
     capture mkdir "$cmsRoot/`f'/dta/harmonized"
     
-    local dtaFiles : dir "`sampleDir'" files "*_sample.dta"
+    local dtaFiles : dir "`sampleDir'" files "*.dta"
     
     foreach file in `dtaFiles' {
         
@@ -84,19 +94,36 @@ foreach f in `folders' {
         
         * --- 9. CLINICAL VARIABLES ---
         capture rename hcpcs_code hcpcs
+		capture rename hcpcs_cd hcpcs
         capture rename hcpcs_drug_ind is_drug_ind
         
         * Drug Names (Part D)
         capture rename gnrc_name generic_name
         capture rename drug_name generic_name
         
+		* -> NEW: UNIVERSAL PART B COST HARMONIZATION <-
+        * CMS switches between reporting Average Cost and Total Cost.
+        * We create a universal Total Cost variable.
+        capture gen tot_partb_cst = .
+        
+        * If CMS provided an Average, multiply by volume:
+        capture replace tot_partb_cst = tot_srvcs * avg_mdcr_stdzd_amt if missing(tot_partb_cst)
+        capture replace tot_partb_cst = tot_srvcs * average_medicare_standardized_amt if missing(tot_partb_cst)
+        capture replace tot_partb_cst = tot_srvcs * avg_mdcr_stndrdzd_amt if missing(tot_partb_cst)
+        
+        * If CMS provided a Total, use it directly:
+        capture replace tot_partb_cst = tot_mdcr_stndrdzd_amnt if missing(tot_partb_cst)
+        capture replace tot_partb_cst = total_medicare_standardized_amt if missing(tot_partb_cst)
+        capture replace tot_partb_cst = tot_mdcr_stndrdzd_amt if missing(tot_partb_cst)
+		
         * --- 10. CLEANUP ---
         capture tostring zip_code, replace
         capture tostring entity_type, replace
         
         * Save
-        local saveName = subinstr("`file'", "_sample.dta", "_harmonized.dta", .)
-        quietly save "`destDir'/`saveName'", replace
+		local saveName = subinstr("`file'", ".dta", "", .)
+		local saveName = subinstr("`saveName'", "_sample", "", .)
+		quietly save "`destDir'/`saveName'_harmonized.dta", replace
     }
 }
 

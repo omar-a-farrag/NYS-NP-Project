@@ -1,11 +1,13 @@
 *===============================================================================
-* SCRIPT: 04_facility_diagnostics.do
+* SCRIPT: 05_facility_diagnostics.do
 * PURPOSE: Scans variable names in Facility Affiliation files to detect schema drift.
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-08
 *===============================================================================
+clear
 
-global component "mips"
+global component "cms"
+global script_name "05_facility_diagnostics"
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 
 clear
@@ -15,8 +17,8 @@ save `master_list', replace emptyok
 display as text "Starting Facility Diagnostic Scan..."
 
 * Point to the new sample folder
-local sampleDir "$mipsRoot/facilityAffiliation/dta/5pct_sample"
-local dtaFiles : dir "`sampleDir'" files "*_sample.dta"
+local sampleDir "$mipsRoot/facilityAffiliation/dta/harmonized"
+local dtaFiles : dir "`sampleDir'" files "*_harmonized.dta"
 
 foreach dta in `dtaFiles' {
     

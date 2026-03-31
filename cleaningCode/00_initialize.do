@@ -2,7 +2,7 @@
 * SECTION 1: MASTER GLOBAL SWITCHES & DYNAMIC PATHS
 *===============================================================================
 global who = "Omar"
-global test = "yes" 
+global test = "no" /// enter "yes" for 5pct sample or "no" for full sample
 
 * Root Path
 if "$who" == "Omar" {

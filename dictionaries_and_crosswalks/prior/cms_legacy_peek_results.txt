@@ -1,0 +1,296 @@
+=== LEGACY INPATIENT DATA PEEK (2008-2012) ===
+
+================================================================================
+SEARCHING: 2008 (DTA Era)
+
+--- FOUND DTA: dbo_vwHQI_FTNT.dta ---
+COLUMNS: ['Footnote', 'FootnoteText']
+SAMPLE ROW:
+{'Footnote': '1    ', 'FootnoteText': 'The number of cases is too small (<25) to reliably tell how well a hospital is performing.'}
+
+--- FOUND DTA: dbo_vwHQI_HOSP.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'Address1', 'Address2', 'Address3', 'City', 'State', 'ZIP_Code', 'County_Name', 'Phone_Number', 'Hospital_Type', 'Hospital_Owner', 'Emergency_Service']
+SAMPLE ROW:
+{'Provider_Number': '010001', 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Address1': '1108 ROSS CLARK CIRCLE', 'Address2': '', 'Address3': '', 'City': 'DOTHAN                        ', 'State': 'AL', 'ZIP_Code': '36302', 'County_Name': 'HOUSTON', 'Phone_Number': '3347938701', 'Hospital_Type': 'Acute Care Hospitals', 'Hospital_Owner': 'Government - Hospital District or Authority', 'Emergency_Service': 'Yes'}
+
+--- FOUND DTA: dbo_vwHQI_HOSP_HCAHPS_MSR.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'HCAHPS_Question', 'HCAHPS_Answer_Description', 'HCAHPS_Answer_Percent', 'Number_of_Completed_Surveys', 'Survey_Response_Rate_Percent', 'Survey_Footnote', 'Hospital_Footnote']
+SAMPLE ROW:
+{'Provider_Number': '010001', 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'HCAHPS_Question': 'How do patients rate the hospital overall?', 'HCAHPS_Answer_Description': 'Patients who gave a rating of 6 or lower (low)', 'HCAHPS_Answer_Percent': '13', 'Number_of_Completed_Surveys': '300 or More', 'Survey_Response_Rate_Percent': 24, 'Survey_Footnote': '', 'Hospital_Footnote': ''}
+
+--- FOUND DTA: dbo_vwHQI_HOSP_MORTALITY_XWLK.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'Condition', 'Measure_Name', 'Category', 'Mortality_Rate', 'Lower_Mortality_Estimate', 'Upper_Mortality_Estimate', 'Number_of_Patients', 'Footnote']
+SAMPLE ROW:
+{'Provider_Number': '010001', 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Condition': 'Heart Attack', 'Measure_Name': 'Hospital 30-Day Death (Mortality) Rates from Heart Attack', 'Category': 'No different than U.S. National Rate', 'Mortality_Rate': 16.0, 'Lower_Mortality_Estimate': 12.7, 'Upper_Mortality_Estimate': 19.8, 'Number_of_Patients': 227.0, 'Footnote': ''}
+
+--- FOUND DTA: dbo_vwHQI_HOSP_MPV_MSR.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'Diagnosis_Related_Group_ID', 'Diagnosis_Related_Group_Name', 'Medicare_Average_Payment', 'Number_Of_Cases']
+SAMPLE ROW:
+{'Provider_Number': '010001', 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Diagnosis_Related_Group_ID': '088', 'Diagnosis_Related_Group_Name': 'Chronic Lung Disease', 'Medicare_Average_Payment': 4614, 'Number_Of_Cases': '306'}
+
+--- FOUND DTA: dbo_vwHQI_HOSP_MSR_XWLK.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'Condition', 'Measure_Name', 'Score', 'Sample', 'Footnote']
+SAMPLE ROW:
+{'Provider_Number': '010001', 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Condition': 'Heart Attack', 'Measure_Name': 'Heart Attack Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD)', 'Score': '96%', 'Sample': '117 patients', 'Footnote': ''}
+
+--- FOUND DTA: dbo_vwHQI_PCTL_MSR_XWLK.dta ---
+COLUMNS: ['Measure_Name', 'Condition', 'Percentile', 'Score']
+SAMPLE ROW:
+{'Measure_Name': 'Children Who Received Reliever Medication While Hospitalized for Asthma', 'Condition': 'Children&#8217;s Asthma Care', 'Percentile': 'National Average of Hospitals submitting data:', 'Score': '100%'}
+
+--- FOUND MDB: Hospital2008.mdb ---
+TABLES INSIDE MDB: ['dbo_vwHQI_FTNT', 'dbo_vwHQI_HOSP', 'dbo_vwHQI_HOSP_HCAHPS_MSR', 'dbo_vwHQI_HOSP_MORTALITY_XWLK', 'dbo_vwHQI_HOSP_MPV_MSR', 'dbo_vwHQI_HOSP_MSR_XWLK', 'dbo_vwHQI_PCTL_MSR_XWLK', 'dbo_vwHQI_STATE_HCAHPS_MSR', 'dbo_vwHQI_STATE_MORTALITY_SCRE', 'dbo_vwHQI_STATE_MPV_MSR', 'dbo_vwHQI_STATE_MSR_AVG', 'dbo_vwHQI_US_NATIONAL_HCAHPS_MSR', 'dbo_vwHQI_US_NATIONAL_MORTALITY_RATE', 'dbo_vwHQI_US_NATIONAL_MPV_MSR']
+
+PEEKING INSIDE TABLE: dbo_vwHQI_FTNT
+COLUMNS: ['Footnote', 'FootnoteText']
+SAMPLE ROW:
+{'Footnote': '1    ', 'FootnoteText': 'The number of cases is too small (<25) to reliably tell how well a hospital is performing.'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP
+COLUMNS: ['Provider Number', 'Hospital Name', 'Address1', 'Address2', 'Address3', 'City', 'State', 'ZIP Code', 'County Name', 'Phone Number', 'Hospital Type', 'Hospital Owner', 'Emergency Service']
+SAMPLE ROW:
+{'Provider Number': '010001', 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Address1': '1108 ROSS CLARK CIRCLE', 'Address2': None, 'Address3': None, 'City': 'DOTHAN                        ', 'State': 'AL', 'ZIP Code': '36302', 'County Name': 'HOUSTON', 'Phone Number': '3347938701', 'Hospital Type': 'Acute Care Hospitals', 'Hospital Owner': 'Government - Hospital District or Authority', 'Emergency Service': 'Yes'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_HCAHPS_MSR
+COLUMNS: ['Provider Number', 'Hospital Name', 'HCAHPS Question', 'HCAHPS Answer Description', 'HCAHPS Answer Percent', 'Number of Completed Surveys', 'Survey Response Rate Percent', 'Survey Footnote', 'Hospital Footnote']
+SAMPLE ROW:
+{'Provider Number': '010001', 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'HCAHPS Question': 'How do patients rate the hospital overall?', 'HCAHPS Answer Description': 'Patients who gave a rating of 6 or lower (low)', 'HCAHPS Answer Percent': '13', 'Number of Completed Surveys': '300 or More', 'Survey Response Rate Percent': 24, 'Survey Footnote': None, 'Hospital Footnote': None}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_MORTALITY_XWLK
+COLUMNS: ['Provider Number', 'Hospital Name', 'Condition', 'Measure Name', 'Category', 'Mortality Rate', 'Lower Mortality Estimate', 'Upper Mortality Estimate', 'Number of Patients', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': '010001', 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Condition': 'Heart Attack', 'Measure Name': 'Hospital 30-Day Death (Mortality) Rates from Heart Attack', 'Category': 'No different than U.S. National Rate', 'Mortality Rate': 16.0, 'Lower Mortality Estimate': 12.7, 'Upper Mortality Estimate': 19.8, 'Number of Patients': 227, 'Footnote': None}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_MPV_MSR
+COLUMNS: ['Provider Number', 'Hospital Name', 'Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Medicare Average Payment', 'Number Of Cases']
+SAMPLE ROW:
+{'Provider Number': '010001', 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Diagnosis Related Group ID': '088', 'Diagnosis Related Group Name': 'Chronic Lung Disease', 'Medicare Average Payment': 4614, 'Number Of Cases': '306'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_MSR_XWLK
+COLUMNS: ['Provider Number', 'Hospital Name', 'Condition', 'Measure Name', 'Score', 'Sample', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': '010001', 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Condition': 'Heart Attack', 'Measure Name': 'Heart Attack Patients Given ACE Inhibitor or ARB for Left Ventricular Systolic Dysfunction (LVSD)', 'Score': '96%', 'Sample': '117 patients', 'Footnote': None}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_PCTL_MSR_XWLK
+COLUMNS: ['Measure Name', 'Condition', 'Percentile', 'Score']
+SAMPLE ROW:
+{'Measure Name': 'Children Who Received Reliever Medication While Hospitalized for Asthma', 'Condition': 'Children&#8217;s Asthma Care', 'Percentile': 'National Average of Hospitals submitting data:', 'Score': '100%'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_HCAHPS_MSR
+COLUMNS: ['State', 'HCAHPS Question', 'HCAHPS Answer Description', 'HCAHPS Answer Percent']
+SAMPLE ROW:
+{'State': 'AK', 'HCAHPS Question': 'How do patients rate the hospital overall?', 'HCAHPS Answer Description': 'Patients who gave a rating of 6 or lower (low)', 'HCAHPS Answer Percent': 12}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_MORTALITY_SCRE
+COLUMNS: ['State', 'Condition', 'Measure Name', 'Category', 'Number of Hospitals']
+SAMPLE ROW:
+{'State': 'AK      ', 'Condition': 'Heart Attack', 'Measure Name': 'Hospital 30-Day Death (Mortality) Rates from Heart Attack', 'Category': 'Better than U.S. National Rate', 'Number of Hospitals': 0}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_MPV_MSR
+COLUMNS: ['State', 'Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Medicare Payment Range', 'Number Of Cases']
+SAMPLE ROW:
+{'State': 'AK', 'Diagnosis Related Group ID': '088', 'Diagnosis Related Group Name': 'Chronic Lung Disease', 'Medicare Payment Range': '6996 - 9013', 'Number Of Cases': '378'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_MSR_AVG
+COLUMNS: ['State', 'Condition', 'Measure Name', 'State Average']
+SAMPLE ROW:
+{'State': 'AK', 'Condition': 'Children&#8217;s Asthma Care', 'Measure Name': 'Children Who Received Reliever Medication While Hospitalized for Asthma', 'State Average': None}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_HCAHPS_MSR
+COLUMNS: ['HCAHPS Question', 'HCAHPS Answer Description', 'HCAHPS Answer Percent']
+SAMPLE ROW:
+{'HCAHPS Question': 'How do patients rate the hospital overall?', 'HCAHPS Answer Description': 'Patients who gave a rating of 6 or lower (low)', 'HCAHPS Answer Percent': 11}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_MORTALITY_RATE
+COLUMNS: ['Condition', 'Measure Name', 'National Mortality Rate']
+SAMPLE ROW:
+{'Condition': 'Heart Attack', 'Measure Name': 'Hospital 30-Day Death (Mortality) Rates from Heart Attack', 'National Mortality Rate': 16}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_MPV_MSR
+COLUMNS: ['Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Medicare Payment Range', 'Number Of Cases']
+SAMPLE ROW:
+{'Diagnosis Related Group ID': '088', 'Diagnosis Related Group Name': 'Chronic Lung Disease', 'Medicare Payment Range': '4712 - 5739', 'Number Of Cases': '362262'}
+================================================================================
+
+================================================================================
+SEARCHING: 2012 (MDB Era)
+
+--- FOUND DTA: dbo_vwHQI_HOSP_HCAHPS_MSR.dta ---
+COLUMNS: ['Provider_Number', 'Hospital_Name', 'State', 'HCAHPS_Measure_Code', 'HCAHPS_Question', 'HCAHPS_Answer_Description', 'HCAHPS_Answer_Percent', 'Number_of_Completed_Surveys', 'Survey_Response_Rate_Percent', 'Footnote']
+SAMPLE ROW:
+{'Provider_Number': "'010001'", 'Hospital_Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'State': 'AL', 'HCAHPS_Measure_Code': 'H_COMP_1_A_P', 'HCAHPS_Question': 'How often did nurses communicate well with patients?', 'HCAHPS_Answer_Description': "Nurses 'always' communicated well", 'HCAHPS_Answer_Percent': '70', 'Number_of_Completed_Surveys': '300 or more', 'Survey_Response_Rate_Percent': '29', 'Footnote': ''}
+
+--- FOUND MDB: Hospital2012.mdb ---
+TABLES INSIDE MDB: ['dbo_vwHQI_FTNT', 'dbo_vwHQI_HOSP', 'dbo_vwHQI_HOSP_ED', 'dbo_vwHQI_HOSP_HCAHPS_MSR', 'dbo_vwHQI_HOSP_IMG_XWLK', 'dbo_vwHQI_HOSP_IMM', 'dbo_vwHQI_HOSP_MPV_MSR', 'dbo_vwHQI_HOSP_MSR_XWLK', 'dbo_vwHQI_HOSP_STRUCTURAL_XWLK', 'dbo_vwHQI_PCTL_MSR_XWLK', 'dbo_vwHQI_STATE_HCAHPS_MSR', 'dbo_vwHQI_STATE_IMG_AVG', 'dbo_vwHQI_STATE_MPV_MSR', 'dbo_vwHQI_STATE_MSR_AVG', 'dbo_vwHQI_US_NATIONAL_HCAHPS_MSR', 'dbo_vwHQI_US_NATIONAL_IMG_AVG', 'dbo_vwHQI_US_NATIONAL_MPV_MSR', 'dbo_vwHQI_US_National_MSR_AVG', 'vwHQI_HOSP_AHRQ', 'vwHQI_HOSP_AHRQ_NATIONAL', 'vwHQI_HOSP_AHRQ_STATE', 'vwHQI_HOSP_ED_National', 'vwHQI_HOSP_ED_State', 'vwHQI_HOSP_HAC', 'vwHQI_HOSP_HAC_NATIONAL', 'vwHQI_HOSP_HAI', 'vwHQI_HOSP_HAI_STATE', 'vwHQI_HOSP_IMM_National', 'vwHQI_HOSP_IMM_State', 'vwHQI_HOSP_MORTALITY', 'vwHQI_HOSP_SPP', 'vwHQI_READM_REDUCTION', 'vwHQI_STATE_MORTALITY', 'vwHQI_US_NATIONAL_MORTALITY', 'vwMeasure_Dates']
+
+PEEKING INSIDE TABLE: dbo_vwHQI_FTNT
+COLUMNS: ['Footnote', 'FootnoteText']
+SAMPLE ROW:
+{'Footnote': '1', 'FootnoteText': 'The number of cases is too small to reliably tell how well a hospital is performing.'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP
+COLUMNS: ['Provider Number', 'Hospital Name', 'Address1', 'Address2', 'Address3', 'City', 'State', 'ZIP Code', 'County Name', 'Phone Number', 'Hospital Type', 'Hospital Ownership', 'Emergency Service']
+SAMPLE ROW:
+{'Provider Number': "'010001'", 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Address1': '1108 ROSS CLARK CIRCLE', 'Address2': None, 'Address3': None, 'City': 'DOTHAN', 'State': 'AL', 'ZIP Code': '36301', 'County Name': 'HOUSTON', 'Phone Number': '3347938701', 'Hospital Type': 'Acute Care Hospitals', 'Hospital Ownership': 'Government - Hospital District or Authority', 'Emergency Service': 'Yes'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_ED
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote', 'Sample']
+SAMPLE ROW:
+{'prvdr_id': '010001', 'msr_cd': 'ED_1b', 'scr': '252', 'footnote': '2', 'Sample': '158'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_HCAHPS_MSR
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'HCAHPS Measure Code', 'HCAHPS Question', 'HCAHPS Answer Description', 'HCAHPS Answer Percent', 'Number of Completed Surveys', 'Survey Response Rate Percent', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': "'010005'", 'Hospital Name': 'MARSHALL MEDICAL CENTER SOUTH', 'State': 'AL', 'HCAHPS Measure Code': 'H_COMP_1_A_P', 'HCAHPS Question': 'Patients who reported that their nurses "Always" communicated well.', 'HCAHPS Answer Description': "Nurses 'always' communicated well", 'HCAHPS Answer Percent': '83', 'Number of Completed Surveys': '300 or more', 'Survey Response Rate Percent': '38', 'Footnote': ''}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_IMG_XWLK
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'Condition', 'Measure Code', 'Measure Name', 'Score', 'Sample', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': "'010001'", 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'State': 'AL', 'Condition': 'Use of Medical Imaging', 'Measure Code': 'OP_8', 'Measure Name': 'Outpatients with low back pain who had an MRI without trying recommended treatments first, such as physical therapy. (If a number is high, it may mean the facility is doing too many unnecessary MRIs for low back pain.)<br/><i><b>Lower</b> percentages are better</i>', 'Score': '38.4', 'Sample': '406', 'Footnote': None}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_IMM
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote', 'Sample']
+SAMPLE ROW:
+{'prvdr_id': '010001', 'msr_cd': 'IMM_2', 'scr': '85', 'footnote': '2', 'Sample': '271'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_MPV_MSR
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Number Of Cases']
+SAMPLE ROW:
+{'Provider Number': "'010023'", 'Hospital Name': 'BAPTIST MEDICAL CENTER SOUTH', 'State': 'AL', 'Diagnosis Related Group ID': '282', 'Diagnosis Related Group Name': 'Acute myocardial infarction, discharged alive w/o CC/MCC', 'Number Of Cases': '27'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_MSR_XWLK
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'Condition', 'Measure Code', 'Measure Name', 'Score', 'Sample', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': "'010001'", 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'State': 'AL', 'Condition': 'Median Time to Transfer to Another Facility for Acute Coronary Intervention', 'Measure Code': 'OP_3b', 'Measure Name': 'Average number of minutes before outpatients with chest pain or possible heart attack who needed specialized care were transferred to another hospital A lower number of minutes is better', 'Score': 'Not Available', 'Sample': 'Not Available', 'Footnote': '5'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_HOSP_STRUCTURAL_XWLK
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'Measure Code', 'Measure Name', 'Measure Response']
+SAMPLE ROW:
+{'Provider Number': "'010005'", 'Hospital Name': 'MARSHALL MEDICAL CENTER SOUTH', 'State': 'AL', 'Measure Code': 'SM_PART_CARD', 'Measure Name': 'Cardiac surgery registry', 'Measure Response': 'Does not have a Cardiac Surgery Program'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_PCTL_MSR_XWLK
+COLUMNS: ['Measure Name', 'Condition', 'Measure Code', 'Percentile', 'Score']
+SAMPLE ROW:
+{'Measure Name': 'Average number of minutes before outpatients with chest pain or possible heart attack who needed specialized care were transferred to another hospital A lower number of minutes is better', 'Condition': ' Process of Care Measures', 'Measure Code': 'OP_3b', 'Percentile': 'National Average of Hospitals submitting data:', 'Score': '59'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_HCAHPS_MSR
+COLUMNS: ['State', 'HCAHPS Question', 'HCAHPS Measure Code', 'HCAHPS Answer Description', 'HCAHPS Answer Percent']
+SAMPLE ROW:
+{'State': 'AK', 'HCAHPS Question': 'Patients who reported that their nurses "Always" communicated well.', 'HCAHPS Measure Code': 'H_COMP_1_A_P', 'HCAHPS Answer Description': 'Nurses always communicated well', 'HCAHPS Answer Percent': '77'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_IMG_AVG
+COLUMNS: ['State', 'Condition', 'Measure Code', 'Measure Name', 'Score']
+SAMPLE ROW:
+{'State': 'AK', 'Condition': 'Use of Medical Imaging', 'Measure Code': 'OP_8', 'Measure Name': 'Outpatients with low back pain who had an MRI without trying recommended treatments first, such as physical therapy. (If a number is high, it may mean the facility is doing too many unnecessary MRIs for low back pain.)<br/><i><b>Lower</b> percentages are better</i>', 'Score': '48.2'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_MPV_MSR
+COLUMNS: ['State', 'Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Number Of Cases']
+SAMPLE ROW:
+{'State': 'AK', 'Diagnosis Related Group ID': '282', 'Diagnosis Related Group Name': 'Acute myocardial infarction, discharged alive w/o CC/MCC', 'Number Of Cases': '42'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_STATE_MSR_AVG
+COLUMNS: ['State', 'Condition', 'Measure Name', 'Measure Code', 'Score']
+SAMPLE ROW:
+{'State': 'AK', 'Condition': ' Process of Care Measures', 'Measure Name': 'Average number of minutes before outpatients with chest pain or possible heart attack who needed specialized care were transferred to another hospital A lower number of minutes is better', 'Measure Code': 'OP_3b', 'Score': '150'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_HCAHPS_MSR
+COLUMNS: ['HCAHPS Measure Code', 'HCAHPS Question', 'HCAHPS Answer Description', 'HCAHPS Answer Percent']
+SAMPLE ROW:
+{'HCAHPS Measure Code': 'H_COMP_1_A_P', 'HCAHPS Question': 'Patients who reported that their nurses "Always" communicated well.', 'HCAHPS Answer Description': 'Nurses always communicated well', 'HCAHPS Answer Percent': '78'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_IMG_AVG
+COLUMNS: ['Condition', 'Measure Code', 'Measure Name', 'Score']
+SAMPLE ROW:
+{'Condition': 'Use of Medical Imaging', 'Measure Code': 'OP_8', 'Measure Name': 'Outpatients with low back pain who had an MRI without trying recommended treatments first, such as physical therapy. (If a number is high, it may mean the facility is doing too many unnecessary MRIs for low back pain.)<br/><i><b>Lower</b> percentages are better</i>', 'Score': '36.8'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_NATIONAL_MPV_MSR
+COLUMNS: ['State', 'Diagnosis Related Group ID', 'Diagnosis Related Group Name', 'Number Of Cases']
+SAMPLE ROW:
+{'State': 'Nation', 'Diagnosis Related Group ID': '282', 'Diagnosis Related Group Name': 'Acute myocardial infarction, discharged alive w/o CC/MCC', 'Number Of Cases': '31069'}
+
+PEEKING INSIDE TABLE: dbo_vwHQI_US_National_MSR_AVG
+COLUMNS: ['Provider Number', 'Condition', 'Measure Name', 'Score']
+SAMPLE ROW:
+{'Provider Number': 'Nation', 'Condition': 'Heart Attack or Chest Pain', 'Measure Name': 'Heart attack patients given fibrinolytic medication within 30 minutes of arrival Higher percentages are better', 'Score': '60'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_AHRQ
+COLUMNS: ['Prvdr_id', 'PSI_4_SURG_COMP', 'PSI_4_SURG_COMP_F', 'PSI_6_IAT_PTX', 'PSI_6_IAT_PTX_F', 'PSI_11_POSTOP_RESPFAIL', 'PSI_11_POSTOP_RESPFAIL_F', 'PSI_12_POSTOP_PULMEMB_DVT', 'PSI_12_POSTOP_PULMEMB_DVT_F', 'PSI_14_POSTOP_DEHIS', 'PSI_14_POSTOP_DEHIS_F', 'PSI_15_ACC_LAC', 'PSI_15_ACC_LAC_F', 'PSI_90_SAFETY', 'PSI_90_SAFETY_F', 'IQI_11_AAA', 'IQI_11_AAA_F', 'IQI_19_HIP_FX', 'IQI_19_HIP_FX_F', 'IQI_91_CONDS', 'IQI_91_CONDS_F', 'PSI_4_SURG_COMP_NUM_DC', 'PSI_4_SURG_COMP_RATE', 'PSI_4_SURG_COMP_LOW_EST', 'PSI_4_SURG_COMP_HIGH_EST', 'PSI_6_IAT_PTX_NUM_DC', 'PSI_6_IAT_PTX_RATE', 'PSI_6_IAT_PTX_LOW_EST', 'PSI_6_IAT_PTX_HIGH_EST', 'PSI_11_POSTOP_RESPFAIL_NUM_DC', 'PSI_11_POSTOP_RESPFAIL_RATE', 'PSI_11_POSTOP_RESPFAIL_LOW_EST', 'PSI_11_POSTOP_RESPFAIL_HIGH_EST', 'PSI_12_POSTOP_PULMEMB_DVT_NUM_DC', 'PSI_12_POSTOP_PULMEMB_DVT_RATE', 'PSI_12_POSTOP_PULMEMB_DVT_LOW_EST', 'PSI_12_POSTOP_PULMEMB_DVT_HIGH_EST', 'PSI_14_POSTOP_DEHIS_NUM_DC', 'PSI_14_POSTOP_DEHIS_RATE', 'PSI_14_POSTOP_DEHIS_LOW_EST', 'PSI_14_POSTOP_DEHIS_HIGH_EST', 'PSI_15_ACC_LAC_NUM_DC', 'PSI_15_ACC_LAC_RATE', 'PSI_15_ACC_LAC_LOW_EST', 'PSI_15_ACC_LAC_HIGH_EST', 'PSI_90_SAFETY_NUM_DC', 'PSI_90_SAFETY_RATE', 'PSI_90_SAFETY_LOW_EST', 'PSI_90_SAFETY_HIGH_EST', 'IQI_11_AAA_NUM_DC', 'IQI_11_AAA_RATE', 'IQI_11_AAA_LOW_EST', 'IQI_11_AAA_HIGH_EST', 'IQI_19_HIP_FX_NUM_DC', 'IQI_19_HIP_FX_RATE', 'IQI_19_HIP_FX_LOW_EST', 'IQI_19_HIP_FX_HIGH_EST', 'IQI_91_CONDS_NUM_DC', 'IQI_91_CONDS_RATE', 'IQI_91_CONDS_LOW_EST', 'IQI_91_CONDS_HIGH_EST']
+SAMPLE ROW:
+{'Prvdr_id': '420037', 'PSI_4_SURG_COMP': 'Number of Cases Too Small', 'PSI_4_SURG_COMP_F': 'j', 'PSI_6_IAT_PTX': 'No Different than U.S. National Rate', 'PSI_6_IAT_PTX_F': None, 'PSI_11_POSTOP_RESPFAIL': 'No Different than U.S. National Rate', 'PSI_11_POSTOP_RESPFAIL_F': None, 'PSI_12_POSTOP_PULMEMB_DVT': 'No Different than U.S. National Rate', 'PSI_12_POSTOP_PULMEMB_DVT_F': None, 'PSI_14_POSTOP_DEHIS': 'No Different than U.S. National Rate', 'PSI_14_POSTOP_DEHIS_F': None, 'PSI_15_ACC_LAC': 'No Different than U.S. National Rate', 'PSI_15_ACC_LAC_F': None, 'PSI_90_SAFETY': 'No Different than U.S. National Rate', 'PSI_90_SAFETY_F': None, 'IQI_11_AAA': 'Not Available', 'IQI_11_AAA_F': '4', 'IQI_19_HIP_FX': 'Not Available', 'IQI_19_HIP_FX_F': '4', 'IQI_91_CONDS': 'Not Available', 'IQI_91_CONDS_F': '4', 'PSI_4_SURG_COMP_NUM_DC': '11', 'PSI_4_SURG_COMP_RATE': 'Not Available', 'PSI_4_SURG_COMP_LOW_EST': 'Not Available', 'PSI_4_SURG_COMP_HIGH_EST': 'Not Available', 'PSI_6_IAT_PTX_NUM_DC': '1551', 'PSI_6_IAT_PTX_RATE': '0.30', 'PSI_6_IAT_PTX_LOW_EST': '0.00', 'PSI_6_IAT_PTX_HIGH_EST': '0.71', 'PSI_11_POSTOP_RESPFAIL_NUM_DC': 'Not Available', 'PSI_11_POSTOP_RESPFAIL_RATE': 'Not Available', 'PSI_11_POSTOP_RESPFAIL_LOW_EST': 'Not Available', 'PSI_11_POSTOP_RESPFAIL_HIGH_EST': 'Not Available', 'PSI_12_POSTOP_PULMEMB_DVT_NUM_DC': '366', 'PSI_12_POSTOP_PULMEMB_DVT_RATE': '5.69', 'PSI_12_POSTOP_PULMEMB_DVT_LOW_EST': '1.61', 'PSI_12_POSTOP_PULMEMB_DVT_HIGH_EST': '9.77', 'PSI_14_POSTOP_DEHIS_NUM_DC': '40', 'PSI_14_POSTOP_DEHIS_RATE': '0.84', 'PSI_14_POSTOP_DEHIS_LOW_EST': '0.00', 'PSI_14_POSTOP_DEHIS_HIGH_EST': '3.02', 'PSI_15_ACC_LAC_NUM_DC': '1568', 'PSI_15_ACC_LAC_RATE': '2.65', 'PSI_15_ACC_LAC_LOW_EST': '0.75', 'PSI_15_ACC_LAC_HIGH_EST': '4.55', 'PSI_90_SAFETY_NUM_DC': 'Not Available', 'PSI_90_SAFETY_RATE': 'Not Available', 'PSI_90_SAFETY_LOW_EST': 'Not Available', 'PSI_90_SAFETY_HIGH_EST': 'Not Available', 'IQI_11_AAA_NUM_DC': 'Not Available', 'IQI_11_AAA_RATE': 'Not Available', 'IQI_11_AAA_LOW_EST': 'Not Available', 'IQI_11_AAA_HIGH_EST': 'Not Available', 'IQI_19_HIP_FX_NUM_DC': 'Not Available', 'IQI_19_HIP_FX_RATE': 'Not Available', 'IQI_19_HIP_FX_LOW_EST': 'Not Available', 'IQI_19_HIP_FX_HIGH_EST': 'Not Available', 'IQI_91_CONDS_NUM_DC': 'Not Available', 'IQI_91_CONDS_RATE': 'Not Available', 'IQI_91_CONDS_LOW_EST': 'Not Available', 'IQI_91_CONDS_HIGH_EST': 'Not Available'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_AHRQ_NATIONAL
+COLUMNS: ['MSR_CD', 'NATIONAL', 'PSI_NATIONAL_SCR', 'IQI_NATIONAL_SCR']
+SAMPLE ROW:
+{'MSR_CD': 'PSI_90_SAFETY_NATIONAL_P', 'NATIONAL': 'Not Available', 'PSI_NATIONAL_SCR': 'Not Available', 'IQI_NATIONAL_SCR': 'Not Available'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_AHRQ_STATE
+COLUMNS: ['State', 'PSI_4_SURG_COMP_WORSE', 'PSI_4_SURG_COMP_SAME', 'PSI_4_SURG_COMP_BETTER', 'PSI_4_SURG_COMP_TOOFEW', 'PSI_6_IAT_PTX_WORSE', 'PSI_6_IAT_PTX_SAME', 'PSI_6_IAT_PTX_BETTER', 'PSI_6_IAT_PTX_TOOFEW', 'PSI_11_POSTOP_RESPFAIL_WORSE', 'PSI_11_POSTOP_RESPFAIL_SAME', 'PSI_11_POSTOP_RESPFAIL_BETTER', 'PSI_11_POSTOP_RESPFAIL_TOOFEW', 'PSI_12_POSTOP_PULMEMB_DVT_WORSE', 'PSI_12_POSTOP_PULMEMB_DVT_SAME', 'PSI_12_POSTOP_PULMEMB_DVT_BETTER', 'PSI_12_POSTOP_PULMEMB_DVT_TOOFEW', 'PSI_14_POSTOP_DEHIS_WORSE', 'PSI_14_POSTOP_DEHIS_SAME', 'PSI_14_POSTOP_DEHIS_BETTER', 'PSI_14_POSTOP_DEHIS_TOOFEW', 'PSI_15_ACC_LAC_WORSE', 'PSI_15_ACC_LAC_SAME', 'PSI_15_ACC_LAC_BETTER', 'PSI_15_ACC_LAC_TOOFEW', 'PSI_90_SAFETY_WORSE', 'PSI_90_SAFETY_SAME', 'PSI_90_SAFETY_BETTER', 'PSI_90_SAFETY_TOOFEW', 'IQI_11_AAA_WORSE', 'IQI_11_AAA_SAME', 'IQI_11_AAA_BETTER', 'IQI_11_AAA_TOOFEW', 'IQI_19_HIP_FX_WORSE', 'IQI_19_HIP_FX_SAME', 'IQI_19_HIP_FX_BETTER', 'IQI_19_HIP_FX_TOOFEW', 'IQI_91_CONDS_WORSE', 'IQI_91_CONDS_SAME', 'IQI_91_CONDS_BETTER', 'IQI_91_CONDS_TOOFEW']
+SAMPLE ROW:
+{'State': 'AK', 'PSI_4_SURG_COMP_WORSE': '0', 'PSI_4_SURG_COMP_SAME': '5', 'PSI_4_SURG_COMP_BETTER': '0', 'PSI_4_SURG_COMP_TOOFEW': '2', 'PSI_6_IAT_PTX_WORSE': '0', 'PSI_6_IAT_PTX_SAME': '9', 'PSI_6_IAT_PTX_BETTER': '0', 'PSI_6_IAT_PTX_TOOFEW': '0', 'PSI_11_POSTOP_RESPFAIL_WORSE': '0', 'PSI_11_POSTOP_RESPFAIL_SAME': '6', 'PSI_11_POSTOP_RESPFAIL_BETTER': '1', 'PSI_11_POSTOP_RESPFAIL_TOOFEW': '0', 'PSI_12_POSTOP_PULMEMB_DVT_WORSE': '0', 'PSI_12_POSTOP_PULMEMB_DVT_SAME': '8', 'PSI_12_POSTOP_PULMEMB_DVT_BETTER': '0', 'PSI_12_POSTOP_PULMEMB_DVT_TOOFEW': '0', 'PSI_14_POSTOP_DEHIS_WORSE': '0', 'PSI_14_POSTOP_DEHIS_SAME': '7', 'PSI_14_POSTOP_DEHIS_BETTER': '0', 'PSI_14_POSTOP_DEHIS_TOOFEW': '1', 'PSI_15_ACC_LAC_WORSE': '3', 'PSI_15_ACC_LAC_SAME': '6', 'PSI_15_ACC_LAC_BETTER': '0', 'PSI_15_ACC_LAC_TOOFEW': '0', 'PSI_90_SAFETY_WORSE': '0', 'PSI_90_SAFETY_SAME': '9', 'PSI_90_SAFETY_BETTER': '0', 'PSI_90_SAFETY_TOOFEW': 'Not Available', 'IQI_11_AAA_WORSE': 'Not Available', 'IQI_11_AAA_SAME': 'Not Available', 'IQI_11_AAA_BETTER': 'Not Available', 'IQI_11_AAA_TOOFEW': 'Not Available', 'IQI_19_HIP_FX_WORSE': 'Not Available', 'IQI_19_HIP_FX_SAME': 'Not Available', 'IQI_19_HIP_FX_BETTER': 'Not Available', 'IQI_19_HIP_FX_TOOFEW': 'Not Available', 'IQI_91_CONDS_WORSE': 'Not Available', 'IQI_91_CONDS_SAME': 'Not Available', 'IQI_91_CONDS_BETTER': 'Not Available', 'IQI_91_CONDS_TOOFEW': 'Not Available'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_ED_National
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'prvdr_id': 'Nation', 'msr_cd': 'ED_1b', 'scr': '277', 'footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_ED_State
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'prvdr_id': 'AK', 'msr_cd': 'ED_1b', 'scr': '274', 'footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_HAC
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr']
+SAMPLE ROW:
+{'prvdr_id': "'010001'", 'msr_cd': 'HAC_1', 'scr': '0.123'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_HAC_NATIONAL
+COLUMNS: ['msr_cd', 'scr']
+SAMPLE ROW:
+{'msr_cd': 'HAC_1', 'scr': '0.028'}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_HAI
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'prvdr_id': None, 'msr_cd': None, 'scr': None, 'footnote': None}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_HAI_STATE
+COLUMNS: ['state', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'state': 'AK', 'msr_cd': 'HAI_1_SIR', 'scr': '0.46', 'footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_IMM_National
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'prvdr_id': 'Nation', 'msr_cd': 'IMM_2', 'scr': '86', 'footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_IMM_State
+COLUMNS: ['prvdr_id', 'msr_cd', 'scr', 'footnote']
+SAMPLE ROW:
+{'prvdr_id': 'AK', 'msr_cd': 'IMM_2', 'scr': '78', 'footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_MORTALITY
+COLUMNS: ['Provider Number', 'Hospital Name', 'State', 'Condition', 'Measure Name', 'Mortality_Readm Rate', 'Comparison to National Rate', 'Lower Mortality_Readm Estimate', 'Upper Mortality_Readm Estimate', 'Number of Patients', 'Footnote']
+SAMPLE ROW:
+{'Provider Number': "'010001'", 'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'State': 'AL', 'Condition': 'Heart Attack', 'Measure Name': 'Heart Attack Death (Mortality) Rates', 'Mortality_Readm Rate': '14.3', 'Comparison to National Rate': 'No Different than U.S. National Rate', 'Lower Mortality_Readm Estimate': '12.1', 'Upper Mortality_Readm Estimate': '17.0', 'Number of Patients': '666', 'Footnote': ''}
+
+PEEKING INSIDE TABLE: vwHQI_HOSP_SPP
+COLUMNS: ['prvdr_id', 'scr', 'msr_cd', 'ftnt_id']
+SAMPLE ROW:
+{'prvdr_id': '010001', 'scr': '1', 'msr_cd': 'SPP_1', 'ftnt_id': ''}
+
+PEEKING INSIDE TABLE: vwHQI_READM_REDUCTION
+COLUMNS: ['Hospital Name', 'Provider Number', 'State', 'Measure Name', 'Number of Discharges', 'Footnote', 'Excess Readmission Ratio', 'Predicted Readmission Rate', 'Expected Readmission Rate', 'Number of Readmissions', 'Start Date', 'End Date']
+SAMPLE ROW:
+{'Hospital Name': 'SOUTHEAST ALABAMA MEDICAL CENTER', 'Provider Number': '10001', 'State': 'AL', 'Measure Name': 'Acute Myocardial Infarction (AMI) 30-Day Readmissions', 'Number of Discharges': '728', 'Footnote': None, 'Excess Readmission Ratio': '0.9664', 'Predicted Readmission Rate': '17.1', 'Expected Readmission Rate': '17.7', 'Number of Readmissions': '123', 'Start Date': '7/1/2008', 'End Date': '6/30/2011'}
+
+PEEKING INSIDE TABLE: vwHQI_STATE_MORTALITY
+COLUMNS: ['State', 'Condition', 'Measure Name', 'Category', 'Number of Hospitals']
+SAMPLE ROW:
+{'State': 'AK', 'Condition': 'Heart Attack', 'Measure Name': 'Acute Myocardial Infarction (AMI) 30-Day Mortality Rate', 'Category': 'Worse than U.S. National Rate', 'Number of Hospitals': '0'}
+
+PEEKING INSIDE TABLE: vwHQI_US_NATIONAL_MORTALITY
+COLUMNS: ['Condition', 'Measure Name', 'National Mortality_Readm Rate']
+SAMPLE ROW:
+{'Condition': 'Heart Attack', 'Measure Name': 'Acute Myocardial Infarction (AMI) 30-Day Mortality Rate', 'National Mortality_Readm Rate': '15.5'}
+================================================================================
+

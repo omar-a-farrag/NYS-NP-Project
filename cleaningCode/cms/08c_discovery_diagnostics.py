@@ -7,10 +7,12 @@ import time
 script_dir = os.path.dirname(os.path.abspath(__file__))
 project_root = os.path.abspath(os.path.join(script_dir, "..", ".."))
 
-# POINT THIS TO YOUR FULL 5% DATA
-# (Ensure this path contains the BIG files, not just the 100-row samples)
-cms_provider_dir = os.path.join(project_root, "cms", "by_provider_service", "dta", "5pct_sample")
-cms_partd_dir = os.path.join(project_root, "cms", "partD", "dta", "5pct_sample")
+# ---> PYTHON TOGGLE: Set to True for 100% data, False for 5% data <---
+USE_FULL_SAMPLE = True 
+target_folder = "full_sample" if USE_FULL_SAMPLE else "5pct_sample"
+
+cms_provider_dir = os.path.join(project_root, "cms", "by_provider_service", "dta", target_folder)
+cms_partd_dir = os.path.join(project_root, "cms", "partD", "dta", target_folder)
 
 output_dir = os.path.join(project_root, "dictionaries_and_crosswalks")
 if not os.path.exists(output_dir):

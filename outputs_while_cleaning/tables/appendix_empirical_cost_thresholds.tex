@@ -1,32 +1,22 @@
-{\small
-\begin{longtable}{p{5cm}cc}
-\caption{Empirical Cost Thresholds by Therapeutic Class} \label{tab:empirical_costs} \\
+\begin{table}[htbp]
+\caption{Empirical High-Cost Thresholds (75th Percentile) by USAN Therapeutic Class. Calculated using the 100\% sample of Medicare Part D claims spanning 2013--2023. $N$ represents the number of unique generic molecules dispensed >100 times during the study period.}
+\label{tab:empirical_costs}
+\begin{tabular}{llc}
 \toprule
-Therapeutic Class (USAN) & Count of Generic Molecules & Top Quartile (High Cost) Threshold \\
+\rowcolor{gray!10}
+Therapeutic Class (USAN) & Unique Molecules (\$N\$) & 75th Percentile Cost Threshold \\
 \midrule
-\endfirsthead
-\caption[]{Empirical Cost Thresholds by Therapeutic Class} \\
-\toprule
-Therapeutic Class (USAN) & Count of Generic Molecules & Top Quartile (High Cost) Threshold \\
-\midrule
-\endhead
-\midrule
-\multicolumn{3}{r}{Continued on next page} \\
-\midrule
-\endfoot
+Anti-Infective & 209 & \$1,380.52 \\
+CNS (Antidepressant) & 22 & \$176.06 \\
+CNS (Benzodiazepine) & 19 & \$154.89 \\
+CNS (Gabapentinoid) & 3 & \$482.64 \\
+CNS (Opioid) & 23 & \$302.18 \\
+Cardiovascular & 110 & \$175.05 \\
+Corticosteroid & 67 & \$265.28 \\
+Gastrointestinal & 28 & \$885.31 \\
+Immunology/Oncology & 153 & \$15,949.40 \\
+Metabolic/Diabetes & 79 & \$869.13 \\
+Other/Unclassified & 1415 & \$1,062.14 \\
 \bottomrule
-\endlastfoot
-Anti-Infective & 110 & \$952.76 \\
-CNS (Antidepressant) & 19 & \$212.28 \\
-CNS (Benzodiazepine) & 17 & \$98.67 \\
-CNS (Gabapentinoid) & 3 & \$363.22 \\
-CNS (Opioid) & 19 & \$314.28 \\
-Cardiovascular & 92 & \$150.65 \\
-Corticosteroid & 46 & \$163.86 \\
-Gastrointestinal & 17 & \$329.89 \\
-Immunology/Oncology & 33 & \$8,499.06 \\
-Metabolic/Diabetes & 43 & \$421.28 \\
-Other/Unclassified & 741 & \$369.40 \\
-\end{longtable}
-
-}
+\end{tabular}
+\end{table}

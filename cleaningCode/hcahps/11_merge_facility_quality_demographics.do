@@ -2,6 +2,10 @@
 * SCRIPT: 11_merge_facility_quality_demographics.do
 * PURPOSE: Merges Inpatient, HOPD, and ASC metrics into Phase 3 Master Sets.
 *===============================================================================
+clear
+
+global component "in_out_patient"
+global script_name "11_merge_facility_quality_demographics"
 
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 

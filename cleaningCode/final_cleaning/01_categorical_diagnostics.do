@@ -2,6 +2,10 @@
 * SCRIPT: 01_categorical_diagnostics.do
 * PURPOSE: Extracts unique values and frequencies for all categorical variables.
 *===============================================================================
+clear
+
+global component "general"
+global script_name "01_categorical_diagnostics"
 
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 

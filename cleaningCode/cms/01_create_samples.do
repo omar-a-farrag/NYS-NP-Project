@@ -4,10 +4,11 @@
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-07
 *===============================================================================
+clear
 
 * --- 0. SET LOGGING COMPONENT ---
 global component "cms"
-
+global script_name "01_create_samples"
 * --- 1. INITIALIZE ENVIRONMENT ---
 * (Keep your absolute path here)
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
@@ -26,8 +27,16 @@ foreach f in by_provider by_provider_service partD {
     
     * 1. Define Paths
     local sourceDir "$cmsRoot/`f'/all_depts/csv"
-    local destDir   "$cmsRoot/`f'/dta/5pct_sample"
-    
+
+    if "$test" == "no" {
+        local destDir "$cmsRoot/`f'/dta/full_sample"
+        display as text "  > MODE: 100% Full Sample"
+    }
+    else {
+        local destDir "$cmsRoot/`f'/dta/5pct_sample"
+        display as text "  > MODE: 5% Testing Sample"
+    }
+	
     * 2. Create Output Directories
     capture mkdir "$cmsRoot/`f'/dta"
     capture mkdir "`destDir'"
@@ -42,14 +51,19 @@ foreach f in by_provider by_provider_service partD {
         
         * Import
         quietly import delimited "`sourceDir'/`file'", clear varnames(1) case(lower)
-        
-        * Create 5% Sample
-        set seed 12345 
-        sample 5
+		
         
         * Save
         local saveName = subinstr("`file'", ".csv", "", .)
-        quietly save "`destDir'/`saveName'_sample.dta", replace
+		* CONDITIONALLY Create 5% Sample
+		if "$test" == "yes" {
+			set seed 12345 
+			sample 5
+			quietly save "`destDir'/`saveName'_sample.dta", replace
+		}
+		else {
+			quietly save "`destDir'/`saveName'.dta", replace
+		}
     }
 }
 

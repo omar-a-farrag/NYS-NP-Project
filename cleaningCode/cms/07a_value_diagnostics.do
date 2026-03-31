@@ -4,8 +4,10 @@
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-08
 *===============================================================================
+clear
 
 global component "cms"
+global script_name "07a_value_diagnostics"
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 
 display as text "Starting Value Diagnostics (Specialty Drift)..."
@@ -16,23 +18,32 @@ save `specialty_master', replace emptyok
 
 * Loop through the Main CMS Provider Files (using the 5% samples)
 * Note: 'by_provider' usually contains the primary 'provider_type' variable
-local providerDir "$cmsRoot/by_provider/dta/5pct_sample"
-local files : dir "`providerDir'" files "*_sample.dta"
+if "$test" == "no" {
+        local providerDir "$cmsRoot/by_provider/dta/full_sample"
+    }
+    else {
+        local providerDir "$cmsRoot/by_provider/dta/5pct_sample"
+    }
+
+local files : dir "`providerDir'" files "*.dta"
 
 foreach file in `files' {
     
     quietly use "`providerDir'/`file'", clear
     
     * Extract Year
-    gen year = regexs(0) if regexm("`file'", "20[0-9][0-9]")
-    
+    *gen year = regexs(0) if regexm("`file'", "20[0-9][0-9]")
+    local fileYear = "9999"
+    if regexm("`file'", "20[0-9][0-9]") {
+        local fileYear = regexs(0)
+    }
     * Identify the Specialty Variable
     * (It is usually 'provider_type', but might be 'provider_type_description' or similar)
     * We try to find it dynamically:
     
     local specVar ""
-    capture confirm variable provider_type
-    if _rc == 0 local specVar "provider_type"
+    capture confirm variable rndrng_prvdr_type
+    if _rc == 0 local specVar "rndrng_prvdr_type"
     
     if "`specVar'" == "" {
         capture confirm variable provider_type_description
@@ -49,7 +60,7 @@ foreach file in `files' {
         
         * Rename to a standard 'specialty' for appending
         rename `specVar' specialty
-        gen year = "`year'"
+        gen year = "`fileYear'"
         
         * Clean up strings (uppercase for consistency)
         replace specialty = upper(specialty)

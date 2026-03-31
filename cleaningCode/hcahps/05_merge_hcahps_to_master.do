@@ -2,6 +2,10 @@
 * SCRIPT: 05_merge_hcahps_to_master.do
 * PURPOSE: Assembles HCAHPS Panel, then merges to BOTH Facility & Provider Networks.
 *===============================================================================
+clear
+
+global component "hcahps"
+global script_name "05_merge_hcahps_to_master"
 
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 

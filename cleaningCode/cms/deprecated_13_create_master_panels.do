@@ -3,8 +3,11 @@
 * PURPOSE: Final Master Panel Assembler.
 * FIX: Natively injects fac_ prefixed facility-level means into the Provider Panel.
 *===============================================================================
+clear
 
 global component "cms"
+global script_name "13_create_master_panels"
+
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 
 capture mkdir "$outputRoot/cleaned_data"
@@ -71,8 +74,8 @@ tostring npi, replace
 replace npi = strtrim(npi)
 destring year, replace
 
-gen partd_generic_rate = 1 - (partd_brand_claims / partd_total_claims)
-gen partd_high_cost_rate = partd_empirical_high_cost_claims / partd_total_claims
+gen partd_generic_rate = 1 - (tot_brand_clms / tot_partd_clms)
+gen partd_high_cost_rate = partd_empirical_high_cost_claims / tot_partd_clms
 gen partd_opioid_rate = partd_opioid_strong_claims / partd_opioid_claims
 gen svc_em_upcode_rate = svc_em_high_intensity / svc_em_total
 gen svc_img_adv_rate = svc_imaging_advanced / svc_imaging_total
@@ -215,7 +218,7 @@ display "  > Saved Base Provider Panel."
 display "Step 5: Creating Facility Panel..."
 
 use `npi_ccn_link', clear
-merge m:1 npi year using "$outputRoot/cleaned_data/cms_master_provider_base.dta", keep(match) nogenerate
+merge m:1 npi year using "$phase1/cms_master_provider_base.dta", keep(match) nogenerate
 
 collapse (mean) fac_mean_generic_rate=partd_generic_rate ///
                 fac_mean_opioid_rate=partd_opioid_rate ///
@@ -241,7 +244,7 @@ collapse (mean) fac_mean_generic_rate=partd_generic_rate ///
                 fac_bene_dual=bene_dual_cnt ///
                 fac_cc_depression=bene_cc_depr ///
                 fac_cc_diabetes=bene_cc_diab ///
-                fac_doc_count=partd_total_claims ///
+                fac_doc_count=tot_partd_clms ///
                 wterm_generic wterm_opioid wterm_highcost wterm_upcode wterm_img_adv wterm_risk, ///
          by(ccn year)
 
@@ -263,13 +266,13 @@ display "  > Saved Facility Panel."
 *-------------------------------------------------------------------------------
 display "Step 6: Injecting Facility Rates into Provider Panel..."
 
-use "$outputRoot/cleaned_data/cms_master_provider_base.dta", clear
+use "$phase1/cms_master_provider_base.dta", clear
 
 * Expand panel to NPI-CCN-Year level (so each provider gets their facility's rates)
 merge 1:m npi year using `npi_ccn_link', keep(master match) nogenerate
 
 * Merge the newly created facility means directly into the provider panel
-merge m:1 ccn year using "$outputRoot/cleaned_data/cms_master_facility_panel.dta", keep(master match) nogenerate
+merge m:1 ccn year using "$phase1/cms_master_facility_panel.dta", keep(master match) nogenerate
 
-save "$outputRoot/cleaned_data/cms_master_provider_panel.dta", replace
+save "$phase1/cms_master_provider_panel.dta", replace
 display "  > Saved Ultimate Provider Panel."

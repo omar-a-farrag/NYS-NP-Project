@@ -4,8 +4,10 @@
 * AUTHOR:  Omar Farrag
 * DATE:    2026-02-08
 *===============================================================================
+clear
 
-global component "mips"
+global component "cms"
+
 global script_name "07b_facility_value_diagnostics"
 
 * (Ensure this path is correct)
@@ -16,8 +18,9 @@ display as text "Starting Facility Specialty Diagnostics (v5)..."
 tempfile facility_specialty_master
 save `facility_specialty_master', replace emptyok
 
-local facilDir "$mipsRoot/facilityAffiliation/dta/5pct_sample"
-local files : dir "`facilDir'" files "*_sample.dta"
+	* Point directly to the harmonized facility output
+local facilDir "$mipsRoot/facilityAffiliation/dta/harmonized"
+local files : dir "`facilDir'" files "*_harmonized.dta"
 
 foreach file in `files' {
     

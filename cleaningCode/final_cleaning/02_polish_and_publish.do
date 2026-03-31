@@ -1,7 +1,12 @@
 *===============================================================================
-* SCRIPT: 15b_polish_and_publish.do
+* SCRIPT: 02_polish_and_publish.do
 * PURPOSE: Finalizes the 4 Master Datasets for public distribution and analysis.
 *===============================================================================
+clear
+
+global component "general"
+global script_name "02_polish_and_publish"
+
 
 include "C:/Users/omarf/Dropbox/personal_files_omar_farrag/Research/general_cms_data/cleaningCode/00_initialize.do"
 

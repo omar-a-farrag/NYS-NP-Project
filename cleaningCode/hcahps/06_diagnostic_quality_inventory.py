@@ -76,5 +76,5 @@ print("-" * 100)
 print("\nNote: 'MDB?' means the data is likely inside the raw Microsoft Access database for that year.")
 
 # Save to CSV for easy viewing
-output_csv = os.path.join(script_dir, "cms_quality_inventory_map.csv")
+output_csv = os.path.join(project_root,"dictionaries_and_crosswalks", "cms_quality_inventory_map.csv")
 df_inventory.to_csv(output_csv, index=False)
