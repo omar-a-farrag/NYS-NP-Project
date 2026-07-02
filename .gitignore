@@ -1,0 +1,36 @@
+# --- Data Files (The heavy stuff) ---
+*.csv
+*.dta
+*.xlsx
+*.xls
+*.mdb
+*.zip
+*.lnk
+
+# --- Stata Temp/Output Files ---
+*.smcl
+*.log
+# If you have specific logs you WANT to keep, you can comment the line above
+
+# --- Binary/Doc Files ---
+# (Usually better to keep these in Dropbox/Drive, not Git)
+*.pdf
+*.docx
+
+# --- Image Files ---
+# (Usually better to keep these in Dropbox/Drive, not Git)
+*.png
+*.jpg
+*.jpeg
+
+# --- LaTeX Related Files ---
+# (Usually better to keep these in Dropbox/Drive, not Git)
+*.tex
+*.aux
+
+# --- System/Dropbox Files ---
+.DS_Store
+Thumbs.db
+Icon?
+.dropbox
+.dropbox.attr

@@ -1,0 +1,2 @@
+# Isn't using MIPs for both Inpatient and Outpatient (where it's the same score for both) Wrong? 
+No, even though it's the same score, providers could respond or update their practice in both the inpatient and outpatient realm -- ie if they provide both services, then they may respond in general to those scores and update their practice in both settings (e.g. costing patients less money by lower billing; better care in prescribing; etc.)

@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+
+
+\begin{document}
+\begin{table}[htbp]
+\centering
+\caption{Full Sample Unique NYS Provider Count: Outpatient ASC By Gender and Provider Type}
+\label{tab:outpatient_gender_x_provtype_full}
+\begin{threeparttable}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Provider Gender} & \textbf{MD/DO} & \textbf{Nurse Practitioner} & \textbf{Physician Assistant} \\
+\midrule
+        Female & 9,722 & 2,915 & 1,854 \\
+        Male & 35,912 & 3,141 & 3,621 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Counts represent unique billing providers in New York across the panel.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\end{document}

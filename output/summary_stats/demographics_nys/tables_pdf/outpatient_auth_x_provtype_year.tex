@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{pdflscape}
+
+\begin{document}
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\caption{Yearly Active NYS Provider Count: Outpatient ASC By Authority and Provider Type}
+\label{tab:outpatient_auth_x_provtype_year}
+\begin{threeparttable}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{State NP Authority} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{2021} & \textbf{2022} & \textbf{2023} \\
+\midrule
+        \multicolumn{10}{l}{\textbf{MD/DO}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 21,491 & 22,748 & 22,352 & 24,587 & 18,465 & 23,344 & 25,469 & 27,558 & 27,604 \\
+        \midrule
+        \multicolumn{10}{l}{\textbf{Nurse Practitioner}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 1,287 & 1,502 & 1,562 & 2,105 & 1,863 & 2,603 & 2,945 & 3,388 & 3,532 \\
+        \midrule
+        \multicolumn{10}{l}{\textbf{Physician Assistant}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 1,437 & 1,642 & 1,828 & 2,186 & 1,727 & 2,496 & 2,921 & 3,298 & 3,431 \\
+        \midrule
+\bottomrule
+\end{tabular}
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Yearly counts represent active billing providers per year in New York.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\end{landscape}
+\end{document}

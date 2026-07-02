@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{pdflscape}
+
+\begin{document}
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\caption{Yearly Active NYS Provider Count: Inpatient By Authority and Provider Type}
+\label{tab:inpatient_auth_x_provtype_year}
+\begin{threeparttable}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccccccc}
+\toprule
+\textbf{State NP Authority} & \textbf{2013} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{2021} & \textbf{2022} & \textbf{2023} \\
+\midrule
+        \multicolumn{12}{l}{\textbf{MD/DO}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 61,019 & 62,233 & 63,126 & 64,107 & 65,160 & 65,842 & 66,932 & 66,182 & 67,256 & 68,124 & 68,616 \\
+        \midrule
+        \multicolumn{12}{l}{\textbf{Nurse Practitioner}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 3,560 & 3,947 & 4,453 & 4,988 & 5,633 & 6,277 & 7,036 & 7,571 & 8,163 & 8,901 & 9,431 \\
+        \midrule
+        \multicolumn{12}{l}{\textbf{Physician Assistant}} \\
+        \midrule
+        \hspace{0.5cm} Full Practice & 3,777 & 4,021 & 4,419 & 4,880 & 5,376 & 5,967 & 6,624 & 6,917 & 7,406 & 7,956 & 8,279 \\
+        \midrule
+\bottomrule
+\end{tabular}
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Yearly counts represent active billing providers per year in New York.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\end{landscape}
+\end{document}

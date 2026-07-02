@@ -1,0 +1,41 @@
+1. Since I have both facility level and individual level quality reporting, it would be interesting to see how the change in HCAHPS 
+scores for an individual provider's facility over time impacts their own prescribing, as well as the lag of the facility score 
+(and individual score) from the prior year impacts current year prescribing. Side note: need to worry about interaction/correlation 
+between individual and facility scores, as individual score likely to impact/not be fully independent of facility score, so maybe run 
+separate regressions with each rather than throwing them both into the same regression. 
+
+2. Run separate analyses at the facility level and individual level with regard to presribing. Can maybe say something about (1) types
+of facilities' prescribing patterns and (2) the impact of facility type on individual providers and (3) composition of individual providers 
+on facility score (e.g. does having a high average of prescribing amongst individual providers lead to higher facility-level scores, and
+do we indeed see that at the facility level, facilities where we observe their individuals prescribing more also themselves prescribe more
+at the facility level compared to peer facilities? This is more of a data validation question, to see how reliable and how much our data capture)
+
+3. Check to see if Graduation year of provider impacts prescribing. Check if provider gender impacts presribing
+
+4. Plot time series of doctors, by department, by (1) graduation year and (2) by existence in CMS data. Let's see if concentration in fields like Family Medicine and Internal medicine is decreasing, with NPs and PAs potentially taking those jobs.
+  A) Look at change in composition of MD/PA/NP by hospital type (i.e. are public or private more turning to non-MDs?)
+
+
+5. Table showing average prescribing rates, risk score faced, etc. by provider type (MD, PA, NP) and disaggregated into gender, Graduation year decade, etc. 
+ -- can show a tree in order to see something like gender-grad decade
+
+ 6. For counterfactual (structual modeling) analysis: 
+  A) By how much are providers across types (MD/PA/NP) influenced by incentives
+  B) By how much _within_ types are providers influenced by incentives
+  C) How does evolving labor composition, from MDs towards PAs and NPs, impact satisfacion, health scores
+   spending, prescribing, outcomes, etc. 
+   D) what would the outcomes, across satisfacion, scores, outcomes, spending, prescribing look like, 
+   across different "decay rates" of MDs towards PAs/NPs?
+   E) Think about "tuning" or setting the initial conditions of the structural model to a time like 2008 or
+   2013/2014, at the outset of the modern ACA. 
+   F) Split this analysis (i.e. the whole structual model) between in-patient and out-patient 
+   as a (crude) why of isolating medical settings. 
+
+7. A validation excercise is to see if in NYS the prescribing volume of NPs increased following 2015 (when the law took effect)
+
+8. Note that HOPD measures like 18b look at time to be seen and/or percent of patients who left without
+being seen -- use these as controls in the regressions!
+
+9. Like I analyzed at sub-groups of patients in my Honors Thesis, I should analyze behavior of 
+sub-groups of providers (since in the CMS data we know a lot about individual providers). Add
+this to the reduced-form analysis. 

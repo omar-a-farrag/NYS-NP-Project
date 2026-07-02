@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{pdflscape}
+
+\begin{document}
+\begin{landscape}
+\begin{table}[htbp]
+\centering
+\caption{Yearly Active NYS Provider Count: Outpatient ASC By Gender and Provider Type}
+\label{tab:outpatient_gender_x_provtype_year}
+\begin{threeparttable}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Provider Gender} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{2021} & \textbf{2022} & \textbf{2023} \\
+\midrule
+        \multicolumn{10}{l}{\textbf{MD/DO}} \\
+        \midrule
+        \hspace{0.5cm} Female & 4,115 & 7,359 & 4,550 & 4,999 & 3,985 & 5,071 & 5,639 & 5,872 & 6,145 \\
+        \hspace{0.5cm} Male & 17,376 & 15,389 & 17,802 & 19,588 & 14,480 & 18,273 & 19,830 & 21,686 & 21,459 \\
+        \midrule
+        \multicolumn{10}{l}{\textbf{Nurse Practitioner}} \\
+        \midrule
+        \hspace{0.5cm} Female & 661 & 1,148 & 860 & 1,049 & 944 & 1,302 & 1,545 & 1,699 & 1,823 \\
+        \hspace{0.5cm} Male & 626 & 354 & 702 & 1,056 & 919 & 1,301 & 1,400 & 1,689 & 1,709 \\
+        \midrule
+        \multicolumn{10}{l}{\textbf{Physician Assistant}} \\
+        \midrule
+        \hspace{0.5cm} Female & 32 & 32 & 676 & 718 & 581 & 891 & 1,052 & 1,205 & 1,302 \\
+        \hspace{0.5cm} Male & 1,405 & 1,610 & 1,152 & 1,468 & 1,146 & 1,605 & 1,869 & 2,093 & 2,129 \\
+        \midrule
+\bottomrule
+\end{tabular}
+}
+\begin{tablenotes}[flushleft]
+\footnotesize
+\item Notes: Yearly counts represent active billing providers per year in New York.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\end{landscape}
+\end{document}
