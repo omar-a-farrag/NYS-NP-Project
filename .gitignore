@@ -27,6 +27,7 @@
 # (Usually better to keep these in Dropbox/Drive, not Git)
 *.tex
 *.aux
+*.txt
 
 # --- System/Dropbox Files ---
 .DS_Store
