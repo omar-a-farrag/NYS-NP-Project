@@ -16,6 +16,7 @@
 # (Usually better to keep these in Dropbox/Drive, not Git)
 *.pdf
 *.docx
+*.md
 
 # --- Image Files ---
 # (Usually better to keep these in Dropbox/Drive, not Git)
